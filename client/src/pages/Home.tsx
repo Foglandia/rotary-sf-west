@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Header } from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Calendar, ArrowRight, ExternalLink, ChevronRight, ChevronDown, Users, Globe, Heart } from "lucide-react";
+import { Calendar, ArrowRight, ExternalLink, ChevronRight, ChevronDown, Users, Globe, Heart, MessageCircle } from "lucide-react";
 import { Link } from "wouter";
 import {
   Carousel,
@@ -76,7 +76,7 @@ const upcomingActivities = [
     location: "Crepes on Cole",
     description: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.",
     image: breakfastMeetingImg,
-    category: "club"
+    category: "meeting"
   },
   {
     id: 4,
@@ -129,6 +129,12 @@ const getCategoryDetails = (category: string) => {
         label: "Community Event", 
         color: "bg-[#10b981] text-white", 
         icon: Heart 
+      };
+    case "meeting":
+      return { 
+        label: "Club Meeting", 
+        color: "bg-[#8b5cf6] text-white", 
+        icon: MessageCircle 
       };
     default:
       return { 
@@ -268,6 +274,10 @@ export default function Home() {
                   <div className="flex items-center gap-1.5">
                     <div className="h-2.5 w-2.5 rounded-full bg-[#10b981]"></div>
                     <span className="text-xs font-medium text-muted-foreground">Community Event</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <div className="h-2.5 w-2.5 rounded-full bg-[#8b5cf6]"></div>
+                    <span className="text-xs font-medium text-muted-foreground">Club Meeting</span>
                   </div>
                 </div>
               </div>
