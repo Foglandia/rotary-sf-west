@@ -125,8 +125,8 @@ export default function Home() {
 
         <div className="grid grid-cols-1 lg:grid-cols-10 gap-8 lg:gap-12">
           
-          {/* Left Sidebar: Quick Links (30% - 3/10 cols) */}
-          <aside className="lg:col-span-3 space-y-6">
+          {/* Left Sidebar: Quick Links (20% - 2/10 cols) */}
+          <aside className="lg:col-span-2 space-y-6">
              <section className="bg-muted/30 rounded-2xl p-6 border border-border/50 sticky top-24">
               <h2 className="text-xl font-heading font-bold text-foreground mb-4 flex items-center gap-2">
                 <ExternalLink className="h-5 w-5 text-secondary" />
@@ -149,8 +149,8 @@ export default function Home() {
             </section>
           </aside>
 
-          {/* Main Content Area: Upcoming Activities (70% - 7/10 cols) */}
-          <div className="lg:col-span-7 space-y-12">
+          {/* Main Content Area: Upcoming Activities (80% - 8/10 cols) */}
+          <div className="lg:col-span-8 space-y-12">
             
             {/* Upcoming Activities Section */}
              <section className="bg-card rounded-2xl border border-border shadow-sm overflow-hidden h-full">
