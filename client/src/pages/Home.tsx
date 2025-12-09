@@ -51,7 +51,7 @@ const quickLinks = [
   { label: "Donate Now", href: "#" },
   { label: "Partner Organizations", href: "#" },
   { label: "Volunteer Handbook", href: "#" },
-  { label: "Annual Report 2024", href: "#" },
+  { label: "Blog", href: "#" },
 ];
 
 const carouselImages = [
@@ -214,7 +214,7 @@ export default function Home() {
               
               <div className="p-4 bg-muted/30 border-t border-border/50 text-center">
                 <Button variant="ghost" className="w-full">
-                  View Full Calendar
+                  View More Activities
                 </Button>
               </div>
             </section>
