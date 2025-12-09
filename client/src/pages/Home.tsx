@@ -23,9 +23,20 @@ import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
 import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg";
 import readingMentorshipImg from "@assets/stock_images/volunteers_teaching__9d9025ed.jpg";
 import beachCleanupImg from "@assets/stock_images/beach_cleanup_ocean__30385de7.jpg";
+import christmasGiftsImg from "@assets/stock_images/volunteers_handing_o_4a2e2d94.jpg";
 
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
+  {
+    id: 0,
+    title: "Hand out Christmas Gifts",
+    date: "Dec 18, 2025",
+    time: "5:00 PM - 8:00 PM",
+    location: "Community Hall",
+    description: "Spread holiday cheer by helping us distribute gifts to families in our community. We need volunteers to help organize gifts and hand them out to children and parents.",
+    image: christmasGiftsImg,
+    category: "club"
+  },
   {
     id: 1,
     title: "Community Park Cleanup",
