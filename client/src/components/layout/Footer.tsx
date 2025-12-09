@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Mail, Phone, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
+import logoImage from "@assets/RotaryLogo_transparent_1765320789572.png";
 
 const XIconBetter = () => (
     <svg
@@ -27,13 +28,20 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           {/* Organization Info */}
           <div className="space-y-4">
-            <div className="flex flex-col gap-1 text-primary">
-              <span className="font-heading font-extrabold text-2xl leading-none">
-                Rotary
-              </span>
-              <span className="font-heading font-light text-base leading-none opacity-90">
-                San Francisco West
-              </span>
+            <div className="flex items-center gap-2 text-primary">
+              <div className="flex flex-col gap-1">
+                <span className="font-heading font-extrabold text-2xl leading-none">
+                  Rotary
+                </span>
+                <span className="font-heading font-light text-base leading-none opacity-90">
+                  San Francisco West
+                </span>
+              </div>
+              <img 
+                src={logoImage} 
+                alt="Rotary Logo" 
+                className="h-16 w-16 object-contain" 
+              />
             </div>
             <p className="text-sm text-muted-foreground max-w-xs">
               To serve and inspire our local community and international partners by creating service opportunities for ourselves and others as expressed in the Rotary principles.
