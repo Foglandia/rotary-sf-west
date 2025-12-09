@@ -53,11 +53,10 @@ const upcomingActivities = [
 
 // Mock Data for Quick Links
 const quickLinks = [
-  { label: "Volunteer Application", href: "/membership" },
-  { label: "Donate Now", href: "#" },
-  { label: "Partner Organizations", href: "#" },
-  { label: "Volunteer Handbook", href: "#" },
-  { label: "Blog", href: "#" },
+  { label: "Join the Club", href: "/join-us" },
+  { label: "Club Leadership", href: "/leadership" },
+  { label: "Club Blog", href: "/blog" },
+  { label: "Rotary International", href: "/rotary-international" },
 ];
 
 const carouselImages = [
