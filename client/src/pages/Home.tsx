@@ -10,7 +10,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 
 import image1 from "@assets/stock_images/diverse_group_of_vol_41b6559d.jpg";
 import image2 from "@assets/stock_images/volunteers_packing_f_6a3a0d33.jpg";
@@ -73,11 +72,6 @@ export default function Home() {
             align: "start",
             loop: true,
           }}
-          plugins={[
-            Autoplay({
-              delay: 4000,
-            }),
-          ]}
           className="w-full"
         >
           <CarouselContent className="-ml-0">
@@ -96,9 +90,9 @@ export default function Home() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="hidden md:block">
-            <CarouselPrevious className="left-4 bg-background/80 hover:bg-background" />
-            <CarouselNext className="right-4 bg-background/80 hover:bg-background" />
+          <div className="absolute inset-0 pointer-events-none flex items-center justify-between px-4">
+             <CarouselPrevious className="relative left-0 bg-background/80 hover:bg-background pointer-events-auto shadow-md border-primary/20" />
+             <CarouselNext className="relative right-0 bg-background/80 hover:bg-background pointer-events-auto shadow-md border-primary/20" />
           </div>
         </Carousel>
       </section>
