@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Header } from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Calendar, ArrowRight, ExternalLink, ChevronRight, ChevronDown } from "lucide-react";
+import { Calendar, ArrowRight, ExternalLink, ChevronRight, ChevronDown, Users, Globe, Heart } from "lucide-react";
 import { Link } from "wouter";
 import {
   Carousel,
@@ -34,6 +34,7 @@ const upcomingActivities = [
     location: "Central City Park",
     description: "Join us for a morning of cleaning up our beloved park. We'll be planting new flowers, painting benches, and clearing trails to ensure a safe and beautiful space for everyone to enjoy. Gloves and bags provided.",
     image: parkCleanupImg,
+    category: "community"
   },
   {
     id: 2,
@@ -43,6 +44,7 @@ const upcomingActivities = [
     location: "Main Street Community Center",
     description: "Help us sort and pack food donations for local families in need this holiday season. We have received over 5000 pounds of non-perishable items that need to be categorized and boxed for distribution.",
     image: foodDriveImg,
+    category: "community"
   },
   {
     id: 3,
@@ -52,6 +54,7 @@ const upcomingActivities = [
     location: "Sunrise Senior Living",
     description: "Spend time playing board games and chatting with residents. Bring your smiles! We are looking for volunteers who can play piano or guitar to lead a sing-along session with the seniors.",
     image: seniorVisitImg,
+    category: "club"
   },
   {
     id: 4,
@@ -61,6 +64,7 @@ const upcomingActivities = [
     location: "Grand Ballroom, City Hotel",
     description: "Our biggest fundraiser of the year! Join us for an evening of dinner, dancing, and auctions to support our community projects. Formal attire requested. Tickets available online.",
     image: galaEventImg,
+    category: "club"
   },
   {
     id: 5,
@@ -70,6 +74,7 @@ const upcomingActivities = [
     location: "Westside Public Library",
     description: "Help foster a love for reading in our local youth. Volunteers will be paired with elementary school students for one-on-one reading sessions and homework help. Background check required.",
     image: readingMentorshipImg,
+    category: "other_rotary"
   },
   {
     id: 6,
@@ -79,8 +84,38 @@ const upcomingActivities = [
     location: "Ocean Beach, Stairwell 17",
     description: "Let's keep our coastline beautiful! We're partnering with the Surf Rider Foundation to remove plastic and debris from the beach. Bring reusable water bottles and sunscreen.",
     image: beachCleanupImg,
+    category: "community"
   },
 ];
+
+const getCategoryDetails = (category: string) => {
+  switch(category) {
+    case "club":
+      return { 
+        label: "Club Activity", 
+        color: "bg-[#17458f] text-white", 
+        icon: Users 
+      };
+    case "other_rotary":
+      return { 
+        label: "Other Rotary Event", 
+        color: "bg-[#f59e0b] text-white", 
+        icon: Globe 
+      };
+    case "community":
+      return { 
+        label: "Community Event", 
+        color: "bg-[#10b981] text-white", 
+        icon: Heart 
+      };
+    default:
+      return { 
+        label: "Event", 
+        color: "bg-gray-500 text-white", 
+        icon: Calendar 
+      };
+  }
+};
 
 // Mock Data for Quick Links
 const quickLinks = [
@@ -214,9 +249,18 @@ export default function Home() {
 
                       <div className="flex-1">
                           <div className="flex justify-between items-start mb-2">
-                          <h3 className="font-bold text-lg text-foreground">
-                              {activity.title}
-                          </h3>
+                            <div className="flex flex-col gap-1">
+                              <div className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full w-fit flex items-center gap-1 ${getCategoryDetails(activity.category).color}`}>
+                                {(() => {
+                                  const Icon = getCategoryDetails(activity.category).icon;
+                                  return <Icon className="h-3 w-3" />;
+                                })()}
+                                {getCategoryDetails(activity.category).label}
+                              </div>
+                              <h3 className="font-bold text-lg text-foreground mt-1">
+                                  {activity.title}
+                              </h3>
+                            </div>
                           </div>
                           
                           <div className="flex flex-wrap items-center gap-3 mb-2">
