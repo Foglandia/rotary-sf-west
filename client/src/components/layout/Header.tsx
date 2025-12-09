@@ -84,13 +84,13 @@ const NavLink = ({ href, children, subItems }: { href: string; children: React.R
   if (subItems) {
     return (
       <DropdownMenu>
-        <DropdownMenuTrigger className="outline-none focus:outline-none">
+        <DropdownMenuTrigger className="h-full flex items-center outline-none focus:outline-none">
           <span className={`cursor-pointer text-sm font-semibold transition-colors hover:text-primary/80 flex items-center gap-1 text-[#17458f] ${isActive ? "font-bold" : ""}`}>
             {children}
             <ChevronDown className="h-3 w-3" />
           </span>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="start">
+        <DropdownMenuContent align="start" sideOffset={0} className="mt-0 rounded-t-none border-t-0">
           {subItems.map((item, index) => (
             <DropdownMenuItem key={index} asChild>
               <Link href={item.href} className="cursor-pointer font-semibold text-[#17458f]">
@@ -104,7 +104,7 @@ const NavLink = ({ href, children, subItems }: { href: string; children: React.R
   }
 
   return (
-    <Link href={href}>
+    <Link href={href} className="h-full flex items-center">
       <span className={`cursor-pointer text-sm font-semibold transition-colors hover:text-primary/80 text-[#17458f] ${isActive ? "font-bold" : ""}`}>
         {children}
       </span>
@@ -133,7 +133,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex h-full items-stretch gap-8">
           <NavLink 
             href="/about"
             subItems={[
