@@ -16,9 +16,9 @@ import image1 from "@assets/stock_images/diverse_group_of_vol_41b6559d.jpg";
 import image2 from "@assets/stock_images/volunteers_packing_f_6a3a0d33.jpg";
 import image3 from "@assets/stock_images/happy_volunteers_wor_0c694cf7.jpg";
 import image4 from "@assets/stock_images/beach_cleanup_volunt_2ef89fde.jpg";
-import parkCleanupImg from "@assets/stock_images/volunteers_cleaning__c5eab4b9.jpg";
-import foodDriveImg from "@assets/stock_images/volunteers_sorting_f_9a3cac02.jpg";
-import seniorVisitImg from "@assets/stock_images/volunteers_visiting__01719443.jpg";
+import parkCleanupImg from "@assets/stock_images/community_park_clean_50bc66f0.jpg";
+import foodDriveImg from "@assets/stock_images/food_drive_sorting_p_39447000.jpg";
+import seniorVisitImg from "@assets/stock_images/senior_home_visit_pe_2bb0f8e6.jpg";
 
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
