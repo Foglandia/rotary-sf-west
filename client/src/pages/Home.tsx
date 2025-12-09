@@ -98,10 +98,34 @@ export default function Home() {
       </section>
 
       <main className="flex-1 container mx-auto px-4 py-8 md:py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+        {/* Intro Section - Full Width at Top */}
+        <section className="space-y-6 mb-12 max-w-4xl">
+          <div className="space-y-2">
+            <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary tracking-tight">
+              Welcome to Rotary San Francisco West
+            </h1>
+            <div className="h-1 w-20 bg-secondary rounded-full"></div>
+          </div>
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Button size="lg" className="rounded-full px-8 shadow-md">
+              Join Us Today
+            </Button>
+            <Button size="lg" variant="outline" className="rounded-full px-8">
+              Learn More
+            </Button>
+          </div>
+        </section>
+
+        <div className="grid grid-cols-1 lg:grid-cols-10 gap-8 lg:gap-12">
           
-          {/* Left Sidebar: Quick Links (Moved to Left) */}
-          <aside className="lg:col-span-3 space-y-6 order-2 lg:order-1">
+          {/* Left Sidebar: Quick Links (30% - 3/10 cols) */}
+          <aside className="lg:col-span-3 space-y-6">
              <section className="bg-muted/30 rounded-2xl p-6 border border-border/50 sticky top-24">
               <h2 className="text-xl font-heading font-bold text-foreground mb-4 flex items-center gap-2">
                 <ExternalLink className="h-5 w-5 text-secondary" />
@@ -124,35 +148,11 @@ export default function Home() {
             </section>
           </aside>
 
-          {/* Main Content Area: Intro + Upcoming Activities (Middle/Right) */}
-          <div className="lg:col-span-9 space-y-12 order-1 lg:order-2">
+          {/* Main Content Area: Upcoming Activities (70% - 7/10 cols) */}
+          <div className="lg:col-span-7 space-y-12">
             
-            {/* Intro Section */}
-            <section className="space-y-6">
-              <div className="space-y-2">
-                <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary tracking-tight">
-                  Welcome to Rotary San Francisco West
-                </h1>
-                <div className="h-1 w-20 bg-secondary rounded-full"></div>
-              </div>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="rounded-full px-8 shadow-md">
-                  Join Us Today
-                </Button>
-                <Button size="lg" variant="outline" className="rounded-full px-8">
-                  Learn More
-                </Button>
-              </div>
-            </section>
-
-            {/* Upcoming Activities Section (Expanded to fit main area) */}
-             <section className="bg-card rounded-2xl border border-border shadow-sm overflow-hidden">
+            {/* Upcoming Activities Section */}
+             <section className="bg-card rounded-2xl border border-border shadow-sm overflow-hidden h-full">
               <div className="bg-primary/5 p-6 border-b border-border/50">
                 <h2 className="text-2xl font-heading font-bold text-primary flex items-center gap-2">
                   <Calendar className="h-6 w-6" />
