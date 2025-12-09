@@ -17,7 +17,7 @@ import image2 from "@assets/stock_images/volunteers_packing_f_6a3a0d33.jpg";
 import image3 from "@assets/stock_images/happy_volunteers_wor_0c694cf7.jpg";
 import image4 from "@assets/stock_images/beach_cleanup_volunt_2ef89fde.jpg";
 import parkCleanupImg from "@assets/communityparkcleanup_1765319980781.jpg";
-import foodDriveImg from "@assets/stock_images/food_drive_sorting_p_39447000.jpg";
+import foodDriveImg from "@assets/fooddrivesorting_1765320006510.jpg";
 import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
 
 // Mock Data for Upcoming Activities
