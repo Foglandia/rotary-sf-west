@@ -171,7 +171,7 @@ export default function Home() {
                         </h3>
                         </div>
                         
-                        <div className="text-sm text-[#0067c8] font-semibold mb-2 uppercase tracking-wide">
+                        <div className="text-sm text-[#657f99] font-semibold mb-2 uppercase tracking-wide">
                         {activity.date} • {activity.time}
                         </div>
                         
