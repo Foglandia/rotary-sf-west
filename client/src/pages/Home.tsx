@@ -176,7 +176,7 @@ export default function Home() {
                         <img 
                           src={activity.image} 
                           alt={activity.title} 
-                          className="w-24 h-24 object-cover rounded-lg shadow-sm"
+                          className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-lg shadow-sm"
                         />
                       </div>
 
