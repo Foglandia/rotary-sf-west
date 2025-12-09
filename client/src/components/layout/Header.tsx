@@ -90,7 +90,7 @@ const NavLink = ({ href, children, subItems }: { href: string; children: React.R
             <ChevronDown className="h-3 w-3" />
           </span>
         </DropdownMenuTrigger>
-        <DropdownMenuContent>
+        <DropdownMenuContent align="start">
           {subItems.map((item, index) => (
             <DropdownMenuItem key={index} asChild>
               <Link href={item.href} className="cursor-pointer font-semibold text-[#17458f]">
