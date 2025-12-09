@@ -39,8 +39,8 @@
 
 :root {
   /* Warm, trustworthy palette */
-  /* Primary: Teal/Blue - Trust */
-  --primary: 185 62% 45%;
+  /* Primary: Rotary Blue #17458f -> 217 72% 33% */
+  --primary: 217 72% 33%;
   --primary-foreground: 0 0% 100%;
   
   /* Secondary: Warm Orange - Action/Warmth */
