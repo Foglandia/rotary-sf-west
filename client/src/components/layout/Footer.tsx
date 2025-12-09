@@ -63,7 +63,7 @@ export function Footer() {
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
                 <span>
-                  Crepes on Cole<br />
+                  100 Carl Street<br />
                   San Francisco, CA 94117
                 </span>
               </div>
