@@ -98,7 +98,7 @@ export function Header() {
               className="h-10 w-10 rounded-full object-cover border border-border" 
             />
             <span className="font-heading font-bold text-xl text-primary hidden sm:inline-block">
-              Volunteer Connect
+              Rotary San Francisco West
             </span>
           </div>
         </Link>

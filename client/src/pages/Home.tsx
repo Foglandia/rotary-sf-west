@@ -113,15 +113,15 @@ export default function Home() {
             <section className="space-y-6">
               <div className="space-y-2">
                 <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary tracking-tight">
-                  Welcome to Volunteer Connect
+                  Welcome to Rotary San Francisco West
                 </h1>
                 <div className="h-1 w-20 bg-secondary rounded-full"></div>
               </div>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                We are a dedicated group of individuals committed to making a tangible difference in our community. 
-                Whether it's through environmental stewardship, supporting local families, or spending time with those in need, 
-                we believe that every small act of kindness ripples outward to create a wave of positive change. 
-                Join us today and be part of something bigger than yourself.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="rounded-full px-8 shadow-md">
