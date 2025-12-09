@@ -16,6 +16,9 @@ import image1 from "@assets/stock_images/diverse_group_of_vol_41b6559d.jpg";
 import image2 from "@assets/stock_images/volunteers_packing_f_6a3a0d33.jpg";
 import image3 from "@assets/stock_images/happy_volunteers_wor_0c694cf7.jpg";
 import image4 from "@assets/stock_images/beach_cleanup_volunt_2ef89fde.jpg";
+import parkCleanupImg from "@assets/stock_images/volunteers_cleaning__c5eab4b9.jpg";
+import foodDriveImg from "@assets/stock_images/volunteers_sorting_f_9a3cac02.jpg";
+import seniorVisitImg from "@assets/stock_images/volunteers_visiting__01719443.jpg";
 
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
@@ -26,6 +29,7 @@ const upcomingActivities = [
     time: "9:00 AM - 12:00 PM",
     location: "Central City Park",
     description: "Join us for a morning of cleaning up our beloved park. We'll be planting new flowers, painting benches, and clearing trails to ensure a safe and beautiful space for everyone to enjoy. Gloves and bags provided.",
+    image: parkCleanupImg,
   },
   {
     id: 2,
@@ -34,6 +38,7 @@ const upcomingActivities = [
     time: "10:00 AM - 2:00 PM",
     location: "Main Street Community Center",
     description: "Help us sort and pack food donations for local families in need this holiday season. We have received over 5000 pounds of non-perishable items that need to be categorized and boxed for distribution.",
+    image: foodDriveImg,
   },
   {
     id: 3,
@@ -42,6 +47,7 @@ const upcomingActivities = [
     time: "2:00 PM - 4:00 PM",
     location: "Sunrise Senior Living",
     description: "Spend time playing board games and chatting with residents. Bring your smiles! We are looking for volunteers who can play piano or guitar to lead a sing-along session with the seniors.",
+    image: seniorVisitImg,
   },
 ];
 
@@ -194,8 +200,12 @@ export default function Home() {
                           </CollapsibleTrigger>
                       </div>
 
-                      <div className="shrink-0 pt-1">
-                        {/* Button removed */}
+                      <div className="shrink-0">
+                        <img 
+                          src={activity.image} 
+                          alt={activity.title} 
+                          className="w-24 h-24 object-cover rounded-lg shadow-sm"
+                        />
                       </div>
                     </div>
                     
