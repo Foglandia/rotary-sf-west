@@ -43,8 +43,8 @@
   --primary: 217 72% 33%;
   --primary-foreground: 0 0% 100%;
   
-  /* Secondary: Custom Purple #241367 -> 252 69% 24% */
-  --secondary: 252 69% 24%;
+  /* Secondary: Custom Red/Pink #d41367 -> 334 83% 45% */
+  --secondary: 334 83% 45%;
   --secondary-foreground: 0 0% 100%;
 
   --background: 40 20% 98%; /* Warm white */
