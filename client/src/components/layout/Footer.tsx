@@ -22,12 +22,12 @@ const XIconBetter = () => (
 
 export function Footer() {
   return (
-    <footer className="bg-[#17458f] text-white pt-12 pb-6">
+    <footer className="bg-background border-t pt-8 pb-6">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           {/* Organization Info */}
           <div className="space-y-4">
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1 text-primary">
               <span className="font-heading font-extrabold text-2xl leading-none">
                 Rotary
               </span>
@@ -35,20 +35,20 @@ export function Footer() {
                 San Francisco West
               </span>
             </div>
-            <p className="text-sm text-blue-100 max-w-xs">
+            <p className="text-sm text-muted-foreground max-w-xs">
               Dedicated to community service, bringing together business and professional leaders to provide humanitarian service.
             </p>
           </div>
 
           {/* Contact Information */}
           <div className="space-y-4">
-            <h3 className="text-lg font-bold font-heading">Contact Us</h3>
-            <div className="space-y-3 text-sm text-blue-100">
-              <a href="mailto:rcofsfw@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors">
+            <h3 className="text-lg font-bold font-heading text-foreground">Contact Us</h3>
+            <div className="space-y-3 text-sm text-muted-foreground">
+              <a href="mailto:rcofsfw@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Mail className="h-4 w-4" />
                 rcofsfw@gmail.com
               </a>
-              <a href="tel:+14152034779" className="flex items-center gap-2 hover:text-white transition-colors">
+              <a href="tel:+14152034779" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Phone className="h-4 w-4" />
                 (415) 203-4779
               </a>
@@ -64,34 +64,34 @@ export function Footer() {
 
           {/* Quick Links & Policy */}
           <div className="space-y-4">
-            <h3 className="text-lg font-bold font-heading">Information</h3>
-            <div className="flex flex-col gap-2 text-sm text-blue-100">
-              <Link href="/privacy-policy" className="hover:text-white transition-colors hover:underline underline-offset-4 w-fit">
+            <h3 className="text-lg font-bold font-heading text-foreground">Information</h3>
+            <div className="flex flex-col gap-2 text-sm text-muted-foreground">
+              <Link href="/privacy-policy" className="hover:text-primary transition-colors hover:underline underline-offset-4 w-fit">
                 Privacy Policy
               </Link>
-              <Link href="/contact" className="hover:text-white transition-colors hover:underline underline-offset-4 w-fit">
+              <Link href="/contact" className="hover:text-primary transition-colors hover:underline underline-offset-4 w-fit">
                 Contact Us
               </Link>
-              <Link href="/about" className="hover:text-white transition-colors hover:underline underline-offset-4 w-fit">
+              <Link href="/about" className="hover:text-primary transition-colors hover:underline underline-offset-4 w-fit">
                 About Us
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-blue-400/30 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-blue-200">
+        <div className="border-t border-border pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} Rotary Club of San Francisco West. All rights reserved.</p>
-          <div className="flex items-center gap-4">
-            <a href="#" className="hover:text-white transition-colors" aria-label="Facebook">
+          <div className="flex items-center gap-4 text-muted-foreground">
+            <a href="#" className="hover:text-primary transition-colors" aria-label="Facebook">
               <Facebook className="h-4 w-4" />
             </a>
-            <a href="#" className="hover:text-white transition-colors" aria-label="Instagram">
+            <a href="#" className="hover:text-primary transition-colors" aria-label="Instagram">
               <Instagram className="h-4 w-4" />
             </a>
-            <a href="#" className="hover:text-white transition-colors" aria-label="X (Twitter)">
+            <a href="#" className="hover:text-primary transition-colors" aria-label="X (Twitter)">
               <XIconBetter />
             </a>
-            <a href="#" className="hover:text-white transition-colors" aria-label="YouTube">
+            <a href="#" className="hover:text-primary transition-colors" aria-label="YouTube">
               <Youtube className="h-4 w-4" />
             </a>
           </div>
