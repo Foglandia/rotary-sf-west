@@ -136,12 +136,12 @@ export default function Home() {
                   <a 
                     key={index} 
                     href={link.href}
-                    className="group flex items-center justify-between p-3 bg-card hover:bg-accent/50 border border-border rounded-xl transition-all duration-200 hover:shadow-sm"
+                    className="group flex items-center gap-2 py-2 text-foreground hover:text-primary transition-colors"
                   >
-                    <span className="font-medium text-sm text-foreground group-hover:text-primary transition-colors">
+                    <ChevronRight className="h-4 w-4 text-secondary group-hover:text-primary transition-colors" />
+                    <span className="font-medium text-base underline-offset-4 group-hover:underline">
                       {link.label}
                     </span>
-                    <ChevronRight className="h-3 w-3 text-muted-foreground group-hover:text-primary transition-transform group-hover:translate-x-1" />
                   </a>
                 ))}
               </div>
