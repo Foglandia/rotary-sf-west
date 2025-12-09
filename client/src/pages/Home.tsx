@@ -102,7 +102,7 @@ export default function Home() {
         {/* Intro Section - Full Width at Top */}
         <section className="space-y-6 mb-12">
           <div className="space-y-2">
-            <h1 className="text-3xl md:text-4xl font-heading font-bold text-primary tracking-tight">
+            <h1 className="text-2xl md:text-3xl font-heading font-bold text-primary tracking-tight">
               Welcome to Rotary San Francisco West
             </h1>
             <div className="h-1 w-20 bg-secondary rounded-full"></div>

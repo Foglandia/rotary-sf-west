@@ -88,16 +88,16 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo Area */}
         <Link href="/">
           <div className="flex items-center gap-3 cursor-pointer">
             <img 
               src={logoImage} 
               alt="Volunteer Connect Logo" 
-              className="h-10 w-10 rounded-full object-cover border border-border" 
+              className="h-8 w-8 rounded-full object-cover border border-border" 
             />
-            <span className="font-heading font-bold text-xl text-primary hidden sm:inline-block">
+            <span className="font-heading font-bold text-lg text-primary hidden sm:inline-block">
               Rotary San Francisco West
             </span>
           </div>
