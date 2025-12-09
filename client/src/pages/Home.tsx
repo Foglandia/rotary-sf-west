@@ -14,10 +14,15 @@ import {
 } from "@/components/ui/carousel";
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible";
 
-import image1 from "@assets/stock_images/diverse_group_of_vol_41b6559d.jpg";
-import image2 from "@assets/stock_images/volunteers_packing_f_6a3a0d33.jpg";
-import image3 from "@assets/stock_images/happy_volunteers_wor_0c694cf7.jpg";
-import image4 from "@assets/stock_images/beach_cleanup_volunt_2ef89fde.jpg";
+import carouselImg1 from "@assets/20171216_BS_221_1765323463090.jpg";
+import carouselImg2 from "@assets/20191122_PL_185_1765323463091.jpg";
+import carouselImg3 from "@assets/20171216_BS_212_1765323463091.jpg";
+import carouselImg4 from "@assets/20180512_AT_112_1765323463091.jpg";
+import carouselImg5 from "@assets/20230319_AU_047_1765323463092.jpg";
+import carouselImg6 from "@assets/20140826_KR_056_(1)_1765323463092.jpg";
+import carouselImg7 from "@assets/20150806_US_040_1765323463092.jpg";
+import beachCleanupCarouselImg from "@assets/stock_images/beach_cleanup_volunt_2ef89fde.jpg";
+
 import parkCleanupImg from "@assets/communityparkcleanup_1765319980781.jpg";
 import foodDriveImg from "@assets/fooddrivesorting_1765320006510.jpg";
 import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
@@ -155,10 +160,14 @@ const quickLinks = [
 ];
 
 const carouselImages = [
-  { src: image1, alt: "Volunteers planting trees" },
-  { src: image2, alt: "Packing food boxes" },
-  { src: image3, alt: "Helping seniors" },
-  { src: image4, alt: "Beach cleanup" },
+  { src: carouselImg1, alt: "Community Gardening" },
+  { src: carouselImg2, alt: "Youth Literacy Program" },
+  { src: carouselImg3, alt: "Environmental Conservation" },
+  { src: carouselImg4, alt: "Vocational Skills Workshop" },
+  { src: carouselImg5, alt: "Food Distribution" },
+  { src: carouselImg6, alt: "Sustainable Agriculture" },
+  { src: carouselImg7, alt: "Beautifying Our Parks" },
+  { src: beachCleanupCarouselImg, alt: "Beach Cleanup" },
 ];
 
 export default function Home() {
