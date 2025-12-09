@@ -7,6 +7,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import Contact from "@/pages/Contact";
 import About from "@/pages/About";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
 
 function Router() {
   return (
@@ -14,6 +15,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
       {/* Placeholder routes for the menu items so they don't 404 immediately */}
       <Route path="/activities" component={Home} />
       <Route path="/membership" component={Home} />
