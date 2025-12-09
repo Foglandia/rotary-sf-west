@@ -171,16 +171,18 @@ export default function Home() {
                         </h3>
                         </div>
                         
-                        <div className="text-sm text-[#657f99] font-semibold mb-2 uppercase tracking-wide">
-                        {activity.date} • {activity.time}
+                        <div className="flex flex-wrap items-center gap-3 mb-2">
+                            <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded-md">
+                                {activity.location}
+                            </span>
+                            <div className="text-sm text-[#657f99] font-semibold uppercase tracking-wide">
+                                {activity.date} • {activity.time}
+                            </div>
                         </div>
                         
                         <p className="text-sm text-muted-foreground mb-2">
                         {activity.description}
                         </p>
-                         <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded-md inline-block mt-2">
-                            {activity.location}
-                        </span>
                     </div>
 
                     <div className="shrink-0">
