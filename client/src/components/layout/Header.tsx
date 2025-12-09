@@ -154,7 +154,7 @@ export function Header() {
             href="/about"
             subItems={[
               { label: "Leadership", href: "/leadership" },
-              { label: "Rotary District 5150", href: "/district-5150" },
+              { label: "Rotary District 5150", href: "https://rotary5150.org/", external: true },
               { label: "Rotary International", href: "https://www.rotary.org/en", external: true },
               { label: "Contact Us", href: "/contact" },
             ]}
@@ -237,7 +237,7 @@ export function Header() {
                     <Link href="/about"><span className="text-lg font-medium cursor-pointer block">About Us</span></Link>
                     <div className="pl-4 flex flex-col gap-2 text-base text-muted-foreground">
                       <Link href="/leadership"><span className="cursor-pointer hover:text-primary">Leadership</span></Link>
-                      <Link href="/district-5150"><span className="cursor-pointer hover:text-primary">Rotary District 5150</span></Link>
+                      <a href="https://rotary5150.org/" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-primary">Rotary District 5150</a>
                       <a href="https://www.rotary.org/en" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-primary">Rotary International</a>
                       <Link href="/contact"><span className="cursor-pointer hover:text-primary">Contact Us</span></Link>
                     </div>
