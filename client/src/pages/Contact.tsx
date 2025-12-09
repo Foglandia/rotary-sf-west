@@ -67,7 +67,7 @@ export default function Contact() {
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Visit Us</h3>
+                    <h3 className="font-bold text-lg mb-1">Join Us</h3>
                     <p className="text-muted-foreground mb-2">Monthly meetings. Third Thursday at 7:30 am</p>
                     <address className="not-italic text-foreground">
                       Crepes on Cole<br />
