@@ -85,7 +85,7 @@ const NavLink = ({ href, children, subItems }: { href: string; children: React.R
     return (
       <DropdownMenu>
         <DropdownMenuTrigger className="outline-none focus:outline-none">
-          <span className={`cursor-pointer text-sm font-medium transition-colors hover:text-primary flex items-center gap-1 ${isActive ? "text-primary font-bold" : "text-muted-foreground"}`}>
+          <span className={`cursor-pointer text-sm font-semibold transition-colors hover:text-primary/80 flex items-center gap-1 text-[#17458f] ${isActive ? "font-bold" : ""}`}>
             {children}
             <ChevronDown className="h-3 w-3" />
           </span>
@@ -93,7 +93,7 @@ const NavLink = ({ href, children, subItems }: { href: string; children: React.R
         <DropdownMenuContent>
           {subItems.map((item, index) => (
             <DropdownMenuItem key={index} asChild>
-              <Link href={item.href} className="cursor-pointer">
+              <Link href={item.href} className="cursor-pointer font-semibold text-[#17458f]">
                 {item.label}
               </Link>
             </DropdownMenuItem>
@@ -105,7 +105,7 @@ const NavLink = ({ href, children, subItems }: { href: string; children: React.R
 
   return (
     <Link href={href}>
-      <span className={`cursor-pointer text-sm font-medium transition-colors hover:text-primary ${isActive ? "text-primary font-bold" : "text-muted-foreground"}`}>
+      <span className={`cursor-pointer text-sm font-semibold transition-colors hover:text-primary/80 text-[#17458f] ${isActive ? "font-bold" : ""}`}>
         {children}
       </span>
     </Link>
