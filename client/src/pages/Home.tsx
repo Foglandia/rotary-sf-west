@@ -113,10 +113,10 @@ export default function Home() {
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="rounded-full px-8 shadow-md">
+            <Button size="lg" className="px-8 shadow-md">
               Join Us Today
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full px-8">
+            <Button size="lg" variant="outline" className="px-8">
               Learn More
             </Button>
           </div>
