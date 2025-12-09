@@ -25,7 +25,7 @@ const upcomingActivities = [
     date: "Dec 15, 2025",
     time: "9:00 AM - 12:00 PM",
     location: "Central City Park",
-    description: "Join us for a morning of cleaning up our beloved park. Gloves and bags provided.",
+    description: "Join us for a morning of cleaning up our beloved park. We'll be planting new flowers, painting benches, and clearing trails to ensure a safe and beautiful space for everyone to enjoy. Gloves and bags provided.",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const upcomingActivities = [
     date: "Dec 20, 2025",
     time: "10:00 AM - 2:00 PM",
     location: "Main Street Community Center",
-    description: "Help us sort and pack food donations for local families in need this holiday season.",
+    description: "Help us sort and pack food donations for local families in need this holiday season. We have received over 5000 pounds of non-perishable items that need to be categorized and boxed for distribution.",
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const upcomingActivities = [
     date: "Jan 05, 2026",
     time: "2:00 PM - 4:00 PM",
     location: "Sunrise Senior Living",
-    description: "Spend time playing board games and chatting with residents. Bring your smiles!",
+    description: "Spend time playing board games and chatting with residents. Bring your smiles! We are looking for volunteers who can play piano or guitar to lead a sing-along session with the seniors.",
   },
 ];
 
