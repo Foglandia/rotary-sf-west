@@ -145,6 +145,7 @@ export function Header() {
               { label: "Leadership", href: "/leadership" },
               { label: "Rotary District 5150", href: "/district-5150" },
               { label: "Rotary International", href: "/rotary-international" },
+              { label: "Contact Us", href: "/contact" },
             ]}
           >
             About Us
@@ -224,6 +225,7 @@ export function Header() {
                       <Link href="/leadership"><span className="cursor-pointer hover:text-primary">Leadership</span></Link>
                       <Link href="/district-5150"><span className="cursor-pointer hover:text-primary">Rotary District 5150</span></Link>
                       <Link href="/rotary-international"><span className="cursor-pointer hover:text-primary">Rotary International</span></Link>
+                      <Link href="/contact"><span className="cursor-pointer hover:text-primary">Contact Us</span></Link>
                     </div>
                   </div>
                   <div className="space-y-3">
