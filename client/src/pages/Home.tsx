@@ -299,16 +299,21 @@ export default function Home() {
                               </div>
                           </div>
 
-                          <p className="text-sm text-muted-foreground mb-2 line-clamp-1">
+                          <p className="text-sm text-muted-foreground mb-4 line-clamp-1">
                               {activity.description}
                           </p>
 
-                          <CollapsibleTrigger asChild>
-                              <div className="flex items-center gap-1 text-sm text-primary font-semibold cursor-pointer hover:underline group/trigger select-none w-fit">
-                                  View Details
-                                  <ChevronDown className="h-4 w-4 transition-transform duration-200 group-data-[state=open]:rotate-180" />
-                              </div>
-                          </CollapsibleTrigger>
+                          <div className="flex items-center gap-3">
+                            <Button size="sm" className="h-8 px-4 font-semibold" asChild>
+                              <Link href={`/signup/${activity.id}`}>Sign Up</Link>
+                            </Button>
+                            <CollapsibleTrigger asChild>
+                                <div className="flex items-center gap-1 text-sm text-primary font-semibold cursor-pointer hover:underline group/trigger select-none w-fit">
+                                    View Details
+                                    <ChevronDown className="h-4 w-4 transition-transform duration-200 group-data-[state=open]:rotate-180" />
+                                </div>
+                            </CollapsibleTrigger>
+                          </div>
                       </div>
 
                     </div>
