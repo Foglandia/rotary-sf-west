@@ -1,7 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Calendar, ArrowRight, ExternalLink, ChevronRight } from "lucide-react";
+import { Calendar, ArrowRight, ExternalLink, ChevronRight, ChevronDown } from "lucide-react";
 import { Link } from "wouter";
 import {
   Carousel,
@@ -10,6 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible";
 
 import image1 from "@assets/stock_images/diverse_group_of_vol_41b6559d.jpg";
 import image2 from "@assets/stock_images/volunteers_packing_f_6a3a0d33.jpg";
@@ -162,35 +163,46 @@ export default function Home() {
               
               <div className="divide-y divide-border/50">
                 {upcomingActivities.map((activity) => (
-                  <div key={activity.id} className="p-6 hover:bg-muted/30 transition-colors flex flex-col md:flex-row gap-6 md:items-center">
-                    
-                    <div className="flex-1">
-                        <div className="flex justify-between items-start mb-2">
-                        <h3 className="font-bold text-lg text-foreground">
-                            {activity.title}
-                        </h3>
-                        </div>
-                        
-                        <div className="flex flex-wrap items-center gap-3 mb-2">
-                            <span className="text-xs font-semibold text-muted-foreground bg-muted px-2 py-1 rounded-md">
-                                {activity.location}
-                            </span>
-                            <div className="text-sm text-[#657f99] font-semibold uppercase tracking-wide">
-                                {activity.date} • {activity.time}
-                            </div>
-                        </div>
-                        
-                        <p className="text-sm text-muted-foreground mb-2">
-                        {activity.description}
-                        </p>
-                    </div>
+                  <Collapsible key={activity.id} className="group">
+                    <div className="p-6 hover:bg-muted/30 transition-colors flex flex-col md:flex-row gap-6 md:items-start">
+                      
+                      <div className="flex-1">
+                          <div className="flex justify-between items-start mb-2">
+                          <h3 className="font-bold text-lg text-foreground">
+                              {activity.title}
+                          </h3>
+                          </div>
+                          
+                          <div className="flex flex-wrap items-center gap-3 mb-2">
+                              <span className="text-xs font-semibold text-muted-foreground bg-muted px-2 py-1 rounded-md">
+                                  {activity.location}
+                              </span>
+                              <div className="text-sm text-[#657f99] font-semibold uppercase tracking-wide">
+                                  {activity.date} • {activity.time}
+                              </div>
+                          </div>
+                      </div>
 
-                    <div className="shrink-0">
-                      <Button variant="outline" size="sm" className="w-full md:w-auto font-semibold group">
-                        View Details <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-1" />
-                      </Button>
+                      <div className="shrink-0 pt-1">
+                        <CollapsibleTrigger asChild>
+                          <Button variant="outline" size="sm" className="w-full md:w-auto font-semibold group-data-[state=open]:bg-muted">
+                            View Details <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-data-[state=open]:rotate-180" />
+                          </Button>
+                        </CollapsibleTrigger>
+                      </div>
                     </div>
-                  </div>
+                    
+                    <CollapsibleContent className="px-6 pb-6 animate-collapsible-down">
+                      <div className="text-sm text-muted-foreground pt-0 border-t border-border/30 mt-[-1rem] pt-4">
+                        <p className="mb-2 font-medium text-foreground">About this event:</p>
+                        <p>{activity.description}</p>
+                        <p className="mt-2">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </CollapsibleContent>
+                  </Collapsible>
                 ))}
               </div>
               
