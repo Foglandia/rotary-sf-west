@@ -36,7 +36,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Dedicated to community service, bringing together business and professional leaders to provide humanitarian service.
+              To serve and inspire our local community and international partners by creating service opportunities for ourselves and others as expressed in the Rotary principles.
             </p>
           </div>
 
