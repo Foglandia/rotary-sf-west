@@ -227,11 +227,27 @@ export default function Home() {
             
             {/* Upcoming Activities Section */}
              <section className="bg-card rounded-2xl border border-border shadow-sm overflow-hidden h-full">
-              <div className="bg-primary/5 p-6 border-b border-border/50">
+              <div className="bg-primary/5 p-6 border-b border-border/50 flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <h2 className="text-2xl font-heading font-bold text-primary flex items-center gap-2">
                   <Calendar className="h-6 w-6" />
                   Upcoming Activities
                 </h2>
+                
+                {/* Category Key/Legend */}
+                <div className="flex flex-wrap gap-3">
+                  <div className="flex items-center gap-1.5">
+                    <div className="h-2.5 w-2.5 rounded-full bg-[#17458f]"></div>
+                    <span className="text-xs font-medium text-muted-foreground">Club Activity</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <div className="h-2.5 w-2.5 rounded-full bg-[#f59e0b]"></div>
+                    <span className="text-xs font-medium text-muted-foreground">Other Rotary Event</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <div className="h-2.5 w-2.5 rounded-full bg-[#10b981]"></div>
+                    <span className="text-xs font-medium text-muted-foreground">Community Event</span>
+                  </div>
+                </div>
               </div>
               
               <div className="divide-y divide-border/50">
