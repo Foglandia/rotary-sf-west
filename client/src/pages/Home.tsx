@@ -29,16 +29,6 @@ import breakfastMeetingImg from "@assets/stock_images/breakfast_meeting_gr_273da
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
   {
-    id: 0,
-    title: "Hand out Christmas Gifts",
-    date: "Dec 18, 2025",
-    time: "5:00 PM - 8:00 PM",
-    location: "Community Hall",
-    description: "Spread holiday cheer by helping us distribute gifts to families in our community. We need volunteers to help organize gifts and hand them out to children and parents.",
-    image: christmasGiftsImg,
-    category: "club"
-  },
-  {
     id: 1,
     title: "Community Park Cleanup",
     date: "Dec 15, 2025",
@@ -47,6 +37,16 @@ const upcomingActivities = [
     description: "Join us for a morning of cleaning up our beloved park. We'll be planting new flowers, painting benches, and clearing trails to ensure a safe and beautiful space for everyone to enjoy. Gloves and bags provided.",
     image: parkCleanupImg,
     category: "community"
+  },
+  {
+    id: 0,
+    title: "Hand out Christmas Gifts",
+    date: "Dec 18, 2025",
+    time: "5:00 PM - 8:00 PM",
+    location: "Community Hall",
+    description: "Spread holiday cheer by helping us distribute gifts to families in our community. We need volunteers to help organize gifts and hand them out to children and parents.",
+    image: christmasGiftsImg,
+    category: "club"
   },
   {
     id: 2,
