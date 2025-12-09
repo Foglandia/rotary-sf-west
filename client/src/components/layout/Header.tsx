@@ -5,6 +5,13 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import logoImage from "@assets/generated_images/volunteer_organization_logo.png";
 import { Input } from "@/components/ui/input";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { ChevronDown } from "lucide-react";
 
 const SocialIcon = ({ name, path }: { name: string; path: string }) => (
   <svg
@@ -70,10 +77,32 @@ const XIconBetter = () => (
 )
 
 
-const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
+const NavLink = ({ href, children, subItems }: { href: string; children: React.ReactNode; subItems?: { label: string; href: string }[] }) => {
   const [location] = useLocation();
   const isActive = location === href;
   
+  if (subItems) {
+    return (
+      <DropdownMenu>
+        <DropdownMenuTrigger className="outline-none focus:outline-none">
+          <span className={`cursor-pointer text-sm font-medium transition-colors hover:text-primary flex items-center gap-1 ${isActive ? "text-primary font-bold" : "text-muted-foreground"}`}>
+            {children}
+            <ChevronDown className="h-3 w-3" />
+          </span>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent>
+          {subItems.map((item, index) => (
+            <DropdownMenuItem key={index} asChild>
+              <Link href={item.href} className="cursor-pointer">
+                {item.label}
+              </Link>
+            </DropdownMenuItem>
+          ))}
+        </DropdownMenuContent>
+      </DropdownMenu>
+    );
+  }
+
   return (
     <Link href={href}>
       <span className={`cursor-pointer text-sm font-medium transition-colors hover:text-primary ${isActive ? "text-primary font-bold" : "text-muted-foreground"}`}>
@@ -105,7 +134,16 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <NavLink href="/about">About Us</NavLink>
+          <NavLink 
+            href="/about"
+            subItems={[
+              { label: "Leadership", href: "/leadership" },
+              { label: "Rotary District 5150", href: "/district-5150" },
+              { label: "Rotary International", href: "/rotary-international" },
+            ]}
+          >
+            About Us
+          </NavLink>
           <NavLink href="/activities">Activities</NavLink>
           <NavLink href="/membership">Membership</NavLink>
           <NavLink href="/blog">Blog</NavLink>
@@ -158,7 +196,14 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right">
                 <div className="flex flex-col gap-6 mt-8">
-                  <Link href="/about"><span className="text-lg font-medium cursor-pointer">About Us</span></Link>
+                  <div className="space-y-3">
+                    <Link href="/about"><span className="text-lg font-medium cursor-pointer block">About Us</span></Link>
+                    <div className="pl-4 flex flex-col gap-2 text-base text-muted-foreground">
+                      <Link href="/leadership"><span className="cursor-pointer hover:text-primary">Leadership</span></Link>
+                      <Link href="/district-5150"><span className="cursor-pointer hover:text-primary">Rotary District 5150</span></Link>
+                      <Link href="/rotary-international"><span className="cursor-pointer hover:text-primary">Rotary International</span></Link>
+                    </div>
+                  </div>
                   <Link href="/activities"><span className="text-lg font-medium cursor-pointer">Activities</span></Link>
                   <Link href="/membership"><span className="text-lg font-medium cursor-pointer">Membership</span></Link>
                   <Link href="/blog"><span className="text-lg font-medium cursor-pointer">Blog</span></Link>
