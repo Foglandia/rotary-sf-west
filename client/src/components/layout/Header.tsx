@@ -3,7 +3,7 @@ import { Search, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logoImage from "@assets/RotaryLogo_1765320081542.jpg";
+import logoImage from "@assets/RotaryLogo_transparent_1765320789572.png";
 import { Input } from "@/components/ui/input";
 import {
   DropdownMenu,
