@@ -77,7 +77,7 @@ const XIconBetter = () => (
 )
 
 
-const NavLink = ({ href, children, subItems }: { href: string; children: React.ReactNode; subItems?: { label: string; href: string }[] }) => {
+const NavLink = ({ href, children, subItems }: { href: string; children: React.ReactNode; subItems?: { label: string; href: string; external?: boolean }[] }) => {
   const [location] = useLocation();
   const isActive = location === href;
   
@@ -93,9 +93,20 @@ const NavLink = ({ href, children, subItems }: { href: string; children: React.R
         <DropdownMenuContent align="start" sideOffset={0} className="mt-0 rounded-t-none border-t-0">
           {subItems.map((item, index) => (
             <DropdownMenuItem key={index} asChild>
-              <Link href={item.href} className="cursor-pointer font-semibold text-[#17458f]">
-                {item.label}
-              </Link>
+              {item.external ? (
+                <a 
+                  href={item.href} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cursor-pointer font-semibold text-[#17458f] w-full block"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link href={item.href} className="cursor-pointer font-semibold text-[#17458f]">
+                  {item.label}
+                </Link>
+              )}
             </DropdownMenuItem>
           ))}
         </DropdownMenuContent>
@@ -144,7 +155,7 @@ export function Header() {
             subItems={[
               { label: "Leadership", href: "/leadership" },
               { label: "Rotary District 5150", href: "/district-5150" },
-              { label: "Rotary International", href: "/rotary-international" },
+              { label: "Rotary International", href: "https://www.rotary.org/en", external: true },
               { label: "Contact Us", href: "/contact" },
             ]}
           >
@@ -227,7 +238,7 @@ export function Header() {
                     <div className="pl-4 flex flex-col gap-2 text-base text-muted-foreground">
                       <Link href="/leadership"><span className="cursor-pointer hover:text-primary">Leadership</span></Link>
                       <Link href="/district-5150"><span className="cursor-pointer hover:text-primary">Rotary District 5150</span></Link>
-                      <Link href="/rotary-international"><span className="cursor-pointer hover:text-primary">Rotary International</span></Link>
+                      <a href="https://www.rotary.org/en" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-primary">Rotary International</a>
                       <Link href="/contact"><span className="cursor-pointer hover:text-primary">Contact Us</span></Link>
                     </div>
                   </div>
