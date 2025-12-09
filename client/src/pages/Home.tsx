@@ -100,8 +100,32 @@ export default function Home() {
       <main className="flex-1 container mx-auto px-4 py-8 md:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           
-          {/* Main Content Area: Intro + Links (Left Column on Desktop) */}
-          <div className="lg:col-span-8 space-y-12">
+          {/* Left Sidebar: Quick Links (Moved to Left) */}
+          <aside className="lg:col-span-3 space-y-6 order-2 lg:order-1">
+             <section className="bg-muted/30 rounded-2xl p-6 border border-border/50 sticky top-24">
+              <h2 className="text-xl font-heading font-bold text-foreground mb-4 flex items-center gap-2">
+                <ExternalLink className="h-5 w-5 text-secondary" />
+                Quick Links
+              </h2>
+              <div className="flex flex-col gap-3">
+                {quickLinks.map((link, index) => (
+                  <a 
+                    key={index} 
+                    href={link.href}
+                    className="group flex items-center justify-between p-3 bg-card hover:bg-accent/50 border border-border rounded-xl transition-all duration-200 hover:shadow-sm"
+                  >
+                    <span className="font-medium text-sm text-foreground group-hover:text-primary transition-colors">
+                      {link.label}
+                    </span>
+                    <ChevronRight className="h-3 w-3 text-muted-foreground group-hover:text-primary transition-transform group-hover:translate-x-1" />
+                  </a>
+                ))}
+              </div>
+            </section>
+          </aside>
+
+          {/* Main Content Area: Intro + Upcoming Activities (Middle/Right) */}
+          <div className="lg:col-span-9 space-y-12 order-1 lg:order-2">
             
             {/* Intro Section */}
             <section className="space-y-6">
@@ -127,33 +151,8 @@ export default function Home() {
               </div>
             </section>
 
-            {/* Links Section */}
-            <section className="bg-muted/30 rounded-2xl p-6 border border-border/50">
-              <h2 className="text-2xl font-heading font-bold text-foreground mb-6 flex items-center gap-2">
-                <ExternalLink className="h-6 w-6 text-secondary" />
-                Quick Links
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {quickLinks.map((link, index) => (
-                  <a 
-                    key={index} 
-                    href={link.href}
-                    className="group flex items-center justify-between p-4 bg-card hover:bg-accent/50 border border-border rounded-xl transition-all duration-200 hover:shadow-sm"
-                  >
-                    <span className="font-medium text-foreground group-hover:text-primary transition-colors">
-                      {link.label}
-                    </span>
-                    <ChevronRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-transform group-hover:translate-x-1" />
-                  </a>
-                ))}
-              </div>
-            </section>
-
-          </div>
-
-          {/* Sidebar: Upcoming Activities (Right Column on Desktop) */}
-          <aside className="lg:col-span-4 space-y-6">
-            <div className="bg-card rounded-2xl border border-border shadow-sm overflow-hidden sticky top-24">
+            {/* Upcoming Activities Section (Expanded to fit main area) */}
+             <section className="bg-card rounded-2xl border border-border shadow-sm overflow-hidden">
               <div className="bg-primary/5 p-6 border-b border-border/50">
                 <h2 className="text-2xl font-heading font-bold text-primary flex items-center gap-2">
                   <Calendar className="h-6 w-6" />
@@ -163,27 +162,30 @@ export default function Home() {
               
               <div className="divide-y divide-border/50">
                 {upcomingActivities.map((activity) => (
-                  <div key={activity.id} className="p-6 hover:bg-muted/30 transition-colors">
-                    <div className="flex justify-between items-start mb-2">
-                      <h3 className="font-bold text-lg text-foreground line-clamp-1">
-                        {activity.title}
-                      </h3>
+                  <div key={activity.id} className="p-6 hover:bg-muted/30 transition-colors flex flex-col md:flex-row gap-6 md:items-center">
+                    
+                    <div className="flex-1">
+                        <div className="flex justify-between items-start mb-2">
+                        <h3 className="font-bold text-lg text-foreground">
+                            {activity.title}
+                        </h3>
+                        </div>
+                        
+                        <div className="text-sm text-secondary font-semibold mb-2 uppercase tracking-wide">
+                        {activity.date} • {activity.time}
+                        </div>
+                        
+                        <p className="text-sm text-muted-foreground mb-2">
+                        {activity.description}
+                        </p>
+                         <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded-md inline-block mt-2">
+                            {activity.location}
+                        </span>
                     </div>
-                    
-                    <div className="text-sm text-secondary font-semibold mb-3 uppercase tracking-wide">
-                      {activity.date} • {activity.time}
-                    </div>
-                    
-                    <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
-                      {activity.description}
-                    </p>
-                    
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded-md">
-                        {activity.location}
-                      </span>
-                      <Button variant="link" size="sm" className="h-auto p-0 text-primary font-semibold group">
-                        Details <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-1" />
+
+                    <div className="shrink-0">
+                      <Button variant="outline" size="sm" className="w-full md:w-auto font-semibold group">
+                        View Details <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-1" />
                       </Button>
                     </div>
                   </div>
@@ -191,12 +193,13 @@ export default function Home() {
               </div>
               
               <div className="p-4 bg-muted/30 border-t border-border/50 text-center">
-                <Button variant="outline" className="w-full">
-                  View All Activities
+                <Button variant="ghost" className="w-full">
+                  View Full Calendar
                 </Button>
               </div>
-            </div>
-          </aside>
+            </section>
+
+          </div>
 
         </div>
       </main>
