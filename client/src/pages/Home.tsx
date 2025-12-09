@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Header } from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -97,6 +98,8 @@ const carouselImages = [
 ];
 
 export default function Home() {
+  const [visibleCount, setVisibleCount] = useState(3);
+  
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
       <Header />
@@ -197,7 +200,7 @@ export default function Home() {
               </div>
               
               <div className="divide-y divide-border/50">
-                {upcomingActivities.map((activity) => (
+                {upcomingActivities.slice(0, visibleCount).map((activity) => (
                   <Collapsible key={activity.id} className="group">
                     <div className="p-6 hover:bg-muted/30 transition-colors flex flex-col md:flex-row gap-6 md:items-start">
                       
@@ -253,9 +256,23 @@ export default function Home() {
               </div>
               
               <div className="p-4 bg-muted/30 border-t border-border/50 text-center">
-                <Button variant="ghost" className="w-full">
-                  View More Activities
-                </Button>
+                {visibleCount < upcomingActivities.length ? (
+                  <Button 
+                    variant="ghost" 
+                    className="w-full"
+                    onClick={() => setVisibleCount(upcomingActivities.length)}
+                  >
+                    View More Activities
+                  </Button>
+                ) : (
+                  <Button 
+                    variant="ghost" 
+                    className="w-full"
+                    onClick={() => setVisibleCount(3)}
+                  >
+                    View Less Activities
+                  </Button>
+                )}
               </div>
             </section>
 
