@@ -11,6 +11,9 @@ import blogImg1 from "@assets/stock_images/community_volunteers_d7eb7d64.jpg";
 import blogImg2 from "@assets/stock_images/community_volunteers_7e0dc292.jpg";
 import blogImg3 from "@assets/stock_images/community_volunteers_2cfa46e8.jpg";
 import blogImg4 from "@assets/stock_images/community_volunteers_4735c16f.jpg";
+import blogImg5 from "@assets/stock_images/picnic_in_park_with__bb86390f.jpg";
+import blogImg6 from "@assets/stock_images/student_holding_cert_4d58b826.jpg";
+import blogImg7 from "@assets/stock_images/person_giving_speech_6545fc12.jpg";
 
 // Mock Data for Blog Posts
 const blogPosts = [
@@ -77,6 +80,54 @@ const blogPosts = [
       
       We will be sharing a detailed presentation of our experience at the next club meeting. We encourage all members to consider attending next year's convention – it is truly a life-changing experience.
     `
+  },
+  {
+    id: 5,
+    title: "Annual Summer Picnic: Fun in the Sun",
+    author: "Lisa Wong",
+    date: "Aug 08, 2025",
+    category: "Social Event",
+    image: blogImg5,
+    excerpt: "The sun was shining and the BBQ was sizzling at our annual summer picnic last weekend. It was wonderful to see so many members and their families enjoying Golden Gate Park.",
+    content: `
+      The sun was shining and the BBQ was sizzling at our annual summer picnic last weekend. It was wonderful to see so many members and their families enjoying Golden Gate Park.
+      
+      We had a great turnout for the volleyball tournament, and the kids loved the face painting station. These social events are the glue that holds our club together, building friendships that translate into better teamwork for our service projects.
+      
+      A huge thank you to the social committee for organizing such a fantastic day!
+    `
+  },
+  {
+    id: 6,
+    title: "Scholarship Winners Announced",
+    author: "Robert Taylor",
+    date: "Jul 15, 2025",
+    category: "Youth Service",
+    image: blogImg6,
+    excerpt: "We are proud to announce the recipients of this year's Rotary San Francisco West College Scholarships. Three outstanding high school seniors were selected based on their academic achievements and community service.",
+    content: `
+      We are proud to announce the recipients of this year's Rotary San Francisco West College Scholarships. Three outstanding high school seniors were selected based on their academic achievements and commitment to community service.
+      
+      Each student received a $2,500 scholarship to support their higher education goals. We were incredibly impressed by the caliber of applications this year.
+      
+      "These young leaders give me so much hope for the future," said Scholarship Chair, Robert Taylor. We wish them all the best as they embark on their college journeys.
+    `
+  },
+  {
+    id: 7,
+    title: "Guest Speaker: The Future of Urban Farming",
+    author: "Sarah Jenkins",
+    date: "Jun 22, 2025",
+    category: "Meeting Recap",
+    image: blogImg7,
+    excerpt: "At last week's meeting, we had the pleasure of hearing from Dr. Emily Chen about the growing importance of urban farming. Her insights into sustainable city living were truly eye-opening.",
+    content: `
+      At last week's meeting, we had the pleasure of hearing from Dr. Emily Chen about the growing importance of urban farming. Her insights into sustainable city living were truly eye-opening.
+      
+      Dr. Chen shared examples of successful rooftop gardens and community plots that are reducing food deserts in our city. She also provided practical tips for starting a small herb garden, even in a small apartment.
+      
+      Inspired by her talk, the club is exploring a partnership with a local community garden for an upcoming service project. Stay tuned for details!
+    `
   }
 ];
 
@@ -86,6 +137,9 @@ const getCategoryColor = (category: string) => {
     case "Project Update": return "bg-[#10b981] text-white";
     case "Member Spotlight": return "bg-[#f59e0b] text-white";
     case "Club News": return "bg-[#8b5cf6] text-white";
+    case "Social Event": return "bg-[#ec4899] text-white";
+    case "Youth Service": return "bg-[#eab308] text-white";
+    case "Meeting Recap": return "bg-[#6366f1] text-white";
     default: return "bg-gray-500 text-white";
   }
 };
