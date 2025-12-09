@@ -122,10 +122,10 @@ export function Header() {
         <Link href="/">
           <div className="flex items-center gap-4 cursor-pointer">
             <div className="flex flex-col items-start hidden sm:flex">
-              <span className="font-heading font-bold text-2xl text-primary leading-none">
+              <span className="font-heading font-extrabold text-2xl text-primary leading-none">
                 Rotary
               </span>
-              <span className="font-heading font-bold text-base text-primary leading-none">
+              <span className="font-heading font-medium text-base text-primary leading-none">
                 San Francisco West
               </span>
             </div>
