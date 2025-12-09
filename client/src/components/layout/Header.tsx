@@ -125,7 +125,7 @@ export function Header() {
               <span className="font-heading font-extrabold text-2xl text-primary leading-none">
                 Rotary
               </span>
-              <span className="font-heading font-medium text-base text-primary leading-none">
+              <span className="font-heading font-light text-base text-primary leading-none">
                 San Francisco West
               </span>
             </div>
