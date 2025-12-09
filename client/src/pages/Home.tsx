@@ -19,6 +19,9 @@ import image4 from "@assets/stock_images/beach_cleanup_volunt_2ef89fde.jpg";
 import parkCleanupImg from "@assets/communityparkcleanup_1765319980781.jpg";
 import foodDriveImg from "@assets/fooddrivesorting_1765320006510.jpg";
 import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
+import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg";
+import readingMentorshipImg from "@assets/stock_images/volunteers_teaching__9d9025ed.jpg";
+import beachCleanupImg from "@assets/stock_images/beach_cleanup_ocean__30385de7.jpg";
 
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
@@ -48,6 +51,33 @@ const upcomingActivities = [
     location: "Sunrise Senior Living",
     description: "Spend time playing board games and chatting with residents. Bring your smiles! We are looking for volunteers who can play piano or guitar to lead a sing-along session with the seniors.",
     image: seniorVisitImg,
+  },
+  {
+    id: 4,
+    title: "Annual Charity Gala",
+    date: "Jan 15, 2026",
+    time: "6:00 PM - 10:00 PM",
+    location: "Grand Ballroom, City Hotel",
+    description: "Our biggest fundraiser of the year! Join us for an evening of dinner, dancing, and auctions to support our community projects. Formal attire requested. Tickets available online.",
+    image: galaEventImg,
+  },
+  {
+    id: 5,
+    title: "Youth Reading Mentorship",
+    date: "Jan 22, 2026",
+    time: "3:30 PM - 5:30 PM",
+    location: "Westside Public Library",
+    description: "Help foster a love for reading in our local youth. Volunteers will be paired with elementary school students for one-on-one reading sessions and homework help. Background check required.",
+    image: readingMentorshipImg,
+  },
+  {
+    id: 6,
+    title: "Ocean Beach Cleanup",
+    date: "Feb 01, 2026",
+    time: "10:00 AM - 1:00 PM",
+    location: "Ocean Beach, Stairwell 17",
+    description: "Let's keep our coastline beautiful! We're partnering with the Surf Rider Foundation to remove plastic and debris from the beach. Bring reusable water bottles and sunscreen.",
+    image: beachCleanupImg,
   },
 ];
 
