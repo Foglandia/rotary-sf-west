@@ -24,6 +24,7 @@ import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg
 import readingMentorshipImg from "@assets/stock_images/volunteers_teaching__9d9025ed.jpg";
 import beachCleanupImg from "@assets/stock_images/beach_cleanup_ocean__30385de7.jpg";
 import christmasGiftsImg from "@assets/stock_images/volunteers_handing_o_4a2e2d94.jpg";
+import breakfastMeetingImg from "@assets/stock_images/breakfast_meeting_gr_273dae38.jpg";
 
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
@@ -65,6 +66,16 @@ const upcomingActivities = [
     location: "Sunrise Senior Living",
     description: "Spend time playing board games and chatting with residents. Bring your smiles! We are looking for volunteers who can play piano or guitar to lead a sing-along session with the seniors.",
     image: seniorVisitImg,
+    category: "club"
+  },
+  {
+    id: 7,
+    title: "Monthly Meeting",
+    date: "Jan 15, 2026",
+    time: "7:30 AM - 9:00 AM",
+    location: "Crepes on Cole",
+    description: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.",
+    image: breakfastMeetingImg,
     category: "club"
   },
   {
