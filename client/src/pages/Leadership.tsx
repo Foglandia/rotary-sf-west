@@ -1,0 +1,110 @@
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Mail, Linkedin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+import presidentImg from "@assets/stock_images/professional_woman_s_1a9cfc00.jpg";
+import treasurerImg from "@assets/stock_images/professional_man_bus_12f770ef.jpg";
+import recruitmentImg from "@assets/stock_images/friendly_young_profe_541f0530.jpg";
+
+const leadershipTeam = [
+  {
+    name: "Sarah Jenkins",
+    role: "President",
+    image: presidentImg,
+    bio: "Sarah has been a dedicated Rotarian for over 15 years. With a background in non-profit management, she leads our club with a vision for inclusive community service and impactful local projects. In her free time, she enjoys gardening and hiking in the Presidio.",
+    email: "sarah.jenkins@example.com",
+    linkedin: "#"
+  },
+  {
+    name: "Robert Chen",
+    role: "Treasurer",
+    image: treasurerImg,
+    bio: "Robert brings 20 years of financial expertise to our board. A CPA by trade, he ensures our club's resources are managed transparently and effectively to maximize our contribution to the community. He is passionate about financial literacy education for youth.",
+    email: "robert.chen@example.com",
+    linkedin: "#"
+  },
+  {
+    name: "Emily Rodriguez",
+    role: "New Member Recruitment Lead",
+    image: recruitmentImg,
+    bio: "Emily joined Rotary to connect with like-minded professionals who care about giving back. As our Recruitment Lead, she loves welcoming new faces and helping them find their niche within our club. She organizes our monthly social mixers and new member orientations.",
+    email: "emily.rodriguez@example.com",
+    linkedin: "#"
+  }
+];
+
+export default function Leadership() {
+  return (
+    <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
+      <Header />
+      
+      <main className="flex-1 container mx-auto px-4 py-8 md:py-12">
+        <section className="space-y-6 mb-12 text-center max-w-2xl mx-auto">
+          <div className="space-y-2">
+            <h1 className="text-3xl md:text-4xl font-heading font-bold text-primary tracking-tight">
+              Club Leadership
+            </h1>
+            <div className="h-1 w-20 bg-[#d41367] rounded-full mx-auto"></div>
+          </div>
+          <p className="text-lg text-muted-foreground">
+            Meet the dedicated individuals who serve on our board and lead our committees.
+          </p>
+        </section>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {leadershipTeam.map((leader, index) => (
+            <Card key={index} className="overflow-hidden border-border/50 shadow-sm hover:shadow-md transition-shadow">
+              <div className="aspect-square relative overflow-hidden bg-muted">
+                <img 
+                  src={leader.image} 
+                  alt={leader.name} 
+                  className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              <CardHeader>
+                <div className="space-y-1">
+                  <div className="text-sm font-semibold text-primary uppercase tracking-wider">
+                    {leader.role}
+                  </div>
+                  <CardTitle className="text-2xl font-bold">
+                    {leader.name}
+                  </CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <CardDescription className="text-base leading-relaxed">
+                  {leader.bio}
+                </CardDescription>
+                
+                <div className="flex items-center gap-2 pt-4 border-t border-border/50">
+                   <Button variant="ghost" size="icon" className="h-9 w-9 text-muted-foreground hover:text-primary">
+                     <Mail className="h-5 w-5" />
+                   </Button>
+                   <Button variant="ghost" size="icon" className="h-9 w-9 text-muted-foreground hover:text-[#0077b5]">
+                     <Linkedin className="h-5 w-5" />
+                   </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <section className="mt-20 bg-muted/30 rounded-2xl p-8 md:p-12 text-center max-w-4xl mx-auto border border-border/50">
+          <h2 className="text-2xl font-bold font-heading text-primary mb-4">
+            Interested in Serving?
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            We are always looking for passionate members to join our committees and take on leadership roles. Whether you have skills in event planning, marketing, or community outreach, there's a place for you on our team.
+          </p>
+          <Button size="lg" className="px-8 shadow-md">
+            Contact the Board
+          </Button>
+        </section>
+      </main>
+      
+      <Footer />
+    </div>
+  );
+}
