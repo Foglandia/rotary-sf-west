@@ -181,21 +181,28 @@ export default function Home() {
                                   {activity.date} • {activity.time}
                               </div>
                           </div>
+
+                          <p className="text-sm text-muted-foreground mb-2 line-clamp-1">
+                              {activity.description}
+                          </p>
+
+                          <CollapsibleTrigger asChild>
+                              <div className="flex items-center gap-1 text-sm text-primary font-semibold cursor-pointer hover:underline group/trigger select-none w-fit">
+                                  View Details
+                                  <ChevronDown className="h-4 w-4 transition-transform duration-200 group-data-[state=open]:rotate-180" />
+                              </div>
+                          </CollapsibleTrigger>
                       </div>
 
                       <div className="shrink-0 pt-1">
-                        <CollapsibleTrigger asChild>
-                          <Button variant="outline" size="sm" className="w-full md:w-auto font-semibold group-data-[state=open]:bg-muted">
-                            View Details <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-data-[state=open]:rotate-180" />
-                          </Button>
-                        </CollapsibleTrigger>
+                        {/* Button removed */}
                       </div>
                     </div>
                     
                     <CollapsibleContent className="px-6 pb-6 animate-collapsible-down">
-                      <div className="text-sm text-muted-foreground pt-0 border-t border-border/30 mt-[-1rem] pt-4">
+                      <div className="text-sm text-muted-foreground pt-0 border-t border-border/30 mt-[-0.5rem] pt-4">
                         <p className="mb-2 font-medium text-foreground">About this event:</p>
-                        <p>{activity.description}</p>
+                        <p className="hidden group-data-[state=open]:block">{activity.description}</p>
                         <p className="mt-2">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
