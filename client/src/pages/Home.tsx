@@ -98,7 +98,7 @@ const getCategoryDetails = (category: string) => {
       };
     case "other_rotary":
       return { 
-        label: "Other Rotary Event", 
+        label: "Other Rotary Club Event", 
         color: "bg-[#f59e0b] text-white", 
         icon: Globe 
       };
@@ -241,7 +241,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-1.5">
                     <div className="h-2.5 w-2.5 rounded-full bg-[#f59e0b]"></div>
-                    <span className="text-xs font-medium text-muted-foreground">Other Rotary Event</span>
+                    <span className="text-xs font-medium text-muted-foreground">Other Rotary Club Event</span>
                   </div>
                   <div className="flex items-center gap-1.5">
                     <div className="h-2.5 w-2.5 rounded-full bg-[#10b981]"></div>
