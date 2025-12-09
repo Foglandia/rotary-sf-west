@@ -68,7 +68,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">Visit Us</h3>
-                    <p className="text-muted-foreground mb-2">Weekly meetings at Crepes on Cole</p>
+                    <p className="text-muted-foreground mb-2">Monthly meetings. Third Thursday at 7:30 am</p>
                     <address className="not-italic text-foreground">
                       100 Carl Street<br />
                       San Francisco, CA 94117
