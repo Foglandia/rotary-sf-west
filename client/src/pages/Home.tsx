@@ -172,7 +172,7 @@ export default function Home() {
                         </div>
                         
                         <div className="flex flex-wrap items-center gap-3 mb-2">
-                            <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded-md">
+                            <span className="text-xs font-semibold text-muted-foreground bg-muted px-2 py-1 rounded-md">
                                 {activity.location}
                             </span>
                             <div className="text-sm text-[#657f99] font-semibold uppercase tracking-wide">
