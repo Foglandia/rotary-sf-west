@@ -99,7 +99,7 @@ export default function Home() {
 
       <main className="flex-1 container mx-auto px-4 py-8 md:py-12">
         {/* Intro Section - Full Width at Top */}
-        <section className="space-y-6 mb-12 max-w-4xl">
+        <section className="space-y-6 mb-12">
           <div className="space-y-2">
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary tracking-tight">
               Welcome to Rotary San Francisco West
