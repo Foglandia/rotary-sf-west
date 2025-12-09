@@ -201,7 +201,6 @@ export default function Home() {
                     
                     <CollapsibleContent className="px-6 pb-6 animate-collapsible-down">
                       <div className="text-sm text-muted-foreground pt-0 border-t border-border/30 mt-[-0.5rem] pt-4">
-                        <p className="mb-2 font-medium text-foreground">About this event:</p>
                         <p className="hidden group-data-[state=open]:block">{activity.description}</p>
                         <p className="mt-2">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
