@@ -20,60 +20,60 @@ export default function PrivacyPolicy() {
         </section>
 
         <div className="max-w-4xl mx-auto prose prose-blue prose-lg dark:prose-invert">
-          <p>
+          <p className="mb-8">
             At Rotary San Francisco West, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.
           </p>
 
-          <h3>1. Information We Collect</h3>
-          <p>
+          <h3 className="mt-12 mb-4">1. Information We Collect</h3>
+          <p className="mb-4">
             We may collect personal information that you voluntarily provide to us when you:
           </p>
-          <ul>
+          <ul className="mb-6 space-y-2">
             <li>Contact us via our contact form or email.</li>
             <li>Sign up for our newsletter or event notifications.</li>
             <li>Register for an event or volunteer opportunity.</li>
             <li>Apply for membership.</li>
           </ul>
-          <p>
+          <p className="mb-8">
             The types of information we may collect include your name, email address, phone number, and any other information you choose to provide.
           </p>
 
-          <h3>2. How We Use Your Information</h3>
-          <p>
+          <h3 className="mt-12 mb-4">2. How We Use Your Information</h3>
+          <p className="mb-4">
             We use the information we collect for specific purposes, including:
           </p>
-          <ul>
+          <ul className="mb-8 space-y-2">
             <li>Responding to your inquiries and providing information about our club.</li>
             <li>Sending you newsletters, updates, and event invitations (you may opt-out at any time).</li>
             <li>Processing event registrations and volunteer sign-ups.</li>
             <li>Improving our website and services.</li>
           </ul>
 
-          <h3>3. Cookies and Tracking Technologies</h3>
-          <p>
+          <h3 className="mt-12 mb-4">3. Cookies and Tracking Technologies</h3>
+          <p className="mb-8">
             Our website may use "cookies" to enhance your user experience. Cookies are small files placed on your hard drive for record-keeping purposes. You may choose to set your web browser to refuse cookies or to alert you when cookies are being sent. Note that some parts of the website may not function properly if cookies are disabled.
           </p>
 
-          <h3>4. Third-Party Links</h3>
-          <p>
+          <h3 className="mt-12 mb-4">4. Third-Party Links</h3>
+          <p className="mb-8">
             Our website may contain links to other websites, such as Rotary International, Rotary District 5150, or social media platforms. We are not responsible for the privacy practices or content of these third-party sites. We encourage you to read the privacy policies of any linked websites you visit.
           </p>
 
-          <h3>5. Data Security</h3>
-          <p>
+          <h3 className="mt-12 mb-4">5. Data Security</h3>
+          <p className="mb-8">
             We implement appropriate data collection, storage, and processing practices and security measures to protect against unauthorized access, alteration, disclosure, or destruction of your personal information.
           </p>
 
-          <h3>6. Changes to This Privacy Policy</h3>
-          <p>
+          <h3 className="mt-12 mb-4">6. Changes to This Privacy Policy</h3>
+          <p className="mb-8">
             Rotary San Francisco West has the discretion to update this privacy policy at any time. When we do, we will revise the updated date at the top of this page. We encourage you to frequently check this page for any changes.
           </p>
 
-          <h3>7. Contact Us</h3>
-          <p>
+          <h3 className="mt-12 mb-4">7. Contact Us</h3>
+          <p className="mb-4">
             If you have any questions about this Privacy Policy, please contact us at:
           </p>
-          <p>
+          <p className="mb-8">
             <strong>Rotary San Francisco West</strong><br />
             Email: <a href="mailto:rcofsfw@gmail.com">rcofsfw@gmail.com</a>
           </p>
