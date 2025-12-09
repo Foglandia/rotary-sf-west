@@ -43,8 +43,8 @@
   --primary: 217 72% 33%;
   --primary-foreground: 0 0% 100%;
   
-  /* Secondary: Warm Orange - Action/Warmth */
-  --secondary: 32 95% 60%;
+  /* Secondary: Custom Purple #241367 -> 252 69% 24% */
+  --secondary: 252 69% 24%;
   --secondary-foreground: 0 0% 100%;
 
   --background: 40 20% 98%; /* Warm white */
@@ -91,7 +91,7 @@
   --primary: 185 62% 45%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 32 95% 60%;
+  --secondary: 252 69% 24%;
   --secondary-foreground: 0 0% 100%;
 
   --muted: 217 33% 17%;
