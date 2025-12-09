@@ -132,7 +132,7 @@ export function Header() {
             <img 
               src={logoImage} 
               alt="Rotary Logo" 
-              className="h-12 w-12 object-contain" 
+              className="h-16 w-16 object-contain" 
             />
           </div>
         </Link>
