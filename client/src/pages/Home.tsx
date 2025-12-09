@@ -172,6 +172,14 @@ export default function Home() {
                   <Collapsible key={activity.id} className="group">
                     <div className="p-6 hover:bg-muted/30 transition-colors flex flex-col md:flex-row gap-6 md:items-start">
                       
+                      <div className="shrink-0">
+                        <img 
+                          src={activity.image} 
+                          alt={activity.title} 
+                          className="w-24 h-24 object-cover rounded-lg shadow-sm"
+                        />
+                      </div>
+
                       <div className="flex-1">
                           <div className="flex justify-between items-start mb-2">
                           <h3 className="font-bold text-lg text-foreground">
@@ -200,13 +208,6 @@ export default function Home() {
                           </CollapsibleTrigger>
                       </div>
 
-                      <div className="shrink-0">
-                        <img 
-                          src={activity.image} 
-                          alt={activity.title} 
-                          className="w-24 h-24 object-cover rounded-lg shadow-sm"
-                        />
-                      </div>
                     </div>
                     
                     <CollapsibleContent className="px-6 pb-6 animate-collapsible-down">
