@@ -1,5 +1,5 @@
 import { Link, useLocation } from "wouter";
-import { Search, Menu, X } from "lucide-react";
+import { Search, Menu, X, Youtube } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -186,6 +186,9 @@ export function Header() {
             <a href="#" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="X (Twitter)">
               <XIconBetter />
             </a>
+            <a href="#" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="YouTube">
+              <Youtube className="h-5 w-5" />
+            </a>
           </div>
 
           {/* Search Toggle */}
@@ -248,6 +251,7 @@ export function Header() {
                     <a href="#"><FacebookIcon /></a>
                     <a href="#"><InstagramIconBetter /></a>
                     <a href="#"><XIconBetter /></a>
+                    <a href="#"><Youtube className="h-5 w-5 hover:text-secondary transition-colors" /></a>
                   </div>
                 </div>
               </SheetContent>

@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 
 export function Footer() {
   return (
@@ -71,6 +71,9 @@ export function Footer() {
             </a>
             <a href="#" className="hover:text-white transition-colors" aria-label="Twitter">
               <Twitter className="h-4 w-4" />
+            </a>
+            <a href="#" className="hover:text-white transition-colors" aria-label="YouTube">
+              <Youtube className="h-4 w-4" />
             </a>
           </div>
         </div>
