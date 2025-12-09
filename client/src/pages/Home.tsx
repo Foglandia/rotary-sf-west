@@ -151,7 +151,7 @@ const quickLinks = [
   { label: "Join the Club", href: "/join-us" },
   { label: "Club Leadership", href: "/leadership" },
   { label: "Club Blog", href: "/blog" },
-  { label: "Rotary International", href: "/rotary-international" },
+  { label: "Rotary International", href: "https://www.rotary.org/en", external: true },
 ];
 
 const carouselImages = [
@@ -239,6 +239,8 @@ export default function Home() {
                   <a 
                     key={index} 
                     href={link.href}
+                    target={link.external ? "_blank" : undefined}
+                    rel={link.external ? "noopener noreferrer" : undefined}
                     className="group flex items-center gap-2 py-2 text-foreground hover:text-primary transition-colors"
                   >
                     <ChevronRight className="h-4 w-4 text-[#d41367] group-hover:text-primary transition-colors" />
