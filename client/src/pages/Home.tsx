@@ -3,6 +3,19 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Calendar, ArrowRight, ExternalLink, ChevronRight } from "lucide-react";
 import { Link } from "wouter";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
+import image1 from "@assets/stock_images/diverse_group_of_vol_41b6559d.jpg";
+import image2 from "@assets/stock_images/volunteers_packing_f_6a3a0d33.jpg";
+import image3 from "@assets/stock_images/happy_volunteers_wor_0c694cf7.jpg";
+import image4 from "@assets/stock_images/beach_cleanup_volunt_2ef89fde.jpg";
 
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
@@ -41,11 +54,55 @@ const quickLinks = [
   { label: "Annual Report 2024", href: "#" },
 ];
 
+const carouselImages = [
+  { src: image1, alt: "Volunteers planting trees" },
+  { src: image2, alt: "Packing food boxes" },
+  { src: image3, alt: "Helping seniors" },
+  { src: image4, alt: "Beach cleanup" },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
       <Header />
       
+      {/* Horizontal Scrolling Image Carousel */}
+      <section className="w-full bg-muted/20 border-b border-border/50">
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 4000,
+            }),
+          ]}
+          className="w-full"
+        >
+          <CarouselContent className="-ml-0">
+            {carouselImages.map((image, index) => (
+              <CarouselItem key={index} className="pl-0 md:basis-1/2 lg:basis-1/3">
+                <div className="relative aspect-[16/9] w-full overflow-hidden">
+                   <img 
+                     src={image.src} 
+                     alt={image.alt} 
+                     className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
+                   />
+                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                     <p className="text-white font-bold text-lg">{image.alt}</p>
+                   </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="hidden md:block">
+            <CarouselPrevious className="left-4 bg-background/80 hover:bg-background" />
+            <CarouselNext className="right-4 bg-background/80 hover:bg-background" />
+          </div>
+        </Carousel>
+      </section>
+
       <main className="flex-1 container mx-auto px-4 py-8 md:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           
