@@ -70,7 +70,7 @@ export default function Contact() {
                     <h3 className="font-bold text-lg mb-1">Visit Us</h3>
                     <p className="text-muted-foreground mb-2">Monthly meetings. Third Thursday at 7:30 am</p>
                     <address className="not-italic text-foreground">
-                      100 Carl Street<br />
+                      Crepes on Cole<br />
                       San Francisco, CA 94117
                     </address>
                   </div>
