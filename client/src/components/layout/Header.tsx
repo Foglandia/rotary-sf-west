@@ -120,15 +120,20 @@ export function Header() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo Area */}
         <Link href="/">
-          <div className="flex items-center gap-3 cursor-pointer">
+          <div className="flex items-center gap-4 cursor-pointer">
+            <div className="flex flex-col items-start hidden sm:flex">
+              <span className="font-heading font-bold text-2xl text-primary leading-none">
+                Rotary
+              </span>
+              <span className="font-heading font-bold text-lg text-primary leading-none">
+                San Francisco West
+              </span>
+            </div>
             <img 
               src={logoImage} 
-              alt="Volunteer Connect Logo" 
-              className="h-8 w-8 rounded-full object-cover border border-border" 
+              alt="Rotary Logo" 
+              className="h-12 w-12 object-contain" 
             />
-            <span className="font-heading font-bold text-lg text-primary hidden sm:inline-block">
-              Rotary San Francisco West
-            </span>
           </div>
         </Link>
 
