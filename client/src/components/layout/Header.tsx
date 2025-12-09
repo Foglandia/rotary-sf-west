@@ -144,7 +144,16 @@ export function Header() {
           >
             About Us
           </NavLink>
-          <NavLink href="/activities">Activities</NavLink>
+          <NavLink 
+            href="/activities"
+            subItems={[
+              { label: "Monthly Meetings", href: "/monthly-meetings" },
+              { label: "Club Activities", href: "/club-activities" },
+              { label: "Social Events", href: "/social-events" },
+            ]}
+          >
+            Activities
+          </NavLink>
           <NavLink href="/membership">Membership</NavLink>
           <NavLink href="/blog">Blog</NavLink>
         </nav>
@@ -204,7 +213,14 @@ export function Header() {
                       <Link href="/rotary-international"><span className="cursor-pointer hover:text-primary">Rotary International</span></Link>
                     </div>
                   </div>
-                  <Link href="/activities"><span className="text-lg font-medium cursor-pointer">Activities</span></Link>
+                  <div className="space-y-3">
+                    <Link href="/activities"><span className="text-lg font-medium cursor-pointer block">Activities</span></Link>
+                    <div className="pl-4 flex flex-col gap-2 text-base text-muted-foreground">
+                      <Link href="/monthly-meetings"><span className="cursor-pointer hover:text-primary">Monthly Meetings</span></Link>
+                      <Link href="/club-activities"><span className="cursor-pointer hover:text-primary">Club Activities</span></Link>
+                      <Link href="/social-events"><span className="cursor-pointer hover:text-primary">Social Events</span></Link>
+                    </div>
+                  </div>
                   <Link href="/membership"><span className="text-lg font-medium cursor-pointer">Membership</span></Link>
                   <Link href="/blog"><span className="text-lg font-medium cursor-pointer">Blog</span></Link>
                   <div className="flex gap-4 mt-4 pt-4 border-t">
