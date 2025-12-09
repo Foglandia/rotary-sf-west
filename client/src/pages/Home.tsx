@@ -105,7 +105,7 @@ export default function Home() {
             <h1 className="text-2xl md:text-3xl font-heading font-bold text-primary tracking-tight">
               Welcome to Rotary San Francisco West
             </h1>
-            <div className="h-1 w-20 bg-secondary rounded-full"></div>
+            <div className="h-1 w-20 bg-[#241367] rounded-full"></div>
           </div>
           <p className="text-lg md:text-xl text-primary leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -129,7 +129,7 @@ export default function Home() {
           <aside className="lg:col-span-2 space-y-6">
              <section className="bg-muted/30 rounded-2xl p-6 border border-border/50 sticky top-24">
               <h2 className="text-xl font-heading font-bold text-foreground mb-4 flex items-center gap-2">
-                <ExternalLink className="h-5 w-5 text-secondary" />
+                <ExternalLink className="h-5 w-5 text-[#241367]" />
                 Quick Links
               </h2>
               <div className="flex flex-col gap-3">
@@ -139,7 +139,7 @@ export default function Home() {
                     href={link.href}
                     className="group flex items-center gap-2 py-2 text-foreground hover:text-primary transition-colors"
                   >
-                    <ChevronRight className="h-4 w-4 text-secondary group-hover:text-primary transition-colors" />
+                    <ChevronRight className="h-4 w-4 text-[#241367] group-hover:text-primary transition-colors" />
                     <span className="font-medium text-base underline-offset-4 group-hover:underline">
                       {link.label}
                     </span>
