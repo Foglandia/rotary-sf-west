@@ -34,7 +34,7 @@
   --radius-xl: calc(var(--radius) + 4px);
   
   --font-sans: "Open Sans", system-ui, sans-serif;
-  --font-heading: "Nunito", system-ui, sans-serif;
+  --font-heading: "Open Sans", system-ui, sans-serif;
 }
 
 :root {
