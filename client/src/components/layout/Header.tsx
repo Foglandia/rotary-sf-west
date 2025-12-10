@@ -177,7 +177,7 @@ export function Header() {
           
           {/* Social Icons (Desktop) */}
           <div className="hidden lg:flex items-center gap-4 border-r pr-4 border-border/50">
-            <a href="#" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="Facebook">
+            <a href="https://www.facebook.com/RCofSFW" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="Facebook">
               <FacebookIcon />
             </a>
             <a href="#" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="Instagram">
@@ -222,7 +222,7 @@ export function Header() {
                   </div>
                   <Link href="/blog"><span className="text-lg font-medium cursor-pointer">Blog</span></Link>
                   <div className="flex gap-4 mt-4 pt-4 border-t">
-                    <a href="#"><FacebookIcon /></a>
+                    <a href="https://www.facebook.com/RCofSFW" target="_blank" rel="noopener noreferrer"><FacebookIcon /></a>
                     <a href="#"><InstagramIconBetter /></a>
                     <a href="#"><XIconBetter /></a>
                     <a href="#"><Youtube className="h-5 w-5 hover:text-secondary transition-colors" /></a>
