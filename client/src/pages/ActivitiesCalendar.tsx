@@ -1,7 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, Users, Globe, Heart, MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
+import { Calendar, Users, Globe, Heart, MessageCircle, ChevronLeft, ChevronRight, LayoutGrid, List } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -161,6 +161,7 @@ const monthNames = [
 
 export default function ActivitiesCalendar() {
   const [currentDate, setCurrentDate] = useState(new Date(2025, 11, 1)); // December 2025
+  const [viewMode, setViewMode] = useState<"calendar" | "list">("calendar");
   
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
@@ -208,6 +209,28 @@ export default function ActivitiesCalendar() {
           </p>
         </section>
 
+        {/* View Toggle */}
+        <div className="flex justify-center gap-2 mb-6">
+          <Button
+            variant={viewMode === "calendar" ? "default" : "outline"}
+            size="sm"
+            onClick={() => setViewMode("calendar")}
+            className="gap-2"
+          >
+            <LayoutGrid className="h-4 w-4" />
+            Calendar
+          </Button>
+          <Button
+            variant={viewMode === "list" ? "default" : "outline"}
+            size="sm"
+            onClick={() => setViewMode("list")}
+            className="gap-2"
+          >
+            <List className="h-4 w-4" />
+            List
+          </Button>
+        </div>
+
         {/* Category Key/Legend */}
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           <div className="flex items-center gap-2">
@@ -228,76 +251,80 @@ export default function ActivitiesCalendar() {
           </div>
         </div>
 
-        {/* Calendar Navigation */}
-        <div className="flex items-center justify-between max-w-4xl mx-auto mb-6">
-          <Button variant="outline" size="icon" onClick={goToPreviousMonth}>
-            <ChevronLeft className="h-5 w-5" />
-          </Button>
-          <h2 className="text-2xl font-heading font-bold text-primary">
-            {monthNames[month]} {year}
-          </h2>
-          <Button variant="outline" size="icon" onClick={goToNextMonth}>
-            <ChevronRight className="h-5 w-5" />
-          </Button>
-        </div>
+        {viewMode === "calendar" && (
+          <>
+            {/* Calendar Navigation */}
+            <div className="flex items-center justify-between max-w-4xl mx-auto mb-6">
+              <Button variant="outline" size="icon" onClick={goToPreviousMonth}>
+                <ChevronLeft className="h-5 w-5" />
+              </Button>
+              <h2 className="text-2xl font-heading font-bold text-primary">
+                {monthNames[month]} {year}
+              </h2>
+              <Button variant="outline" size="icon" onClick={goToNextMonth}>
+                <ChevronRight className="h-5 w-5" />
+              </Button>
+            </div>
 
-        {/* Calendar Grid */}
-        <Card className="max-w-4xl mx-auto shadow-md">
-          <CardContent className="p-4">
-            {/* Day Headers */}
-            <div className="grid grid-cols-7 gap-1 mb-2">
-              {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
-                <div key={day} className="text-center text-sm font-bold text-muted-foreground py-2">
-                  {day}
+            {/* Calendar Grid */}
+            <Card className="max-w-4xl mx-auto shadow-md">
+              <CardContent className="p-4">
+                {/* Day Headers */}
+                <div className="grid grid-cols-7 gap-1 mb-2">
+                  {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
+                    <div key={day} className="text-center text-sm font-bold text-muted-foreground py-2">
+                      {day}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-            
-            {/* Calendar Days */}
-            <div className="grid grid-cols-7 gap-1">
-              {days.map((day, index) => {
-                const dateKey = day ? formatDateKey(year, month, day) : null;
-                const dayActivities = dateKey ? activitiesByDate[dateKey] || [] : [];
                 
-                return (
-                  <div
-                    key={index}
-                    className={`min-h-[100px] md:min-h-[120px] border rounded-lg p-1 ${
-                      day ? "bg-card" : "bg-muted/30"
-                    }`}
-                  >
-                    {day && (
-                      <>
-                        <div className="text-sm font-medium text-muted-foreground mb-1 px-1">
-                          {day}
-                        </div>
-                        <div className="space-y-1">
-                          {dayActivities.map((activity) => {
-                            const category = getCategoryDetails(activity.category);
-                            return (
-                              <div
-                                key={activity.id}
-                                className={`${category.color} ${category.textColor} text-[10px] md:text-xs p-1 rounded truncate cursor-pointer hover:opacity-90 transition-opacity`}
-                                title={`${activity.title} - ${activity.time}`}
-                              >
-                                <div className="font-semibold truncate">{activity.title}</div>
-                                <div className="opacity-80 hidden md:block">{activity.time}</div>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </CardContent>
-        </Card>
+                {/* Calendar Days */}
+                <div className="grid grid-cols-7 gap-1">
+                  {days.map((day, index) => {
+                    const dateKey = day ? formatDateKey(year, month, day) : null;
+                    const dayActivities = dateKey ? activitiesByDate[dateKey] || [] : [];
+                    
+                    return (
+                      <div
+                        key={index}
+                        className={`min-h-[100px] md:min-h-[120px] border rounded-lg p-1 ${
+                          day ? "bg-card" : "bg-muted/30"
+                        }`}
+                      >
+                        {day && (
+                          <>
+                            <div className="text-sm font-medium text-muted-foreground mb-1 px-1">
+                              {day}
+                            </div>
+                            <div className="space-y-1">
+                              {dayActivities.map((activity) => {
+                                const category = getCategoryDetails(activity.category);
+                                return (
+                                  <div
+                                    key={activity.id}
+                                    className={`${category.color} ${category.textColor} text-[10px] md:text-xs p-1 rounded truncate cursor-pointer hover:opacity-90 transition-opacity`}
+                                    title={`${activity.title} - ${activity.time}`}
+                                  >
+                                    <div className="font-semibold truncate">{activity.title}</div>
+                                    <div className="opacity-80 hidden md:block">{activity.time}</div>
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          </>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </CardContent>
+            </Card>
+          </>
+        )}
 
-        {/* Upcoming Events List */}
-        <section className="max-w-4xl mx-auto mt-12">
-          <h3 className="text-xl font-heading font-bold text-primary mb-6">Upcoming Events</h3>
+        {/* Events List */}
+        <section className={`max-w-4xl mx-auto ${viewMode === "calendar" ? "mt-12" : ""}`}>
+          {viewMode === "calendar" && <h3 className="text-xl font-heading font-bold text-primary mb-6">Upcoming Events</h3>}
           <div className="space-y-3">
             {upcomingActivities.map((activity) => {
               const category = getCategoryDetails(activity.category);
