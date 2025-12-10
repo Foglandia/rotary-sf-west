@@ -174,6 +174,7 @@ export default function JoinUs() {
                         id="phone" 
                         type="tel" 
                         placeholder="(555) 123-4567" 
+                        required
                         value={formData.phone}
                         onChange={handleChange}
                         data-testid="input-phone"
@@ -199,6 +200,7 @@ export default function JoinUs() {
                       id="reason" 
                       placeholder="Tell us a bit about your interests and what you hope to gain from membership..." 
                       className="min-h-[120px]"
+                      required
                       value={formData.reason}
                       onChange={handleChange}
                       data-testid="input-reason"
