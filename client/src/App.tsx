@@ -11,6 +11,7 @@ import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import Blog from "@/pages/Blog";
 import Leadership from "@/pages/Leadership";
 import JoinUs from "@/pages/JoinUs";
+import Activities from "@/pages/Activities";
 
 function Router() {
   return (
@@ -22,8 +23,8 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/leadership" component={Leadership} />
       <Route path="/join-us" component={JoinUs} />
+      <Route path="/activities" component={Activities} />
       {/* Placeholder routes for the menu items so they don't 404 immediately */}
-      <Route path="/activities" component={Home} />
       <Route path="/membership" component={Home} />
       <Route path="/blog" component={Home} />
       
