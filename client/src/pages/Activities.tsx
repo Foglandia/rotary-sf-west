@@ -128,11 +128,6 @@ export default function Activities() {
               <p className="text-muted-foreground">
                 Recent social events have included a wine tasting tour, a group hike in Marin, and our annual summer BBQ. Spouses, partners, and friends are always welcome to join the fun.
               </p>
-              <div className="pt-2">
-                 <Button asChild>
-                   <Link href="/">Join Our Next Event</Link>
-                 </Button>
-              </div>
             </div>
             <div className="relative">
                <div className="absolute -top-4 -right-4 w-2/3 h-2/3 bg-[#ec4899]/10 rounded-2xl -z-10"></div>
