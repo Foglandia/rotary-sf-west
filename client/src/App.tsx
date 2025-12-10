@@ -10,6 +10,7 @@ import About from "@/pages/About";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import Blog from "@/pages/Blog";
 import Leadership from "@/pages/Leadership";
+import JoinUs from "@/pages/JoinUs";
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/blog" component={Blog} />
       <Route path="/leadership" component={Leadership} />
+      <Route path="/join-us" component={JoinUs} />
       {/* Placeholder routes for the menu items so they don't 404 immediately */}
       <Route path="/activities" component={Home} />
       <Route path="/membership" component={Home} />
