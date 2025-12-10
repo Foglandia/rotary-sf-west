@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Users, Globe, Heart, MessageCircle, ChevronLeft, ChevronRight, LayoutGrid, List } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { Link } from "wouter";
 
 import parkCleanupImg from "@assets/communityparkcleanup_1765319980781.jpg";
 import foodDriveImg from "@assets/fooddrivesorting_1765320006510.jpg";
@@ -300,14 +301,15 @@ export default function ActivitiesCalendar() {
                               {dayActivities.map((activity) => {
                                 const category = getCategoryDetails(activity.category);
                                 return (
-                                  <div
+                                  <Link
                                     key={activity.id}
-                                    className={`${category.color} ${category.textColor} text-[10px] md:text-xs p-1 rounded truncate cursor-pointer hover:opacity-90 transition-opacity`}
+                                    href={`/activity/${activity.id}`}
+                                    className={`${category.color} ${category.textColor} text-[10px] md:text-xs p-1 rounded truncate cursor-pointer hover:opacity-80 transition-opacity block`}
                                     title={`${activity.title} - ${activity.time}`}
                                   >
                                     <div className="font-semibold truncate">{activity.title}</div>
                                     <div className="opacity-80 hidden md:block">{activity.time}</div>
-                                  </div>
+                                  </Link>
                                 );
                               })}
                             </div>
@@ -338,23 +340,25 @@ export default function ActivitiesCalendar() {
               });
               
               return (
-                <Card key={activity.id} className={`border-l-4 ${category.borderColor}`}>
-                  <CardContent className="p-4 flex items-start gap-4">
-                    <div className={`${category.color} p-2 rounded-lg shrink-0`}>
-                      <Icon className="h-5 w-5 text-white" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h4 className="font-bold text-foreground">{activity.title}</h4>
-                      <p className="text-sm text-muted-foreground">
-                        {formattedDate} • {activity.time}
-                      </p>
-                      <p className="text-sm text-muted-foreground">{activity.location}</p>
-                    </div>
-                    <div className={`${category.color} ${category.textColor} text-xs px-2 py-1 rounded-full shrink-0 hidden sm:block`}>
-                      {category.label}
-                    </div>
-                  </CardContent>
-                </Card>
+                <Link key={activity.id} href={`/activity/${activity.id}`} className="block">
+                  <Card className={`border-l-4 ${category.borderColor} hover:shadow-md transition-shadow cursor-pointer`}>
+                    <CardContent className="p-4 flex items-start gap-4">
+                      <div className={`${category.color} p-2 rounded-lg shrink-0`}>
+                        <Icon className="h-5 w-5 text-white" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-bold text-foreground">{activity.title}</h4>
+                        <p className="text-sm text-muted-foreground">
+                          {formattedDate} • {activity.time}
+                        </p>
+                        <p className="text-sm text-muted-foreground">{activity.location}</p>
+                      </div>
+                      <div className={`${category.color} ${category.textColor} text-xs px-2 py-1 rounded-full shrink-0 hidden sm:block`}>
+                        {category.label}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
               );
             })}
           </div>
