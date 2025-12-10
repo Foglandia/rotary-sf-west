@@ -63,11 +63,6 @@ export default function Activities() {
                 </Card>
               </div>
 
-              <div className="pt-2">
-                 <Button asChild>
-                   <Link href="/contact">Visit as a Guest</Link>
-                 </Button>
-              </div>
             </div>
             <div className="relative">
                <div className="absolute -top-4 -right-4 w-2/3 h-2/3 bg-[#8b5cf6]/10 rounded-2xl -z-10"></div>
