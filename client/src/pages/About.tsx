@@ -141,12 +141,6 @@ export default function About() {
                 </Card>
               ))}
              </div>
-             
-             <div className="pt-12 text-center">
-               <Button asChild size="lg">
-                 <Link href="/leadership">Meet Our Full Team</Link>
-               </Button>
-             </div>
           </div>
         </section>
 
