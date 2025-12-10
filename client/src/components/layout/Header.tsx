@@ -161,7 +161,15 @@ export function Header() {
           >
             About Us
           </NavLink>
-          <NavLink href="/activities">Activities</NavLink>
+          <NavLink 
+            href="/activities"
+            subItems={[
+              { label: "Our Activities", href: "/activities" },
+              { label: "Activities Calendar", href: "/activities-calendar" },
+            ]}
+          >
+            Activities
+          </NavLink>
           <NavLink 
             href="/membership"
             subItems={[
@@ -234,7 +242,11 @@ export function Header() {
                     </div>
                   </div>
                   <div className="space-y-3">
-                    <Link href="/activities"><span className="text-lg font-medium cursor-pointer block">Activities</span></Link>
+                    <span className="text-lg font-medium block">Activities</span>
+                    <div className="pl-4 flex flex-col gap-2 text-base text-muted-foreground">
+                      <Link href="/activities"><span className="cursor-pointer hover:text-primary">Our Activities</span></Link>
+                      <Link href="/activities-calendar"><span className="cursor-pointer hover:text-primary">Activities Calendar</span></Link>
+                    </div>
                   </div>
                   <div className="space-y-3">
                     <Link href="/membership"><span className="text-lg font-medium cursor-pointer block">Membership</span></Link>

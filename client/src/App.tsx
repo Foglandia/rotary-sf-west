@@ -12,6 +12,7 @@ import Blog from "@/pages/Blog";
 import Leadership from "@/pages/Leadership";
 import JoinUs from "@/pages/JoinUs";
 import Activities from "@/pages/Activities";
+import ActivitiesCalendar from "@/pages/ActivitiesCalendar";
 
 function Router() {
   return (
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/leadership" component={Leadership} />
       <Route path="/join-us" component={JoinUs} />
       <Route path="/activities" component={Activities} />
+      <Route path="/activities-calendar" component={ActivitiesCalendar} />
       {/* Placeholder routes for the menu items so they don't 404 immediately */}
       <Route path="/membership" component={Home} />
       <Route path="/blog" component={Home} />
