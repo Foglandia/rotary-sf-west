@@ -342,7 +342,7 @@ export default function Home() {
                                 </div>
                             </CollapsibleTrigger>
                             <Button size="sm" className="h-8 px-4 font-semibold" asChild>
-                              <Link href={`/signup/${activity.id}`}>Sign Up</Link>
+                              <Link href={`/activity/${activity.id}`}>Learn More</Link>
                             </Button>
                           </div>
                       </div>
