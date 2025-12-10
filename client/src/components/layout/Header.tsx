@@ -1,10 +1,8 @@
 import { Link, useLocation } from "wouter";
-import { Search, Menu, X, Youtube } from "lucide-react";
-import { useState } from "react";
+import { Menu, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import logoImage from "@assets/RotaryLogo_transparent_1765320789572.png";
-import { Input } from "@/components/ui/input";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -124,8 +122,6 @@ const NavLink = ({ href, children, subItems }: { href: string; children: React.R
 };
 
 export function Header() {
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
-
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 h-[74px] flex items-center justify-between">
@@ -193,27 +189,6 @@ export function Header() {
             <a href="#" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="YouTube">
               <Youtube className="h-5 w-5" />
             </a>
-          </div>
-
-          {/* Search Toggle */}
-          <div className="relative flex items-center">
-             {isSearchOpen ? (
-                 <div className="absolute right-0 flex items-center bg-background border rounded-full px-2 py-1 shadow-md w-64 animate-in fade-in slide-in-from-right-4">
-                     <Input 
-                        placeholder="Search..." 
-                        className="border-none shadow-none focus-visible:ring-0 h-8 text-sm"
-                        autoFocus
-                        onBlur={() => setIsSearchOpen(false)} 
-                     />
-                     <Button variant="ghost" size="icon" className="h-6 w-6" onClick={() => setIsSearchOpen(false)}>
-                         <X className="h-3 w-3" />
-                     </Button>
-                 </div>
-             ) : (
-                <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} aria-label="Search">
-                    <Search className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
-                </Button>
-             )}
           </div>
 
           {/* Mobile Menu */}
