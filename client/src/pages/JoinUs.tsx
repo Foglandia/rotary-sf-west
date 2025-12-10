@@ -88,7 +88,7 @@ export default function JoinUs() {
 
                   <div className="space-y-2">
                     <Label htmlFor="address">Address</Label>
-                    <Input id="address" placeholder="123 Main St, San Francisco, CA 94117" />
+                    <Input id="address" placeholder="123 Main St, San Francisco, CA 94117" required />
                   </div>
 
                   <div className="space-y-2">
