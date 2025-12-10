@@ -37,11 +37,12 @@ export default function About() {
               <div className="order-2 lg:order-1 relative">
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#f59e0b]/20 rounded-full blur-2xl"></div>
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-[#17458f]/20 rounded-full blur-2xl"></div>
-                <img 
-                  src={missionImg} 
-                  alt="Rotary volunteers working together" 
-                  className="relative rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                />
+                {/* Image removed as per request */}
+                <div className="bg-muted/10 rounded-2xl p-8 border border-border/50 h-full flex items-center justify-center">
+                   <p className="text-muted-foreground italic text-center max-w-sm">
+                     "Service Above Self" is our motto and our mission.
+                   </p>
+                </div>
               </div>
               <div className="order-1 lg:order-2 space-y-8">
                 <div>
@@ -115,41 +116,36 @@ export default function About() {
         {/* Leadership Preview Section */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
-             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-               <div className="space-y-6">
-                 <h2 className="text-3xl font-heading font-bold text-primary">Our Leadership</h2>
-                 <p className="text-lg text-muted-foreground">
-                   Our club is led by a diverse group of professionals dedicated to making a difference. Meet the team that guides our service projects and club operations.
-                 </p>
-                 <ul className="space-y-3">
-                   {[
-                     "Dedicated Board of Directors",
-                     "Experienced Committee Chairs",
-                     "Passionate Project Leaders",
-                     "Committed Club Officers"
-                   ].map((item, i) => (
-                     <li key={i} className="flex items-center gap-3 text-foreground font-medium">
-                       <CheckCircle2 className="h-5 w-5 text-[#10b981]" />
-                       {item}
-                     </li>
-                   ))}
-                 </ul>
-                 <div className="pt-4">
-                   <Button asChild size="lg">
-                     <Link href="/leadership">Meet Our Leaders</Link>
-                   </Button>
-                 </div>
-               </div>
-               <div className="relative">
-                 <img 
-                   src={aboutHeroImg} 
-                   alt="Rotary Club Leadership Team" 
-                   className="rounded-2xl shadow-xl w-full object-cover aspect-video"
-                 />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl flex items-end p-8">
-                   <p className="text-white font-bold text-xl">Strong Leadership for a Better Community</p>
-                 </div>
-               </div>
+             <div className="space-y-6 text-center mb-12">
+               <h2 className="text-3xl font-heading font-bold text-primary">Our Leadership</h2>
+               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                 Our club is led by a diverse group of professionals dedicated to making a difference. Meet the team that guides our service projects and club operations.
+               </p>
+             </div>
+             
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {[
+                { name: "Sarah Jenkins", role: "President" },
+                { name: "Robert Chen", role: "Treasurer" },
+                { name: "Emily Rodriguez", role: "New Member Recruitment Lead" }
+              ].map((leader, index) => (
+                <Card key={index} className="overflow-hidden border-border/50 shadow-sm hover:shadow-md transition-shadow">
+                  <CardContent className="p-6 text-center space-y-2">
+                    <div className="text-sm font-semibold text-primary uppercase tracking-wider">
+                      {leader.role}
+                    </div>
+                    <h3 className="text-xl font-bold">
+                      {leader.name}
+                    </h3>
+                  </CardContent>
+                </Card>
+              ))}
+             </div>
+             
+             <div className="pt-12 text-center">
+               <Button asChild size="lg">
+                 <Link href="/leadership">Meet Our Full Team</Link>
+               </Button>
              </div>
           </div>
         </section>
