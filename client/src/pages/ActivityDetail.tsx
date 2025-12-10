@@ -116,7 +116,6 @@ export default function ActivityDetail() {
                   </div>
                   
                   <div className="border-t pt-6">
-                    <h3 className="text-lg font-bold text-foreground mb-3">About This Event</h3>
                     <div className="prose prose-sm max-w-none text-muted-foreground">
                       {activity.fullDescription.split('\n\n').map((paragraph, index) => (
                         <p key={index} className="mb-4">{paragraph}</p>
