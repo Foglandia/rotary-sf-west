@@ -151,7 +151,7 @@ export default function Contact() {
                 <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label htmlFor="firstName" className="text-sm font-medium text-foreground">First Name</label>
+                      <label htmlFor="firstName" className="text-sm font-medium text-foreground">First Name <span className="text-red-500">*</span></label>
                       <Input 
                         id="firstName" 
                         placeholder="John" 
@@ -162,7 +162,7 @@ export default function Contact() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="lastName" className="text-sm font-medium text-foreground">Last Name</label>
+                      <label htmlFor="lastName" className="text-sm font-medium text-foreground">Last Name <span className="text-red-500">*</span></label>
                       <Input 
                         id="lastName" 
                         placeholder="Doe" 
@@ -175,7 +175,7 @@ export default function Contact() {
                   </div>
                   
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-foreground">Email Address</label>
+                    <label htmlFor="email" className="text-sm font-medium text-foreground">Email Address <span className="text-red-500">*</span></label>
                     <Input 
                       id="email" 
                       type="email" 
@@ -188,7 +188,7 @@ export default function Contact() {
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="subject" className="text-sm font-medium text-foreground">Subject</label>
+                    <label htmlFor="subject" className="text-sm font-medium text-foreground">Subject <span className="text-red-500">*</span></label>
                     <Input 
                       id="subject" 
                       placeholder="How can we help?" 
@@ -200,7 +200,7 @@ export default function Contact() {
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium text-foreground">Message</label>
+                    <label htmlFor="message" className="text-sm font-medium text-foreground">Message <span className="text-red-500">*</span></label>
                     <Textarea 
                       id="message" 
                       placeholder="Tell us more about your inquiry..." 

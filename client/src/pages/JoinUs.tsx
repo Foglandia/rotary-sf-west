@@ -132,7 +132,7 @@ export default function JoinUs() {
                 <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <Label htmlFor="firstName">First Name</Label>
+                      <Label htmlFor="firstName">First Name <span className="text-red-500">*</span></Label>
                       <Input 
                         id="firstName" 
                         placeholder="Jane" 
@@ -143,7 +143,7 @@ export default function JoinUs() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="lastName">Last Name</Label>
+                      <Label htmlFor="lastName">Last Name <span className="text-red-500">*</span></Label>
                       <Input 
                         id="lastName" 
                         placeholder="Doe" 
@@ -157,7 +157,7 @@ export default function JoinUs() {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email Address</Label>
+                      <Label htmlFor="email">Email Address <span className="text-red-500">*</span></Label>
                       <Input 
                         id="email" 
                         type="email" 
@@ -169,7 +169,7 @@ export default function JoinUs() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Phone Number</Label>
+                      <Label htmlFor="phone">Phone Number <span className="text-red-500">*</span></Label>
                       <Input 
                         id="phone" 
                         type="tel" 
@@ -183,7 +183,7 @@ export default function JoinUs() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="address">Address</Label>
+                    <Label htmlFor="address">Address <span className="text-red-500">*</span></Label>
                     <Input 
                       id="address" 
                       placeholder="123 Main St, San Francisco, CA 94117" 
@@ -195,7 +195,7 @@ export default function JoinUs() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="reason">Why do you want to join Rotary?</Label>
+                    <Label htmlFor="reason">Why do you want to join Rotary? <span className="text-red-500">*</span></Label>
                     <Textarea 
                       id="reason" 
                       placeholder="Tell us a bit about your interests and what you hope to gain from membership..." 
