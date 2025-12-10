@@ -135,7 +135,7 @@ export default function ActivityDetail() {
                     </h2>
                     <p className="text-sm text-muted-foreground mt-1">{activity.address}</p>
                   </div>
-                  <div className="aspect-video w-full">
+                  <div className="aspect-[2/1] w-full">
                     <iframe
                       width="100%"
                       height="100%"
