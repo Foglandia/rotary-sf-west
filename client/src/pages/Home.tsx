@@ -189,8 +189,8 @@ export default function Home() {
         >
           <CarouselContent className="-ml-0">
             {carouselImages.map((image, index) => (
-              <CarouselItem key={index} className="pl-0 md:basis-1/2 lg:basis-1/4">
-                <div className="relative aspect-[4/3] w-full overflow-hidden max-h-[200px]">
+              <CarouselItem key={index} className="pl-0 md:basis-1/2 lg:basis-1/3">
+                <div className="relative aspect-[16/10] w-full overflow-hidden">
                    <img 
                      src={image.src} 
                      alt={image.alt} 
@@ -223,11 +223,11 @@ export default function Home() {
             We are a passionate group of professionals, entrepreneurs, and community leaders united by a simple belief: that together, we can make a real difference. From cleaning up our beautiful San Francisco parks and beaches to mentoring local youth and supporting families in need, we roll up our sleeves and get to work. But it's not all hard work—we're also friends who share laughter over breakfast meetings, celebrate milestones together, and build connections that last a lifetime. Whether you're looking to give back, grow personally, or simply find your tribe, you'll discover a warm welcome here.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="px-8 shadow-md">
-              Join Us Today
+            <Button asChild size="lg" className="px-8 shadow-md">
+              <Link href="/join-us">Join Us Today</Link>
             </Button>
-            <Button size="lg" variant="outline" className="px-8">
-              Learn More
+            <Button asChild size="lg" variant="outline" className="px-8">
+              <Link href="/activities">Learn More</Link>
             </Button>
           </div>
         </section>
