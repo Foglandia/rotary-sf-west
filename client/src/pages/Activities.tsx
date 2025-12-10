@@ -130,7 +130,7 @@ export default function Activities() {
               </p>
               <div className="pt-2">
                  <Button variant="secondary" asChild>
-                   <Link href="/join-us">Join Our Next Event</Link>
+                   <Link href="/">Join Our Next Event</Link>
                  </Button>
               </div>
             </div>
