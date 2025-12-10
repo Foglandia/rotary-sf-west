@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Mail, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import presidentImg from "@assets/stock_images/professional_woman_s_1a9cfc00.jpg";
+import presidentImg from "@assets/NarineHeadshot_1765331555432.jpeg";
 import treasurerImg from "@assets/stock_images/professional_man_bus_12f770ef.jpg";
 import recruitmentImg from "@assets/stock_images/friendly_young_profe_541f0530.jpg";
 
