@@ -6,8 +6,74 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 export default function JoinUs() {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    address: "",
+    reason: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.id]: e.target.value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/membership-inquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast({
+          title: "Application Submitted!",
+          description: "Thank you for your interest. Our Recruitment Lead will contact you soon.",
+        });
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          address: "",
+          reason: "",
+        });
+      } else {
+        toast({
+          title: "Submission Failed",
+          description: data.error || "Please try again later.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Unable to submit application. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
       <Header />
@@ -21,7 +87,7 @@ export default function JoinUs() {
             <div className="h-1 w-20 bg-[#d41367] rounded-full mx-auto"></div>
           </div>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Join Rotary San Francisco West and become part of a vibrant community dedicated to making a difference! We’re not just about service; we’re about building lasting friendships, learning from each other, and having a great time while giving back. Whether we're organizing a local food drive, cleaning up our beautiful beaches, or enjoying a social mixer, you'll find a welcoming group of professionals who believe that service above self is the key to a fulfilling life. Come for the cause, stay for the community!
+            Join Rotary San Francisco West and become part of a vibrant community dedicated to making a difference! We're not just about service; we're about building lasting friendships, learning from each other, and having a great time while giving back. Whether we're organizing a local food drive, cleaning up our beautiful beaches, or enjoying a social mixer, you'll find a welcoming group of professionals who believe that service above self is the key to a fulfilling life. Come for the cause, stay for the community!
           </p>
         </section>
 
@@ -63,32 +129,68 @@ export default function JoinUs() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="firstName">First Name</Label>
-                      <Input id="firstName" placeholder="Jane" required />
+                      <Input 
+                        id="firstName" 
+                        placeholder="Jane" 
+                        required 
+                        value={formData.firstName}
+                        onChange={handleChange}
+                        data-testid="input-firstName"
+                      />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="lastName">Last Name</Label>
-                      <Input id="lastName" placeholder="Doe" required />
+                      <Input 
+                        id="lastName" 
+                        placeholder="Doe" 
+                        required 
+                        value={formData.lastName}
+                        onChange={handleChange}
+                        data-testid="input-lastName"
+                      />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="email">Email Address</Label>
-                      <Input id="email" type="email" placeholder="jane@example.com" required />
+                      <Input 
+                        id="email" 
+                        type="email" 
+                        placeholder="jane@example.com" 
+                        required 
+                        value={formData.email}
+                        onChange={handleChange}
+                        data-testid="input-email"
+                      />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="phone">Phone Number</Label>
-                      <Input id="phone" type="tel" placeholder="(555) 123-4567" />
+                      <Input 
+                        id="phone" 
+                        type="tel" 
+                        placeholder="(555) 123-4567" 
+                        value={formData.phone}
+                        onChange={handleChange}
+                        data-testid="input-phone"
+                      />
                     </div>
                   </div>
 
                   <div className="space-y-2">
                     <Label htmlFor="address">Address</Label>
-                    <Input id="address" placeholder="123 Main St, San Francisco, CA 94117" required />
+                    <Input 
+                      id="address" 
+                      placeholder="123 Main St, San Francisco, CA 94117" 
+                      required 
+                      value={formData.address}
+                      onChange={handleChange}
+                      data-testid="input-address"
+                    />
                   </div>
 
                   <div className="space-y-2">
@@ -97,12 +199,21 @@ export default function JoinUs() {
                       id="reason" 
                       placeholder="Tell us a bit about your interests and what you hope to gain from membership..." 
                       className="min-h-[120px]"
+                      value={formData.reason}
+                      onChange={handleChange}
+                      data-testid="input-reason"
                     />
                   </div>
 
                   <div className="pt-4">
-                    <Button type="submit" size="lg" className="w-full md:w-auto px-8">
-                      Submit Application
+                    <Button 
+                      type="submit" 
+                      size="lg" 
+                      className="w-full md:w-auto px-8"
+                      disabled={isSubmitting}
+                      data-testid="button-submit"
+                    >
+                      {isSubmitting ? "Submitting..." : "Submit Application"}
                     </Button>
                   </div>
                 </form>

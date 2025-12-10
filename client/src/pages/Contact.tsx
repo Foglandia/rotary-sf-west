@@ -5,8 +5,72 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 export default function Contact() {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.id]: e.target.value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/contact-message", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast({
+          title: "Message Sent!",
+          description: "Thank you for reaching out. We'll get back to you soon.",
+        });
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        toast({
+          title: "Submission Failed",
+          description: data.error || "Please try again later.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Unable to send message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
       <Header />
@@ -84,26 +148,55 @@ export default function Contact() {
             <h2 className="text-2xl font-heading font-bold text-primary">Send a Message</h2>
             <Card className="border shadow-md">
               <CardContent className="p-6 md:p-8">
-                <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label htmlFor="firstName" className="text-sm font-medium text-foreground">First Name</label>
-                      <Input id="firstName" placeholder="John" required />
+                      <Input 
+                        id="firstName" 
+                        placeholder="John" 
+                        required 
+                        value={formData.firstName}
+                        onChange={handleChange}
+                        data-testid="input-firstName"
+                      />
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="lastName" className="text-sm font-medium text-foreground">Last Name</label>
-                      <Input id="lastName" placeholder="Doe" required />
+                      <Input 
+                        id="lastName" 
+                        placeholder="Doe" 
+                        required 
+                        value={formData.lastName}
+                        onChange={handleChange}
+                        data-testid="input-lastName"
+                      />
                     </div>
                   </div>
                   
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium text-foreground">Email Address</label>
-                    <Input id="email" type="email" placeholder="john@example.com" required />
+                    <Input 
+                      id="email" 
+                      type="email" 
+                      placeholder="john@example.com" 
+                      required 
+                      value={formData.email}
+                      onChange={handleChange}
+                      data-testid="input-email"
+                    />
                   </div>
 
                   <div className="space-y-2">
                     <label htmlFor="subject" className="text-sm font-medium text-foreground">Subject</label>
-                    <Input id="subject" placeholder="How can we help?" required />
+                    <Input 
+                      id="subject" 
+                      placeholder="How can we help?" 
+                      required 
+                      value={formData.subject}
+                      onChange={handleChange}
+                      data-testid="input-subject"
+                    />
                   </div>
 
                   <div className="space-y-2">
@@ -113,12 +206,20 @@ export default function Contact() {
                       placeholder="Tell us more about your inquiry..." 
                       className="min-h-[150px]"
                       required 
+                      value={formData.message}
+                      onChange={handleChange}
+                      data-testid="input-message"
                     />
                   </div>
 
-                  <Button type="submit" className="w-full md:w-auto font-semibold">
+                  <Button 
+                    type="submit" 
+                    className="w-full md:w-auto font-semibold"
+                    disabled={isSubmitting}
+                    data-testid="button-submit"
+                  >
                     <Send className="mr-2 h-4 w-4" />
-                    Send Message
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </CardContent>
