@@ -26,7 +26,7 @@ export default function Activities() {
           <p className="text-lg text-muted-foreground">
             From service projects to social gatherings, there's always something happening at Rotary San Francisco West.
           </p>
-          <Button asChild variant="outline" className="mt-2">
+          <Button asChild className="mt-2">
             <Link href="/activities-calendar">
               <Calendar className="h-4 w-4 mr-2" />
               View Activities Calendar
