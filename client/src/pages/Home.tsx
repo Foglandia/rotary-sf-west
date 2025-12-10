@@ -155,6 +155,7 @@ const getCategoryDetails = (category: string) => {
 const quickLinks = [
   { label: "Join the Club", href: "/join-us" },
   { label: "Club Leadership", href: "/leadership" },
+  { label: "Activities Calendar", href: "/activities-calendar" },
   { label: "Club Blog", href: "/blog" },
   { label: "Rotary International", href: "https://www.rotary.org/en", external: true },
 ];
