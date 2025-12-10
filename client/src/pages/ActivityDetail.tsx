@@ -85,7 +85,7 @@ export default function ActivityDetail() {
               <Card className="shadow-md">
                 <CardContent className="p-6">
                   <h2 className="text-xl font-heading font-bold text-primary mb-4">Event Details</h2>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                  <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
                     <div className="flex items-start gap-3">
                       <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                         <Calendar className="h-5 w-5 text-primary" />
@@ -111,6 +111,15 @@ export default function ActivityDetail() {
                       <div>
                         <p className="text-sm text-muted-foreground">Location</p>
                         <p className="font-semibold">{activity.location}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className={`h-10 w-10 rounded-full ${category.color} flex items-center justify-center shrink-0`}>
+                        <CategoryIcon className="h-5 w-5 text-white" />
+                      </div>
+                      <div>
+                        <p className="text-sm text-muted-foreground">Event Type</p>
+                        <p className="font-semibold">{category.label}</p>
                       </div>
                     </div>
                   </div>
