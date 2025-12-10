@@ -170,13 +170,7 @@ export function Header() {
           >
             Activities
           </NavLink>
-          <NavLink 
-            href="/membership"
-            subItems={[
-              { label: "Learn More", href: "/membership-learn-more" },
-              { label: "Join Us", href: "/join-us" },
-            ]}
-          >
+          <NavLink href="/join-us">
             Membership
           </NavLink>
           <NavLink href="/blog">Blog</NavLink>
@@ -249,11 +243,7 @@ export function Header() {
                     </div>
                   </div>
                   <div className="space-y-3">
-                    <Link href="/membership"><span className="text-lg font-medium cursor-pointer block">Membership</span></Link>
-                    <div className="pl-4 flex flex-col gap-2 text-base text-muted-foreground">
-                      <Link href="/membership-learn-more"><span className="cursor-pointer hover:text-primary">Learn More</span></Link>
-                      <Link href="/join-us"><span className="cursor-pointer hover:text-primary">Join Us</span></Link>
-                    </div>
+                    <Link href="/join-us"><span className="text-lg font-medium cursor-pointer block">Membership</span></Link>
                   </div>
                   <Link href="/blog"><span className="text-lg font-medium cursor-pointer">Blog</span></Link>
                   <div className="flex gap-4 mt-4 pt-4 border-t">
