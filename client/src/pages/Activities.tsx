@@ -129,7 +129,7 @@ export default function Activities() {
                 Recent social events have included a wine tasting tour, a group hike in Marin, and our annual summer BBQ. Spouses, partners, and friends are always welcome to join the fun.
               </p>
               <div className="pt-2">
-                 <Button variant="secondary" asChild>
+                 <Button asChild>
                    <Link href="/">Join Our Next Event</Link>
                  </Button>
               </div>
