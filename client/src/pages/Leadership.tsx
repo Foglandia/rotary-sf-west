@@ -99,7 +99,7 @@ export default function Leadership() {
             We are always looking for passionate members to join our committees and take on leadership roles. Whether you have skills in event planning, marketing, or community outreach, there's a place for you on our team.
           </p>
           <Button size="lg" className="px-8 shadow-md">
-            Contact the Board
+            Contact Us
           </Button>
         </section>
       </main>
