@@ -179,7 +179,7 @@ export default function Home() {
       <Header />
       
       {/* Horizontal Scrolling Image Carousel */}
-      <section className="w-full bg-muted/20 border-b border-border/50">
+      <section className="w-full bg-muted/20 border-b border-border/50 mt-6">
         <Carousel
           opts={{
             align: "start",
@@ -189,8 +189,8 @@ export default function Home() {
         >
           <CarouselContent className="-ml-0">
             {carouselImages.map((image, index) => (
-              <CarouselItem key={index} className="pl-0 md:basis-1/2 lg:basis-1/3">
-                <div className="relative aspect-[16/9] w-full overflow-hidden">
+              <CarouselItem key={index} className="pl-0 md:basis-1/2 lg:basis-1/4">
+                <div className="relative aspect-[4/3] w-full overflow-hidden max-h-[200px]">
                    <img 
                      src={image.src} 
                      alt={image.alt} 
