@@ -77,9 +77,9 @@ export default function About() {
         <section className="py-16 md:py-24 bg-muted/30 border-y border-border/50">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl font-heading font-bold text-primary mb-4">What We Do</h2>
+              <h2 className="text-3xl font-heading font-bold text-primary mb-4">Our Vision</h2>
               <p className="text-lg text-muted-foreground">
-                Rotary members believe that we have a shared responsibility to take action on our world’s most persistent issues.
+                Rotary brings together a global network of volunteers who dedicate their time and talents to tackle the world’s most pressing humanitarian challenges. Rotary connects 1.2 million members from more than 200 countries and geographical areas. Their work impacts lives at both the local and international levels, helping families in the need in their polio-free world. Rotary also offers expanded service opportunities including:
               </p>
             </div>
 
