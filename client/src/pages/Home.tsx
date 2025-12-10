@@ -39,7 +39,7 @@ const upcomingActivities = [
     title: "Community Park Cleanup",
     date: "Dec 15, 2025",
     time: "9:00 AM - 12:00 PM",
-    location: "Central City Park",
+    location: "Bandstand at Golden Gate Park",
     description: "Join us for a morning of cleaning up our beloved park. We'll be planting new flowers, painting benches, and clearing trails to ensure a safe and beautiful space for everyone to enjoy. Gloves and bags provided.",
     image: parkCleanupImg,
     category: "community"
