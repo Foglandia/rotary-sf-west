@@ -103,6 +103,11 @@ export default function Activities() {
                   Youth Literacy Programs
                 </li>
               </ul>
+              <div className="pt-2">
+                 <Button asChild className="bg-[#10b981] hover:bg-[#10b981]/90">
+                   <Link href="/join-us">Join Us</Link>
+                 </Button>
+              </div>
             </div>
             <div className="lg:order-1 relative">
                <div className="absolute -bottom-4 -left-4 w-2/3 h-2/3 bg-[#10b981]/10 rounded-2xl -z-10"></div>
@@ -128,6 +133,11 @@ export default function Activities() {
               <p className="text-muted-foreground">
                 Recent social events have included a wine tasting tour, a group hike in Marin, and our annual summer BBQ. Spouses, partners, and friends are always welcome to join the fun.
               </p>
+              <div className="pt-2">
+                 <Button asChild className="bg-[#ec4899] hover:bg-[#ec4899]/90">
+                   <Link href="/join-us">Join Us</Link>
+                 </Button>
+              </div>
             </div>
             <div className="relative">
                <div className="absolute -top-4 -right-4 w-2/3 h-2/3 bg-[#ec4899]/10 rounded-2xl -z-10"></div>
