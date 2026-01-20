@@ -24,7 +24,10 @@ export default function About() {
               </h1>
               <div className="h-1 w-24 bg-[#d41367] rounded-full mx-auto"></div>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                We are a dedicated group of neighbors, friends, and community leaders who come together to create positive, lasting change in our communities and around the world.
+                Perhaps you have been at Crepes on Cole on a Thursday morning and seen a group of folks at a long table, talking animatedly. You may have thought it was a group of friends meeting for morning coffee, which it is, but it's so much more. What you're seeing is the monthly meeting of the San Francisco West Rotary Club, one of the oldest Rotary Clubs in the city.
+              </p>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                The Rotary Club is the world's largest service organization with over 1.2 million members. It is a grassroots organization with most of the service being carried out by the members in their local communities. Rotarians work together on both regional and international projects which can be anything from providing academic scholarships for high school and college students to building sanitation facilities for a girl's school in Bangladesh. Bay Area Rotary clubs work together each year to put on a weeklong leadership camp in the Santa Cruz mountains that is free to Bay Area high school students.
               </p>
             </div>
           </div>
