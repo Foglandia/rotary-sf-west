@@ -20,7 +20,7 @@ export default function About() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary tracking-tight">
-                About Rotary San Francisco West
+                About Us
               </h1>
               <div className="h-1 w-24 bg-[#d41367] rounded-full mx-auto"></div>
               <p className="text-xl text-muted-foreground leading-relaxed">
