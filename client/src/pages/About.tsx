@@ -1,8 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "wouter";
 
 export default function About() {
   return (
@@ -59,25 +57,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="bg-[#17458f] py-16 text-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold">Ready to Make a Difference?</h2>
-              <p className="text-blue-100 text-lg">
-                Join us at our next meeting or participate in an upcoming service project to see what Rotary is all about.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Button size="lg" variant="secondary" className="font-bold" asChild>
-                  <Link href="/join-us">Become a Member</Link>
-                </Button>
-                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-[#17458f]" asChild>
-                  <Link href="/contact">Contact Us</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
       
       <Footer />
