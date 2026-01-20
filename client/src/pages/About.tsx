@@ -56,22 +56,8 @@ export default function About() {
             <div className="max-w-4xl space-y-6">
               <h2 className="text-3xl font-heading font-bold text-primary">Our Vision</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Rotary brings together a global network of volunteers who dedicate their time and talents to tackle the world's most pressing humanitarian challenges. Rotary connects 1.2 million members from more than 200 countries and geographical areas. Their work impacts lives at both the local and international levels, helping families in the need in their polio-free world. Rotary also offers expanded service opportunities including:
+                Rotary brings together a global network of volunteers who dedicate their time and talents to tackle the world's most pressing humanitarian challenges. Rotary connects 1.2 million members from more than 200 countries and geographical areas. Their work impacts lives at both the local and international levels, helping families in the need in their polio-free world.
               </p>
-              <div className="space-y-4 pt-4">
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Promote Peace</h3>
-                  <p className="text-muted-foreground">We encourage dialogue to foster understanding within and across cultures.</p>
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Fight Disease</h3>
-                  <p className="text-muted-foreground">We educate and equip communities to stop the spread of life-threatening diseases.</p>
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Support Education</h3>
-                  <p className="text-muted-foreground">We support basic education and literacy, reduce gender disparity in education, and increase adult literacy.</p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
