@@ -149,6 +149,7 @@ export function Header() {
           <NavLink 
             href="/about"
             subItems={[
+              { label: "Overview", href: "/about" },
               { label: "Leadership", href: "/leadership" },
               { label: "Rotary District 5150", href: "https://rotary5150.org/", external: true },
               { label: "Rotary International", href: "https://www.rotary.org/en", external: true },
@@ -204,6 +205,7 @@ export function Header() {
                   <div className="space-y-3">
                     <Link href="/about"><span className="text-lg font-medium cursor-pointer block">About Us</span></Link>
                     <div className="pl-4 flex flex-col gap-2 text-base text-muted-foreground">
+                      <Link href="/about"><span className="cursor-pointer hover:text-primary">Overview</span></Link>
                       <Link href="/leadership"><span className="cursor-pointer hover:text-primary">Leadership</span></Link>
                       <a href="https://rotary5150.org/" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-primary">Rotary District 5150</a>
                       <a href="https://www.rotary.org/en" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-primary">Rotary International</a>
