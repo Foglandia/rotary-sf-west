@@ -10,7 +10,7 @@ export default function About() {
       <Header />
       
       <main className="flex-1">
-        {/* Hero Section */}
+        {/* About Us Section */}
         <section className="bg-muted/30 py-16 md:py-24 border-b border-border/50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl space-y-6">
@@ -23,40 +23,6 @@ export default function About() {
               </p>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 The Rotary Club is the world's largest service organization with over 1.2 million members. It is a grassroots organization with most of the service being carried out by the members in their local communities. Rotarians work together on both regional and international projects which can be anything from providing academic scholarships for high school and college students to building sanitation facilities for a girl's school in Bangladesh. Bay Area Rotary clubs work together each year to put on a weeklong leadership camp in the Santa Cruz mountains that is free to Bay Area high school students.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Mission Section */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl space-y-6">
-              <h2 className="text-3xl font-heading font-bold text-primary">Our Mission</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                The mission of the Rotary Club of San Francisco West is to serve and inspire our local community and international partners by creating service opportunities for ourselves and others as expressed in the Rotary principles.
-              </p>
-              <div className="space-y-4 pt-4">
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Fellowship</h3>
-                  <p className="text-muted-foreground">Building lifelong friendships while serving our community.</p>
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Service</h3>
-                  <p className="text-muted-foreground">Dedicated to "Service Above Self" in all our endeavors.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Vision Section */}
-        <section className="py-16 md:py-24 bg-muted/30 border-y border-border/50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl space-y-6">
-              <h2 className="text-3xl font-heading font-bold text-primary">Our Vision</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Rotary brings together a global network of volunteers who dedicate their time and talents to tackle the world's most pressing humanitarian challenges. Rotary connects 1.2 million members from more than 200 countries and geographical areas. Their work impacts lives at both the local and international levels, helping families in the need in their polio-free world.
               </p>
             </div>
           </div>
