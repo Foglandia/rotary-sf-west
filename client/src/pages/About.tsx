@@ -2,7 +2,17 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 
+import presidentImg from "@assets/NarineHeadshot_1765331555432.jpeg";
+import treasurerImg from "@assets/stock_images/professional_man_bus_12f770ef.jpg";
+import recruitmentImg from "@assets/stock_images/friendly_young_profe_541f0530.jpg";
+
 export default function About() {
+  const leaders = [
+    { name: "Sarah Jenkins", role: "President", image: presidentImg },
+    { name: "Robert Chen", role: "Treasurer", image: treasurerImg },
+    { name: "Emily Rodriguez", role: "New Member Recruitment Lead", image: recruitmentImg }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
       <Header />
@@ -37,12 +47,15 @@ export default function About() {
             </div>
              
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl">
-              {[
-                { name: "Sarah Jenkins", role: "President" },
-                { name: "Robert Chen", role: "Treasurer" },
-                { name: "Emily Rodriguez", role: "New Member Recruitment Lead" }
-              ].map((leader, index) => (
+              {leaders.map((leader, index) => (
                 <Card key={index} className="overflow-hidden border-border/50 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="aspect-square overflow-hidden">
+                    <img 
+                      src={leader.image} 
+                      alt={leader.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <CardContent className="p-6 space-y-2">
                     <div className="text-sm font-semibold text-primary uppercase tracking-wider">
                       {leader.role}
