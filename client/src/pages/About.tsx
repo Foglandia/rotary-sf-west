@@ -36,6 +36,19 @@ export default function About() {
           </div>
         </section>
 
+        {/* Our Focus Section */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl space-y-6">
+              <h2 className="text-3xl font-heading font-bold text-primary">Our Focus</h2>
+              <div className="h-1 w-24 bg-[#d41367] rounded-full"></div>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                We support children and families and have several ongoing projects. Our club provides support to the Good Samaritan Family Resource Center by supplying Thanksgiving dinners to families and holiday gifts to children. SF West also runs a "breakfast club" at the Edgewood Center for Children and Families where we cook a hearty weekend breakfast for everyone that we sit down and enjoy with the kids and staff. SF West members also help out when needed at organizations like St. Anthony's dining room and the KZV Armenian School. Each month brings us a new opportunity to serve our community.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Leadership Preview Section */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
