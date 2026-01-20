@@ -220,7 +220,10 @@ export default function Home() {
             <div className="h-1 w-20 bg-[#d41367] rounded-full"></div>
           </div>
           <p className="text-lg md:text-xl text-primary leading-relaxed">
-            We are a passionate group of professionals, entrepreneurs, and community leaders united by a simple belief: that together, we can make a real difference. From cleaning up our beautiful San Francisco parks and beaches to mentoring local youth and supporting families in need, we roll up our sleeves and get to work. But it's not all hard work—we're also friends who share laughter over breakfast meetings, celebrate milestones together, and build connections that last a lifetime. Whether you're looking to give back, grow personally, or simply find your tribe, you'll discover a warm welcome here.
+            Rotary San Francisco West is a diverse local service group made up of community members, business and nonprofit owners, educators and civic leadership. We provide ongoing support to several family focused nonprofits: Good Samaritan Family Resource Center and the Edgewood Center for Children and Families. We also provide volunteer help at local schools, community gardens and at community meal programs.
+          </p>
+          <p className="text-lg md:text-xl text-primary leading-relaxed">
+            Mixed in with the service is a large dose of friendship and fun. SF West members meet up for picnics, dinners and other social events. There are also multiple opportunities throughout the year to mix with other Rotarians at conferences and training in areas such as leadership and public speaking. The Rotary is truly a global family where all are welcome.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button size="lg" className="px-8 shadow-md">
