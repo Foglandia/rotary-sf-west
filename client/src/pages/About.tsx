@@ -40,12 +40,11 @@ export default function About() {
               <div className="order-2 lg:order-1 relative">
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#f59e0b]/20 rounded-full blur-2xl"></div>
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-[#17458f]/20 rounded-full blur-2xl"></div>
-                {/* Image removed as per request */}
-                <div className="bg-muted/10 rounded-2xl p-8 border border-border/50 h-full flex items-center justify-center">
-                   <p className="text-muted-foreground italic text-center max-w-sm">
-                     "Service Above Self" is our motto and our mission.
-                   </p>
-                </div>
+                <img 
+                  src={missionImg} 
+                  alt="Volunteers working together" 
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                />
               </div>
               <div className="order-1 lg:order-2 space-y-8">
                 <div>
