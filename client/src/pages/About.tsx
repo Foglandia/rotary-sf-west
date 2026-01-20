@@ -19,7 +19,7 @@ export default function About() {
       
       <main className="flex-1">
         {/* About Us Section */}
-        <section className="bg-muted/30 py-16 md:py-24 border-b border-border/50">
+        <section className="bg-muted/30 py-12 md:py-16 border-b border-border/50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl space-y-6">
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary tracking-tight">
@@ -37,7 +37,7 @@ export default function About() {
         </section>
 
         {/* Our Focus Section */}
-        <section className="py-16 md:py-24">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl space-y-6">
               <h2 className="text-3xl font-heading font-bold text-primary">Our Focus</h2>
@@ -50,7 +50,7 @@ export default function About() {
         </section>
 
         {/* Leadership Preview Section */}
-        <section className="py-16 md:py-24">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl space-y-6 mb-12">
               <h2 className="text-3xl font-heading font-bold text-primary">Our Leadership</h2>
