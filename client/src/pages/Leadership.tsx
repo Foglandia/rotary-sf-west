@@ -16,7 +16,7 @@ const leadershipTeam = [
     name: "Narine Kerelian",
     role: "President",
     image: presidentImg,
-    bio: "Narine has been a dedicated Rotarian for over 15 years. With a background in non-profit management, she leads our club with a vision for inclusive community service and impactful local projects. In her free time, she enjoys gardening and hiking in the Presidio.",
+    bio: "Narine leads Rotary SF West with a vision for inclusive community service and impactful local projects. She also provides leadership and support for the Rotary SF West Board.",
     email: "narine.kerelian@example.com",
     linkedin: "#"
   },
