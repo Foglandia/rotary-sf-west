@@ -48,7 +48,7 @@ const upcomingActivities = [
     date: "Feb 5, 2026",
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
-    description: "",
+    description: "Join us for our monthly meeting at Crepes on Cole. Connect with fellow Rotarians, hear updates on club projects, and enjoy great company over breakfast.",
     image: christmasGiftsImg,
     category: "club"
   },
