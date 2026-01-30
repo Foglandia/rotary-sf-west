@@ -231,9 +231,11 @@ export default function Home() {
                 Join Us Today
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="px-8">
-              Learn More
-            </Button>
+            <Link href="/about">
+              <Button size="lg" variant="outline" className="px-8">
+                Learn More
+              </Button>
+            </Link>
           </div>
         </section>
 
