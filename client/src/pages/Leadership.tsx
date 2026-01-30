@@ -5,7 +5,7 @@ import { Mail, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 import presidentImg from "@assets/NarineHeadshot_1765331555432.jpeg";
-import treasurerImg from "@assets/stock_images/professional_man_headshot_1_1.jpg";
+import treasurerImg from "@assets/Ken_Lai_Headshot_1769795085503.jpg";
 import membershipImg from "@assets/stock_images/professional_woman_headshot.jpg";
 import communityServiceImg from "@assets/stock_images/professional_man_headshot_1_2.jpg";
 import youthServicesImg from "@assets/stock_images/professional_man_headshot_1_3.jpg";
