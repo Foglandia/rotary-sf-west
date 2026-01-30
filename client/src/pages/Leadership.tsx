@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import presidentImg from "@assets/NarineHeadshot_1765331555432.jpeg";
 import treasurerImg from "@assets/Ken_Lai_Headshot_1769795085503.jpg";
 import membershipImg from "@assets/Mary_Notsch_headshot_1769795201406.jpeg";
-import communityServiceImg from "@assets/stock_images/professional_man_headshot_1_2.jpg";
+import communityServiceImg from "@assets/Frank_Moreman_Headshot_1769795317278.jpg";
 import youthServicesImg from "@assets/stock_images/professional_man_headshot_1_3.jpg";
 import foundationImg from "@assets/stock_images/professional_man_bus_12f770ef.jpg";
 
