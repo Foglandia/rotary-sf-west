@@ -355,10 +355,6 @@ export default function Home() {
                     <CollapsibleContent className="px-6 pb-6 animate-collapsible-down">
                       <div className="text-sm text-muted-foreground pt-0 border-t border-border/30 mt-[-0.5rem] pt-4">
                         <p className="hidden group-data-[state=open]:block">{activity.description}</p>
-                        <p className="mt-2">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
                       </div>
                     </CollapsibleContent>
                   </Collapsible>
