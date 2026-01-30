@@ -182,7 +182,7 @@ export function Header() {
             <a href="https://www.facebook.com/RCofSFW" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="Facebook">
               <FacebookIcon />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="Instagram">
+            <a href="https://www.instagram.com/rcsfwest/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="Instagram">
               <InstagramIconBetter />
             </a>
             <a href="#" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="X (Twitter)">
@@ -227,7 +227,7 @@ export function Header() {
                   <Link href="/blog"><span className="text-lg font-medium cursor-pointer">Blog</span></Link>
                   <div className="flex gap-4 mt-4 pt-4 border-t">
                     <a href="https://www.facebook.com/RCofSFW" target="_blank" rel="noopener noreferrer"><FacebookIcon /></a>
-                    <a href="#"><InstagramIconBetter /></a>
+                    <a href="https://www.instagram.com/rcsfwest/" target="_blank" rel="noopener noreferrer"><InstagramIconBetter /></a>
                     <a href="#"><XIconBetter /></a>
                     <a href="#"><Youtube className="h-5 w-5 hover:text-secondary transition-colors" /></a>
                   </div>
