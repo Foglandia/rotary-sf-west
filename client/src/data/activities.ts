@@ -57,7 +57,7 @@ export const activities: Activity[] = [
     location: "Main Street Community Center",
     address: "Main Street Community Center, San Francisco, CA",
     description: "Help us sort and pack food donations for local families in need this holiday season. We have received over 5000 pounds of non-perishable items that need to be categorized and boxed for distribution.",
-    fullDescription: "Help us sort and pack food donations for local families in need this holiday season. We have received over 5000 pounds of non-perishable items that need to be categorized and boxed for distribution.\n\nVolunteers will work in teams to sort donations by category, check expiration dates, and pack family-sized boxes. Each box will feed a family of four for approximately one week.\n\nLunch will be provided for all volunteers. Please wear comfortable clothes and closed-toe shoes.",
+    fullDescription: "Help us sort and pack food donations for local families in need this holiday season. We have received over 5000 pounds of non-perishable items that need to be categorized and boxed for distribution.\n\nVolunteers will work in teams to sort donations by category, check expiration dates, and pack family-sized boxes. Each box will feed a family of four for approximately one week.\n\nPlease wear comfortable clothes and closed-toe shoes.",
     image: foodDriveImg,
     category: "community"
   },
