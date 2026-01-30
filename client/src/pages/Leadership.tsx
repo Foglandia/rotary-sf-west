@@ -13,11 +13,11 @@ import foundationImg from "@assets/stock_images/professional_man_bus_12f770ef.jp
 
 const leadershipTeam = [
   {
-    name: "Sarah Jenkins",
+    name: "Narine Kerelian",
     role: "President",
     image: presidentImg,
-    bio: "Sarah has been a dedicated Rotarian for over 15 years. With a background in non-profit management, she leads our club with a vision for inclusive community service and impactful local projects. In her free time, she enjoys gardening and hiking in the Presidio.",
-    email: "sarah.jenkins@example.com",
+    bio: "Narine has been a dedicated Rotarian for over 15 years. With a background in non-profit management, she leads our club with a vision for inclusive community service and impactful local projects. In her free time, she enjoys gardening and hiking in the Presidio.",
+    email: "narine.kerelian@example.com",
     linkedin: "#"
   },
   {
