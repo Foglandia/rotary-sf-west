@@ -48,7 +48,7 @@ const upcomingActivities = [
     date: "Feb 5, 2026",
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
-    description: "Join us for our monthly meeting at Crepes on Cole. Connect with fellow Rotarians, hear updates on club projects, and enjoy great company over breakfast.",
+    description: "",
     image: christmasGiftsImg,
     category: "club"
   },
@@ -58,7 +58,7 @@ const upcomingActivities = [
     date: "Feb 28, 2026",
     time: "10:00 AM - 2:00 PM",
     location: "SF-Marin Food Bank",
-    description: "Help us sort and pack food supplies for local families and seniors in need. We will repack dry goods, sort produce, and fill food boxes.",
+    description: "",
     image: foodDriveImg,
     category: "community"
   },
