@@ -5,8 +5,11 @@ import { Mail, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 import presidentImg from "@assets/NarineHeadshot_1765331555432.jpeg";
-import treasurerImg from "@assets/stock_images/professional_man_bus_12f770ef.jpg";
-import recruitmentImg from "@assets/stock_images/friendly_young_profe_541f0530.jpg";
+import treasurerImg from "@assets/stock_images/professional_man_headshot_1_1.jpg";
+import membershipImg from "@assets/stock_images/professional_woman_headshot.jpg";
+import communityServiceImg from "@assets/stock_images/professional_man_headshot_1_2.jpg";
+import youthServicesImg from "@assets/stock_images/professional_man_headshot_1_3.jpg";
+import foundationImg from "@assets/stock_images/professional_man_bus_12f770ef.jpg";
 
 const leadershipTeam = [
   {
@@ -18,19 +21,43 @@ const leadershipTeam = [
     linkedin: "#"
   },
   {
-    name: "Robert Chen",
+    name: "Ken Lai",
     role: "Treasurer",
     image: treasurerImg,
-    bio: "Robert brings 20 years of financial expertise to our board. A CPA by trade, he ensures our club's resources are managed transparently and effectively to maximize our contribution to the community. He is passionate about financial literacy education for youth.",
-    email: "robert.chen@example.com",
+    bio: "Ken brings extensive financial expertise to our board. He ensures our club's resources are managed transparently and effectively to maximize our contribution to the community.",
+    email: "ken.lai@example.com",
     linkedin: "#"
   },
   {
-    name: "Emily Rodriguez",
-    role: "New Member Recruitment Lead",
-    image: recruitmentImg,
-    bio: "Emily joined Rotary to connect with like-minded professionals who care about giving back. As our Recruitment Lead, she loves welcoming new faces and helping them find their niche within our club. She organizes our monthly social mixers and new member orientations.",
-    email: "emily.rodriguez@example.com",
+    name: "Mary Notsch",
+    role: "Membership Chair",
+    image: membershipImg,
+    bio: "Mary welcomes new members and helps them find their place within our club. She organizes our monthly social mixers and new member orientations.",
+    email: "mary.notsch@example.com",
+    linkedin: "#"
+  },
+  {
+    name: "Frank Moreman",
+    role: "Community Service",
+    image: communityServiceImg,
+    bio: "Frank coordinates our community service projects and ensures our club continues to make a positive impact in San Francisco.",
+    email: "frank.moreman@example.com",
+    linkedin: "#"
+  },
+  {
+    name: "Robert Jocson",
+    role: "Youth Services/Secretary",
+    image: youthServicesImg,
+    bio: "Robert oversees our youth programs and serves as club secretary, keeping our records organized and our meetings running smoothly.",
+    email: "robert.jocson@example.com",
+    linkedin: "#"
+  },
+  {
+    name: "Bill Glimore",
+    role: "Foundation Chair",
+    image: foundationImg,
+    bio: "Bill leads our foundation initiatives and helps connect our local efforts with Rotary International's global mission.",
+    email: "bill.glimore@example.com",
     linkedin: "#"
   }
 ];
