@@ -54,11 +54,11 @@ const upcomingActivities = [
   },
   {
     id: 2,
-    title: "Food Drive Sorting",
-    date: "Dec 20, 2025",
+    title: "Food Pantry Support",
+    date: "Feb 28, 2026",
     time: "10:00 AM - 2:00 PM",
-    location: "Main Street Community Center",
-    description: "Help us sort and pack food donations for local families in need this holiday season. We have received over 5000 pounds of non-perishable items that need to be categorized and boxed for distribution.",
+    location: "SF-Marin Food Bank",
+    description: "Help us sort and pack food supplies for local families and seniors in need. We will repack dry goods, sort produce, and fill food boxes.",
     image: foodDriveImg,
     category: "community"
   },
