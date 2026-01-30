@@ -28,7 +28,7 @@ import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg
 import readingMentorshipImg from "@assets/stock_images/volunteers_teaching__9d9025ed.jpg";
 import beachCleanupImg from "@assets/stock_images/beach_cleanup_ocean__30385de7.jpg";
 import christmasGiftsImg from "@assets/stock_images/volunteers_handing_o_4a2e2d94.jpg";
-import breakfastCafeImg from "@assets/stock_images/breakfast_cafe_meeting.jpg";
+import breakfastCafeImg from "@assets/A_joyful_breakfast_gathering_in_the_café_1769802970122.jpg";
 import breakfastMeetingImg from "@assets/stock_images/breakfast_meeting_gr_273dae38.jpg";
 
 // Mock Data for Upcoming Activities
