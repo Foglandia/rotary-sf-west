@@ -44,11 +44,11 @@ const upcomingActivities = [
   },
   {
     id: 0,
-    title: "Hand out Christmas Gifts",
-    date: "Dec 18, 2025",
-    time: "5:00 PM - 8:00 PM",
-    location: "Community Hall",
-    description: "Spread holiday cheer by helping us distribute gifts to families in our community. We need volunteers to help organize gifts and hand them out to children and parents.",
+    title: "February Monthly Meeting",
+    date: "Feb 5, 2026",
+    time: "7:30 AM - 8:30 AM",
+    location: "Crepes on Cole",
+    description: "Join us for our monthly meeting at Crepes on Cole. Connect with fellow Rotarians, hear updates on club projects, and enjoy great company over breakfast.",
     image: christmasGiftsImg,
     category: "club"
   },
