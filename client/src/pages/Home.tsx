@@ -58,7 +58,7 @@ const upcomingActivities = [
     date: "Feb 28, 2026",
     time: "10:00 AM - 2:00 PM",
     location: "SF-Marin Food Bank",
-    description: "Help us sort and pack food supplies for local families and seniors in need. We will repack dry goods, sort produce, and fill food boxes.",
+    description: "Help us sort and pack food supplies for local families and seniors in need. We will repack dry goods, sort produce, and fill food boxes. Please wear comfortable clothes and closed-toe shoes. It is often cold in the warehouse so we recommend bringing a jacket.",
     image: foodDriveImg,
     category: "community"
   },
