@@ -1,7 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Mail, Linkedin } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 import presidentImg from "@assets/NarineHeadshot_1765331555432.jpeg";
@@ -106,9 +106,6 @@ export default function Leadership() {
                 </CardDescription>
                 
                 <div className="flex items-center gap-2 pt-4 border-t border-border/50">
-                   <Button variant="ghost" size="icon" className="h-9 w-9 text-muted-foreground hover:text-primary">
-                     <Mail className="h-5 w-5" />
-                   </Button>
                    <Button variant="ghost" size="icon" className="h-9 w-9 text-muted-foreground hover:text-[#0077b5]">
                      <Linkedin className="h-5 w-5" />
                    </Button>
