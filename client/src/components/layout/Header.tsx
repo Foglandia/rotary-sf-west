@@ -163,6 +163,7 @@ export function Header() {
             subItems={[
               { label: "Our Activities", href: "/activities" },
               { label: "Activities Calendar", href: "/activities-calendar" },
+              { label: "Social Events", href: "/social-events" },
             ]}
           >
             Activities
@@ -217,6 +218,7 @@ export function Header() {
                     <div className="pl-4 flex flex-col gap-2 text-base text-muted-foreground">
                       <Link href="/activities"><span className="cursor-pointer hover:text-primary">Our Activities</span></Link>
                       <Link href="/activities-calendar"><span className="cursor-pointer hover:text-primary">Activities Calendar</span></Link>
+                      <Link href="/social-events"><span className="cursor-pointer hover:text-primary">Social Events</span></Link>
                     </div>
                   </div>
                   <div className="space-y-3">

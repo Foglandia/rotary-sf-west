@@ -14,6 +14,7 @@ import JoinUs from "@/pages/JoinUs";
 import Activities from "@/pages/Activities";
 import ActivitiesCalendar from "@/pages/ActivitiesCalendar";
 import ActivityDetail from "@/pages/ActivityDetail";
+import SocialEvents from "@/pages/SocialEvents";
 
 function Router() {
   return (
@@ -28,6 +29,7 @@ function Router() {
       <Route path="/activities" component={Activities} />
       <Route path="/activities-calendar" component={ActivitiesCalendar} />
       <Route path="/activity/:id" component={ActivityDetail} />
+      <Route path="/social-events" component={SocialEvents} />
       {/* Placeholder routes for the menu items so they don't 404 immediately */}
       <Route path="/membership" component={Home} />
       <Route path="/blog" component={Home} />
