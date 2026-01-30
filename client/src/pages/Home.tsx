@@ -226,9 +226,11 @@ export default function Home() {
             Mixed in with the service is a large dose of friendship and fun. SF West members meet up for picnics, dinners and other social events. There are also multiple opportunities throughout the year to mix with other Rotarians at conferences and training in areas such as leadership and public speaking. The Rotary is truly a global family where all are welcome.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="px-8 shadow-md">
-              Join Us Today
-            </Button>
+            <Link href="/membership">
+              <Button size="lg" className="px-8 shadow-md">
+                Join Us Today
+              </Button>
+            </Link>
             <Button size="lg" variant="outline" className="px-8">
               Learn More
             </Button>
