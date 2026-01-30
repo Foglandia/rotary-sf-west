@@ -14,14 +14,12 @@ import {
 } from "@/components/ui/carousel";
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible";
 
-import carouselImg1 from "@assets/20171216_BS_221_1765323463090.jpg";
-import carouselImg2 from "@assets/20191122_PL_185_1765323463091.jpg";
-import carouselImg3 from "@assets/20171216_BS_212_1765323463091.jpg";
-import carouselImg4 from "@assets/20180512_AT_112_1765323463091.jpg";
-import carouselImg5 from "@assets/20230319_AU_047_1765323463092.jpg";
-import carouselImg6 from "@assets/20140826_KR_056_(1)_1765323463092.jpg";
-import carouselImg7 from "@assets/20150806_US_040_1765323463092.jpg";
-import beachCleanupCarouselImg from "@assets/stock_images/beach_cleanup_volunt_2ef89fde.jpg";
+import carouselImg1 from "@assets/Rotary_202601_001_MaryNotsch_FrankMoreman_MLKDayEvent_1769799672466.jpeg";
+import carouselImg2 from "@assets/Rotary_202512_003_ChristmasGift_Giveaway_Narine_1769799672467.jpeg";
+import carouselImg3 from "@assets/Rotary_202511_004_Thanskgiving_Turkeygiveaway_GroupShot_1769799672468.jpg";
+import carouselImg4 from "@assets/Rotary_202511_002_Thanksgiving_Frank&Narine_1769799672468.jpeg";
+import carouselImg5 from "@assets/Rotary_202511_001_Thanksgiving_Turkeygiveaway_2025_1769799672468.jpeg";
+import carouselImg6 from "@assets/Rotary_202512_002_ChristmasGift_Giveaway_1769799672468.jpeg";
 
 import parkCleanupImg from "@assets/communityparkcleanup_1765319980781.jpg";
 import foodDriveImg from "@assets/fooddrivesorting_1765320006510.jpg";
@@ -161,14 +159,12 @@ const quickLinks = [
 ];
 
 const carouselImages = [
-  { src: carouselImg1, alt: "Community Gardening" },
-  { src: carouselImg2, alt: "Youth Literacy Program" },
-  { src: carouselImg3, alt: "Environmental Conservation" },
-  { src: carouselImg4, alt: "Vocational Skills Workshop" },
-  { src: carouselImg5, alt: "Food Distribution" },
-  { src: carouselImg6, alt: "Sustainable Agriculture" },
-  { src: carouselImg7, alt: "Beautifying Our Parks" },
-  { src: beachCleanupCarouselImg, alt: "Beach Cleanup" },
+  { src: carouselImg1, alt: "MLK Day Event - Mary Notsch and Frank Moreman" },
+  { src: carouselImg2, alt: "Christmas Gift Giveaway" },
+  { src: carouselImg3, alt: "Thanksgiving Turkey Giveaway Group" },
+  { src: carouselImg4, alt: "Holiday Gift Wrapping" },
+  { src: carouselImg5, alt: "Happy Thanksgiving" },
+  { src: carouselImg6, alt: "Gift Bags for Families" },
 ];
 
 export default function Home() {
