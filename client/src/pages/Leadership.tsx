@@ -32,7 +32,7 @@ const leadershipTeam = [
     name: "Mary Notsch",
     role: "Membership Chair",
     image: membershipImg,
-    bio: "Mary welcomes new members and helps them find their place within our club. She organizes our monthly social mixers and new member orientations.",
+    bio: "Mary recruits new members and welcomes them to the club. She is responsible for new member onboarding.",
     email: "mary.notsch@example.com",
     linkedin: "#"
   },
