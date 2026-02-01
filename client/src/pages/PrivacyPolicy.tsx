@@ -61,8 +61,23 @@ export default function PrivacyPolicy() {
           </ul>
 
           <h3 className="mt-12 mb-4">4. Usage Details, IP Addresses, Cookies and Other Technologies</h3>
+          <p className="mb-4">
+            As you navigate through and interact with our Website, we may automatically collect certain data about your equipment, browsing actions, and patterns, including:
+          </p>
+          <ul className="mb-6 space-y-2 list-disc list-inside">
+            <li>Details of your visits to our Website, including traffic data, location data, logs, and other communication data and the resources that you access and use on our Website</li>
+            <li>Information about your computer and internet connection, including your IP address, operating system, and browser type</li>
+          </ul>
+          <p className="mb-4">
+            The data collected in this way is anonymous. It is aggregated into statistical data to help us improve our Website and to deliver a better and more personalized service by enabling us to:
+          </p>
+          <ul className="mb-6 space-y-2 list-disc list-inside">
+            <li>Estimate our audience size, browser statistics, popularity of content, and usage patterns</li>
+            <li>Speed up your searches</li>
+            <li>Recognize you when you return to our Website</li>
+          </ul>
           <p className="mb-8">
-            Our website may use "cookies" to enhance your user experience. Cookies are small files placed on your hard drive for record-keeping purposes. You may choose to set your web browser to refuse cookies or to alert you when cookies are being sent. Note that some parts of the website may not function properly if cookies are disabled.
+            We use cookies (or browser cookies) for this automatic data collection. A cookie is a small file placed on the hard drive of your computer. You may refuse to accept browser cookies by activating the appropriate setting on your browser. However, if you select this setting, you may be unable to access certain parts of our Website. Unless you have adjusted your browser setting so that it will refuse cookies, our system will issue cookies when you direct your browser to our Website.
           </p>
 
           <h3 className="mt-12 mb-4">5. Third-Party Links</h3>
