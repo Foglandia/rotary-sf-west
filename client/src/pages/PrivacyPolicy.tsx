@@ -60,7 +60,7 @@ export default function PrivacyPolicy() {
             <li>Improving our website and services.</li>
           </ul>
 
-          <h3 className="mt-12 mb-4">4. Cookies and Tracking Technologies</h3>
+          <h3 className="mt-12 mb-4">4. Usage Details, IP Addresses, Cookies and Other Technologies</h3>
           <p className="mb-8">
             Our website may use "cookies" to enhance your user experience. Cookies are small files placed on your hard drive for record-keeping purposes. You may choose to set your web browser to refuse cookies or to alert you when cookies are being sent. Note that some parts of the website may not function properly if cookies are disabled.
           </p>
