@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 
 import presidentImg from "@assets/NarineHeadshot_1765331555432.jpeg";
 import treasurerImg from "@assets/Ken_Lai_Headshot_1769795085503.jpg";
@@ -122,9 +123,11 @@ export default function Leadership() {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             We are always looking for passionate members to join our committees and take on leadership roles. Whether you have skills in event planning, marketing, or community outreach, there's a place for you on our team.
           </p>
-          <Button size="lg" className="px-8 shadow-md">
-            Contact Us
-          </Button>
+          <Link href="/contact">
+            <Button size="lg" className="px-8 shadow-md">
+              Contact Us
+            </Button>
+          </Link>
         </section>
       </main>
       
