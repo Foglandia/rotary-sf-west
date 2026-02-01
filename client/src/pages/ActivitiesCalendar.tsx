@@ -5,98 +5,7 @@ import { Calendar, Users, Globe, Heart, MessageCircle, ChevronLeft, ChevronRight
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Link } from "wouter";
-
-import parkCleanupImg from "@assets/communityparkcleanup_1765319980781.jpg";
-import foodDriveImg from "@assets/fooddrivesorting_1765320006510.jpg";
-import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
-import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg";
-import readingMentorshipImg from "@assets/stock_images/volunteers_teaching__9d9025ed.jpg";
-import beachCleanupImg from "@assets/stock_images/beach_cleanup_ocean__30385de7.jpg";
-import christmasGiftsImg from "@assets/stock_images/volunteers_handing_o_4a2e2d94.jpg";
-import breakfastMeetingImg from "@assets/stock_images/breakfast_meeting_gr_273dae38.jpg";
-
-const upcomingActivities = [
-  {
-    id: 1,
-    title: "Community Park Cleanup",
-    date: "2025-12-15",
-    time: "9:00 AM - 12:00 PM",
-    location: "Bandstand at Golden Gate Park",
-    description: "Join us for a morning of cleaning up our beloved park.",
-    image: parkCleanupImg,
-    category: "community"
-  },
-  {
-    id: 0,
-    title: "Hand out Christmas Gifts",
-    date: "2025-12-18",
-    time: "5:00 PM - 8:00 PM",
-    location: "Community Hall",
-    description: "Spread holiday cheer by helping us distribute gifts to families in our community.",
-    image: christmasGiftsImg,
-    category: "club"
-  },
-  {
-    id: 2,
-    title: "Food Drive Sorting",
-    date: "2025-12-20",
-    time: "10:00 AM - 2:00 PM",
-    location: "Main Street Community Center",
-    description: "Help us sort and pack food donations for local families in need.",
-    image: foodDriveImg,
-    category: "community"
-  },
-  {
-    id: 3,
-    title: "Senior Home Visit",
-    date: "2026-01-05",
-    time: "2:00 PM - 4:00 PM",
-    location: "Sunrise Senior Living",
-    description: "Spend time playing board games and chatting with residents.",
-    image: seniorVisitImg,
-    category: "club"
-  },
-  {
-    id: 7,
-    title: "Monthly Meeting",
-    date: "2026-01-15",
-    time: "7:30 AM - 9:00 AM",
-    location: "Crepes on Cole",
-    description: "Join us for our monthly club meeting.",
-    image: breakfastMeetingImg,
-    category: "meeting"
-  },
-  {
-    id: 4,
-    title: "Annual Charity Gala",
-    date: "2026-01-15",
-    time: "6:00 PM - 10:00 PM",
-    location: "Grand Ballroom, City Hotel",
-    description: "Our biggest fundraiser of the year!",
-    image: galaEventImg,
-    category: "club"
-  },
-  {
-    id: 5,
-    title: "Youth Reading Mentorship",
-    date: "2026-01-22",
-    time: "3:30 PM - 5:30 PM",
-    location: "Westside Public Library",
-    description: "Help foster a love for reading in our local youth.",
-    image: readingMentorshipImg,
-    category: "other_rotary"
-  },
-  {
-    id: 6,
-    title: "Ocean Beach Cleanup",
-    date: "2026-02-01",
-    time: "10:00 AM - 1:00 PM",
-    location: "Ocean Beach, Stairwell 17",
-    description: "Let's keep our coastline beautiful!",
-    image: beachCleanupImg,
-    category: "community"
-  },
-];
+import { activities } from "@/data/activities";
 
 const getCategoryDetails = (category: string) => {
   switch(category) {
@@ -161,7 +70,7 @@ const monthNames = [
 ];
 
 export default function ActivitiesCalendar() {
-  const [currentDate, setCurrentDate] = useState(new Date(2025, 11, 1)); // December 2025
+  const [currentDate, setCurrentDate] = useState(new Date(2026, 1, 1)); // February 2026
   const [viewMode, setViewMode] = useState<"calendar" | "list">("calendar");
   
   const year = currentDate.getFullYear();
@@ -169,13 +78,13 @@ export default function ActivitiesCalendar() {
   const daysInMonth = getDaysInMonth(year, month);
   const firstDayOfMonth = getFirstDayOfMonth(year, month);
   
-  const activitiesByDate = upcomingActivities.reduce((acc, activity) => {
+  const activitiesByDate = activities.reduce((acc, activity) => {
     if (!acc[activity.date]) {
       acc[activity.date] = [];
     }
     acc[activity.date].push(activity);
     return acc;
-  }, {} as Record<string, typeof upcomingActivities>);
+  }, {} as Record<string, typeof activities>);
 
   const goToPreviousMonth = () => {
     setCurrentDate(new Date(year, month - 1, 1));
@@ -328,7 +237,7 @@ export default function ActivitiesCalendar() {
         <section className={`max-w-4xl mx-auto ${viewMode === "calendar" ? "mt-12" : ""}`}>
           {viewMode === "calendar" && <h3 className="text-xl font-heading font-bold text-primary mb-6">Upcoming Events</h3>}
           <div className="space-y-3">
-            {upcomingActivities.map((activity) => {
+            {activities.map((activity) => {
               const category = getCategoryDetails(activity.category);
               const Icon = category.icon;
               const eventDate = new Date(activity.date);
