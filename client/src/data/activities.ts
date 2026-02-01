@@ -116,8 +116,8 @@ export const activities: Activity[] = [
   {
     id: 6,
     title: "Ocean Beach Cleanup",
-    date: "2026-02-01",
-    displayDate: "Feb 01, 2026",
+    date: "2026-02-14",
+    displayDate: "Feb 14, 2026",
     time: "10:00 AM - 1:00 PM",
     location: "Ocean Beach, Stairwell 17",
     address: "Ocean Beach, Stairwell 17, San Francisco, CA",
