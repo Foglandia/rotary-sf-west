@@ -19,7 +19,7 @@ const leadershipTeam = [
     image: presidentImg,
     bio: "Narine leads Rotary SF West with a vision for inclusive community service and impactful local projects. She also provides leadership and support for the Rotary SF West Board.",
     email: "narine.kerelian@example.com",
-    linkedin: "#"
+    linkedin: "https://www.linkedin.com/in/narine-n-kerelian-ph-d-15902915/"
   },
   {
     name: "Ken Lai",
