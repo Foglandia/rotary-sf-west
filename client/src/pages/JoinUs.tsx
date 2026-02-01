@@ -81,26 +81,26 @@ export default function JoinUs() {
       <Header />
       
       <main className="flex-1 container mx-auto px-4 py-8 md:py-12">
-        <section className="mb-12 max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="relative">
-              <div className="absolute -bottom-4 -left-4 w-2/3 h-2/3 bg-primary/10 rounded-2xl -z-10"></div>
+        <section className="mb-12 max-w-4xl mx-auto">
+          <div className="space-y-8">
+            <div className="space-y-6 text-center">
+              <div className="space-y-2">
+                <h1 className="text-3xl md:text-4xl font-heading font-bold text-primary tracking-tight">
+                  Join the Club
+                </h1>
+                <div className="h-1 w-20 bg-[#d41367] rounded-full mx-auto"></div>
+              </div>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Join Rotary San Francisco West and become part of a vibrant community dedicated to making a difference! We're not just about service; we're about building lasting friendships, learning from each other, and having a great time while giving back. Whether we're organizing a local food drive, cleaning up our beautiful beaches, or enjoying a social mixer, you'll find a welcoming group of professionals who believe that service above self is the key to a fulfilling life. Come for the cause, stay for the community!
+              </p>
+            </div>
+            <div className="relative max-w-3xl mx-auto">
+              <div className="absolute -bottom-4 -right-4 w-2/3 h-2/3 bg-primary/10 rounded-2xl -z-10"></div>
               <img 
                 src={groupImg} 
                 alt="Rotary San Francisco West members group photo" 
                 className="rounded-2xl shadow-lg w-full object-cover"
               />
-            </div>
-            <div className="space-y-6 text-center md:text-left">
-              <div className="space-y-2">
-                <h1 className="text-3xl md:text-4xl font-heading font-bold text-primary tracking-tight">
-                  Join the Club
-                </h1>
-                <div className="h-1 w-20 bg-[#d41367] rounded-full mx-auto md:mx-0"></div>
-              </div>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Join Rotary San Francisco West and become part of a vibrant community dedicated to making a difference! We're not just about service; we're about building lasting friendships, learning from each other, and having a great time while giving back. Whether we're organizing a local food drive, cleaning up our beautiful beaches, or enjoying a social mixer, you'll find a welcoming group of professionals who believe that service above self is the key to a fulfilling life. Come for the cause, stay for the community!
-              </p>
             </div>
           </div>
         </section>
