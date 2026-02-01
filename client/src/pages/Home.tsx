@@ -35,16 +35,6 @@ import breakfastMeetingImg from "@assets/stock_images/breakfast_meeting_gr_273da
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
   {
-    id: 1,
-    title: "Community Park Cleanup",
-    date: "Feb 21, 2026",
-    time: "9:00 AM - 12:00 PM",
-    location: "Bandstand at Golden Gate Park",
-    description: "Join us for a morning of cleaning up our beloved park. We'll be planting new flowers, painting benches, and clearing trails to ensure a safe and beautiful space for everyone to enjoy. Gloves and bags provided.",
-    image: parkCleanupImg,
-    category: "community"
-  },
-  {
     id: 0,
     title: "February Monthly Meeting",
     date: "Feb 5, 2026",
@@ -53,6 +43,16 @@ const upcomingActivities = [
     description: "Join us for our monthly meeting at Crepes on Cole. Connect with fellow Rotarians, hear updates on club projects, and enjoy great company over breakfast.",
     image: breakfastCafeImg,
     category: "club"
+  },
+  {
+    id: 1,
+    title: "Community Park Cleanup",
+    date: "Feb 21, 2026",
+    time: "9:00 AM - 12:00 PM",
+    location: "Bandstand at Golden Gate Park",
+    description: "Join us for a morning of cleaning up our beloved park. We'll be planting new flowers, painting benches, and clearing trails to ensure a safe and beautiful space for everyone to enjoy. Gloves and bags provided.",
+    image: parkCleanupImg,
+    category: "community"
   },
   {
     id: 2,
