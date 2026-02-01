@@ -23,6 +23,19 @@ export interface Activity {
 
 export const activities: Activity[] = [
   {
+    id: 7,
+    title: "February Monthly Meeting",
+    date: "2026-02-05",
+    displayDate: "Feb 5, 2026",
+    time: "7:30 AM - 8:30 AM",
+    location: "Crepes on Cole",
+    address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
+    description: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.",
+    fullDescription: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.\n\nThis month's guest speaker will discuss community engagement strategies and how we can expand our impact in the coming year. We'll also be voting on new initiatives and reviewing our recent service projects.\n\nBreakfast is included with your attendance. Please RSVP so we can ensure adequate seating.",
+    image: breakfastMeetingImg,
+    category: "meeting"
+  },
+  {
     id: 1,
     title: "Community Park Cleanup",
     date: "2025-12-15",
@@ -73,19 +86,6 @@ export const activities: Activity[] = [
     fullDescription: "Spend time playing board games and chatting with residents. Bring your smiles! We are looking for volunteers who can play piano or guitar to lead a sing-along session with the seniors.\n\nThis is one of our most rewarding activities. Many of our senior friends look forward to these visits all month. We'll have board games, cards, and art supplies available.\n\nIf you have any musical talents, please let us know! We'd love to have live music for our afternoon together. Background check required for first-time volunteers.",
     image: seniorVisitImg,
     category: "club"
-  },
-  {
-    id: 7,
-    title: "February Monthly Meeting",
-    date: "2026-02-05",
-    displayDate: "Feb 5, 2026",
-    time: "7:30 AM - 8:30 AM",
-    location: "Crepes on Cole",
-    address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
-    description: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.",
-    fullDescription: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.\n\nThis month's guest speaker will discuss community engagement strategies and how we can expand our impact in the coming year. We'll also be voting on new initiatives and reviewing our recent service projects.\n\nBreakfast is included with your attendance. Please RSVP so we can ensure adequate seating.",
-    image: breakfastMeetingImg,
-    category: "meeting"
   },
   {
     id: 4,
