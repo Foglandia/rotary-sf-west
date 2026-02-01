@@ -35,7 +35,7 @@ const leadershipTeam = [
     image: membershipImg,
     bio: "Mary recruits new members and welcomes them to the club. She is responsible for new member onboarding.",
     email: "mary.notsch@example.com",
-    linkedin: "#"
+    linkedin: "https://www.linkedin.com/in/mary-b-notsch-2489129/"
   },
   {
     name: "Frank Moreman",
