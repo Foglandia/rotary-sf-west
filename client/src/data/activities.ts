@@ -24,7 +24,7 @@ export interface Activity {
 export const activities: Activity[] = [
   {
     id: 7,
-    title: "February Monthly Meeting",
+    title: "Monthly Meeting",
     date: "2026-02-05",
     displayDate: "Feb 5, 2026",
     time: "7:30 AM - 8:30 AM",
@@ -37,7 +37,7 @@ export const activities: Activity[] = [
   },
   {
     id: 8,
-    title: "March Monthly Meeting",
+    title: "Monthly Meeting",
     date: "2026-03-05",
     displayDate: "Mar 5, 2026",
     time: "7:30 AM - 8:30 AM",
@@ -50,7 +50,7 @@ export const activities: Activity[] = [
   },
   {
     id: 9,
-    title: "April Monthly Meeting",
+    title: "Monthly Meeting",
     date: "2026-04-02",
     displayDate: "Apr 2, 2026",
     time: "7:30 AM - 8:30 AM",
