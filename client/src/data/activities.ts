@@ -36,6 +36,32 @@ export const activities: Activity[] = [
     category: "meeting"
   },
   {
+    id: 8,
+    title: "March Monthly Meeting",
+    date: "2026-03-05",
+    displayDate: "Mar 5, 2026",
+    time: "7:30 AM - 8:30 AM",
+    location: "Crepes on Cole",
+    address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
+    description: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.",
+    fullDescription: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.\n\nBreakfast is included with your attendance. Please RSVP so we can ensure adequate seating.",
+    image: breakfastMeetingImg,
+    category: "meeting"
+  },
+  {
+    id: 9,
+    title: "April Monthly Meeting",
+    date: "2026-04-02",
+    displayDate: "Apr 2, 2026",
+    time: "7:30 AM - 8:30 AM",
+    location: "Crepes on Cole",
+    address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
+    description: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.",
+    fullDescription: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.\n\nBreakfast is included with your attendance. Please RSVP so we can ensure adequate seating.",
+    image: breakfastMeetingImg,
+    category: "meeting"
+  },
+  {
     id: 1,
     title: "Community Park Cleanup",
     date: "2025-12-15",
