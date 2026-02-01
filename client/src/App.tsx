@@ -8,6 +8,7 @@ import Home from "@/pages/Home";
 import Contact from "@/pages/Contact";
 import About from "@/pages/About";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import TermsOfUse from "@/pages/TermsOfUse";
 import Blog from "@/pages/Blog";
 import Leadership from "@/pages/Leadership";
 import JoinUs from "@/pages/JoinUs";
@@ -23,6 +24,7 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/terms-of-use" component={TermsOfUse} />
       <Route path="/blog" component={Blog} />
       <Route path="/leadership" component={Leadership} />
       <Route path="/join-us" component={JoinUs} />

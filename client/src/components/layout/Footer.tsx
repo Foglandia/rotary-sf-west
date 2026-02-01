@@ -77,6 +77,9 @@ export function Footer() {
               <Link href="/privacy-policy" className="hover:text-primary transition-colors hover:underline underline-offset-4 w-fit">
                 Privacy Policy
               </Link>
+              <Link href="/terms-of-use" className="hover:text-primary transition-colors hover:underline underline-offset-4 w-fit">
+                Terms of Use
+              </Link>
               <Link href="/contact" className="hover:text-primary transition-colors hover:underline underline-offset-4 w-fit">
                 Contact Us
               </Link>
