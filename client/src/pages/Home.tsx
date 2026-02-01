@@ -20,6 +20,7 @@ import carouselImg3 from "@assets/Rotary_202511_004_Thanskgiving_Turkeygiveaway_
 import carouselImg4 from "@assets/Rotary_202511_002_Thanksgiving_Frank&Narine_1769799672468.jpeg";
 import carouselImg5 from "@assets/Rotary_202511_001_Thanksgiving_Turkeygiveaway_2025_1769799672468.jpeg";
 import carouselImg6 from "@assets/Rotary_202512_002_ChristmasGift_Giveaway_1769799672468.jpeg";
+import carouselImg7 from "@assets/202602_001_ServiceAward_Frank_Narine_Ma_1769968477823.jpg";
 
 import parkCleanupImg from "@assets/communityparkcleanup_1765319980781.jpg";
 import foodDriveImg from "@assets/fooddrivesorting_1765320006510.jpg";
@@ -166,6 +167,7 @@ const carouselImages = [
   { src: carouselImg4, alt: "Holiday Gift Wrapping" },
   { src: carouselImg5, alt: "Happy Thanksgiving" },
   { src: carouselImg6, alt: "Gift Bags for Families" },
+  { src: carouselImg7, alt: "Service Award - Teddy & Fiona Ma" },
 ];
 
 export default function Home() {
