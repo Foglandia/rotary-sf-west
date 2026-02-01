@@ -16,23 +16,20 @@ export default function About() {
               </h1>
               <div className="h-1 w-24 bg-[#d41367] rounded-full"></div>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Our club organizes a variety of service projects throughout the year. Our primary focus is helping children in need, but we also participate in a range of volunteer events including helping out at St. Anthony's kitchen, working on planting projects at local schools and providing meals to families in need on Thanksgiving.
-              </p>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                The Rotary Club is the world's largest service organization with over 1.2 million members. It is a grassroots organization with most of the service being carried out by the members in their local communities. Rotarians work together on both regional and international projects which can be anything from providing academic scholarships for high school and college students to building sanitation facilities for a girl's school in Bangladesh. Bay Area Rotary clubs work together each year to put on a weeklong leadership camp in the Santa Cruz mountains that is free to Bay Area high school students.
+                We support children and families and have several ongoing projects. Our club provides support to the Good Samaritan Family Resource Center by supplying Thanksgiving dinners to families and holiday gifts to children. SF West also runs a "breakfast club" at the Edgewood Center for Children and Families where we cook a hearty weekend breakfast for everyone that we sit down and enjoy with the kids and staff. SF West members also help out when needed at organizations like St. Anthony's dining room and the KZV Armenian School. Each month brings us a new opportunity to serve our community.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Our Focus Section */}
+        {/* Rotary International Section */}
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl space-y-6">
-              <h2 className="text-3xl font-heading font-bold text-primary">Our Focus</h2>
+              <h2 className="text-3xl font-heading font-bold text-primary">Rotary International</h2>
               <div className="h-1 w-24 bg-[#d41367] rounded-full"></div>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                We support children and families and have several ongoing projects. Our club provides support to the Good Samaritan Family Resource Center by supplying Thanksgiving dinners to families and holiday gifts to children. SF West also runs a "breakfast club" at the Edgewood Center for Children and Families where we cook a hearty weekend breakfast for everyone that we sit down and enjoy with the kids and staff. SF West members also help out when needed at organizations like St. Anthony's dining room and the KZV Armenian School. Each month brings us a new opportunity to serve our community.
+                The Rotary Club is the world's largest service organization with over 1.2 million members. It is a grassroots organization with most of the service being carried out by the members in their local communities. Rotarians work together on both regional and international projects which can be anything from providing academic scholarships for high school and college students to building sanitation facilities for a girl's school in Bangladesh. Bay Area Rotary clubs work together each year to put on a weeklong leadership camp in the Santa Cruz mountains that is free to Bay Area high school students.
               </p>
             </div>
           </div>
