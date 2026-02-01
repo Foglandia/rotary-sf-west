@@ -77,8 +77,8 @@ export const activities: Activity[] = [
   {
     id: 3,
     title: "Senior Home Visit",
-    date: "2026-01-05",
-    displayDate: "Jan 05, 2026",
+    date: "2026-03-07",
+    displayDate: "Mar 07, 2026",
     time: "2:00 PM - 4:00 PM",
     location: "Sunrise Senior Living",
     address: "Sunrise Senior Living, San Francisco, CA",
