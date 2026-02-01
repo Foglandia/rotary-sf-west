@@ -32,8 +32,7 @@ function Router() {
       <Route path="/activities-calendar" component={ActivitiesCalendar} />
       <Route path="/activity/:id" component={ActivityDetail} />
       <Route path="/social-events" component={SocialEvents} />
-      {/* Placeholder routes for the menu items so they don't 404 immediately */}
-      <Route path="/membership" component={Home} />
+      <Route path="/membership" component={JoinUs} />
       <Route path="/blog" component={Home} />
       
       <Route component={NotFound} />
