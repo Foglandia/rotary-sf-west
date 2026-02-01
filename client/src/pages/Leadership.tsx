@@ -83,7 +83,7 @@ export default function Leadership() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {leadershipTeam.map((leader, index) => (
-            <Card key={index} className="overflow-hidden border-border/50 shadow-sm hover:shadow-md transition-shadow">
+            <Card key={index} className="overflow-hidden border-border/50 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
               <div className="aspect-square relative overflow-hidden bg-muted">
                 <img 
                   src={leader.image} 
@@ -101,12 +101,12 @@ export default function Leadership() {
                   </CardTitle>
                 </div>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <CardDescription className="text-base leading-relaxed">
+              <CardContent className="flex flex-col flex-1">
+                <CardDescription className="text-base leading-relaxed flex-1">
                   {leader.bio}
                 </CardDescription>
                 
-                <div className="flex items-center gap-2 pt-4 border-t border-border/50">
+                <div className="flex items-center gap-2 pt-4 mt-4 border-t border-border/50">
                    <a href={leader.linkedin} target="_blank" rel="noopener noreferrer">
                      <Button variant="ghost" size="icon" className="h-9 w-9 text-muted-foreground hover:text-[#0077b5]">
                        <Linkedin className="h-5 w-5" />
