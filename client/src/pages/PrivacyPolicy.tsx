@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
           <p className="mb-4">
             We collect Personal Data from:
           </p>
-          <ul className="mb-8 space-y-2">
+          <ul className="mb-8 space-y-2 list-disc list-inside">
             <li>Users of our Website</li>
             <li>Rotary San Francisco West members</li>
             <li>People who attend Rotary San Francisco West events</li>
@@ -53,7 +53,7 @@ export default function PrivacyPolicy() {
           <p className="mb-4">
             We use the information we collect for specific purposes, including:
           </p>
-          <ul className="mb-8 space-y-2">
+          <ul className="mb-8 space-y-2 list-disc list-inside">
             <li>Responding to your inquiries and providing information about our club.</li>
             <li>Sending you newsletters, updates, and event invitations (you may opt-out at any time).</li>
             <li>Processing event registrations and volunteer sign-ups.</li>
