@@ -31,6 +31,18 @@ export default function About() {
               <p className="text-xl text-muted-foreground leading-relaxed">
                 The Rotary Club is the world's largest service organization with over 1.2 million members. It is a grassroots organization with most of the service being carried out by the members in their local communities. Rotarians work together on both regional and international projects which can be anything from providing academic scholarships for high school and college students to building sanitation facilities for a girl's school in Bangladesh. Bay Area Rotary clubs work together each year to put on a weeklong leadership camp in the Santa Cruz mountains that is free to Bay Area high school students.
               </p>
+              <a 
+                href="https://www.rotary.org/en" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-[#17458f] hover:text-[#d41367] font-semibold transition-colors"
+                data-testid="link-rotary-international"
+              >
+                Learn More
+                <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
             </div>
           </div>
         </section>
