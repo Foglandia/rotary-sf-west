@@ -237,7 +237,7 @@ export default function ActivitiesCalendar() {
         <section className={`max-w-4xl mx-auto ${viewMode === "calendar" ? "mt-12" : ""}`}>
           {viewMode === "calendar" && <h3 className="text-xl font-heading font-bold text-primary mb-6">Upcoming Events</h3>}
           <div className="space-y-3">
-            {activities.map((activity) => {
+            {[...activities].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()).map((activity) => {
               const category = getCategoryDetails(activity.category);
               const Icon = category.icon;
               const eventDate = new Date(activity.date);
