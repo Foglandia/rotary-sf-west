@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
         <section className="space-y-6 mb-12 text-center max-w-2xl mx-auto">
           <div className="space-y-2">
             <h1 className="text-3xl md:text-4xl font-heading font-bold text-primary tracking-tight">
-              Privacy Policy
+              Rotary San Francisco West Privacy Policy
             </h1>
             <div className="h-1 w-20 bg-[#d41367] rounded-full mx-auto"></div>
           </div>
