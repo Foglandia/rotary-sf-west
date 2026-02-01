@@ -107,9 +107,11 @@ export default function Leadership() {
                 </CardDescription>
                 
                 <div className="flex items-center gap-2 pt-4 border-t border-border/50">
-                   <Button variant="ghost" size="icon" className="h-9 w-9 text-muted-foreground hover:text-[#0077b5]">
-                     <Linkedin className="h-5 w-5" />
-                   </Button>
+                   <a href={leader.linkedin} target="_blank" rel="noopener noreferrer">
+                     <Button variant="ghost" size="icon" className="h-9 w-9 text-muted-foreground hover:text-[#0077b5]">
+                       <Linkedin className="h-5 w-5" />
+                     </Button>
+                   </a>
                 </div>
               </CardContent>
             </Card>
