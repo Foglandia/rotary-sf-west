@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
             <li>Apply for membership.</li>
           </ul>
           <p className="mb-8">
-            The types of information we may collect include your name, email address, phone number, and any other information you choose to provide.
+            The types of information we may collect include your name, email address, phone number, mailing address, and any other information you choose to provide.
           </p>
 
           <h3 className="mt-12 mb-4">2. How We Use Your Information</h3>
