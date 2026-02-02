@@ -25,8 +25,8 @@ export const activities: Activity[] = [
   {
     id: 7,
     title: "Monthly Meeting",
-    date: "2026-02-05",
-    displayDate: "Feb 5, 2026",
+    date: "2026-02-12",
+    displayDate: "Feb 12, 2026",
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
     address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
@@ -38,8 +38,8 @@ export const activities: Activity[] = [
   {
     id: 8,
     title: "Monthly Meeting",
-    date: "2026-03-05",
-    displayDate: "Mar 5, 2026",
+    date: "2026-03-12",
+    displayDate: "Mar 12, 2026",
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
     address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
@@ -51,8 +51,8 @@ export const activities: Activity[] = [
   {
     id: 9,
     title: "Monthly Meeting",
-    date: "2026-04-02",
-    displayDate: "Apr 2, 2026",
+    date: "2026-04-09",
+    displayDate: "Apr 9, 2026",
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
     address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
