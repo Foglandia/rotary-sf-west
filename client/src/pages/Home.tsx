@@ -33,7 +33,7 @@ import carouselImg6 from "@assets/Rotary_202512_002_ChristmasGift_Giveaway_17697
 import carouselImg7 from "@assets/202602_001_ServiceAward_Frank_Narine_Ma_1769968477823.jpg";
 
 import parkCleanupImg from "@assets/communityparkcleanup_1765319980781.jpg";
-import foodDriveImg from "@assets/fooddrivesorting_1765320006510.jpg";
+import foodDriveImg from "@assets/Rotary_202511_004_Thanskgiving_Turkeygiveaway_GroupShot_1770766111577.jpg";
 import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
 import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg";
 import readingMentorshipImg from "@assets/stock_images/volunteers_teaching__9d9025ed.jpg";
