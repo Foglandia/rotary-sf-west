@@ -39,8 +39,8 @@ export const activities: Activity[] = [
   {
     id: 8,
     title: "Monthly Meeting",
-    date: "2026-03-12",
-    displayDate: "Mar 12, 2026",
+    date: "2026-03-10",
+    displayDate: "Mar 10, 2026",
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
     address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
