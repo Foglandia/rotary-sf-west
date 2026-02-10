@@ -30,6 +30,7 @@ import readingMentorshipImg from "@assets/stock_images/volunteers_teaching__9d90
 import beachCleanupImg from "@assets/stock_images/beach_cleanup_ocean__30385de7.jpg";
 import christmasGiftsImg from "@assets/stock_images/volunteers_handing_o_4a2e2d94.jpg";
 import serviceAwardImg from "@assets/202602_001_ServiceAward_Frank_Narine_1770755899495.jpg";
+import trailRepairImg from "@assets/20260221_WoodsideTrailRepair_1770756385281.jpeg";
 import breakfastMeetingImg from "@assets/stock_images/breakfast_meeting_gr_273dae38.jpg";
 
 // Mock Data for Upcoming Activities
@@ -51,7 +52,7 @@ const upcomingActivities = [
     time: "8:45 AM - 12:30 PM",
     location: "Bandstand at Golden Gate Park",
     description: "Come join us on Mount Sutro for a morning in habitat restoration activities and help us uncover Woodland Canyon Creek!",
-    image: parkCleanupImg,
+    image: trailRepairImg,
     category: "community"
   },
   {

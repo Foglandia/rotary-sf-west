@@ -1,4 +1,5 @@
 import parkCleanupImg from "@assets/communityparkcleanup_1765319980781.jpg";
+import trailRepairImg from "@assets/20260221_WoodsideTrailRepair_1770756385281.jpeg";
 import foodDriveImg from "@assets/fooddrivesorting_1765320006510.jpg";
 import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
 import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg";
@@ -71,7 +72,7 @@ export const activities: Activity[] = [
     address: "Mount Sutro, San Francisco, CA",
     description: "Come join us on Mount Sutro for a morning in habitat restoration activities and help us uncover Woodland Canyon Creek!",
     fullDescription: "Come join us on Mount Sutro for a morning in habitat restoration activities and help us uncover Woodland Canyon Creek!\n\nThis is a family-friendly event and all ages are welcome to participate. We'll have refreshments available and will provide all necessary supplies including gloves, bags, and gardening tools.\n\nPlease wear comfortable clothes that can get dirty and closed-toe shoes. Sunscreen and water bottles are recommended.",
-    image: parkCleanupImg,
+    image: trailRepairImg,
     category: "community"
   },
   {
