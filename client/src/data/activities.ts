@@ -1,4 +1,5 @@
 import parkCleanupImg from "@assets/communityparkcleanup_1765319980781.jpg";
+import angelIslandImg from "@assets/1024px-Angel_Island_(California)_1770767921980.jpeg";
 import trailRepairImg from "@assets/20260221_WoodsideTrailRepair_1770756385281.jpeg";
 import foodDriveImg from "@assets/Rotary_202511_004_Thanskgiving_Turkeygiveaway_GroupShot_1770766111577.jpg";
 import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
@@ -150,7 +151,7 @@ export const activities: Activity[] = [
     address: "San Francisco Ferry Terminal, San Francisco, CA",
     description: "Join us for a picnic on Angel Island. We will meet at the Ferry Terminal at 11:00 AM.",
     fullDescription: "Join us for a picnic on Angel Island. We will meet at the Ferry Terminal at 11:00 AM.",
-    image: parkCleanupImg,
+    image: angelIslandImg,
     category: "club"
   },
 ];

@@ -33,6 +33,7 @@ import carouselImg6 from "@assets/Rotary_202512_002_ChristmasGift_Giveaway_17697
 import carouselImg7 from "@assets/202602_001_ServiceAward_Frank_Narine_Ma_1769968477823.jpg";
 
 import parkCleanupImg from "@assets/communityparkcleanup_1765319980781.jpg";
+import angelIslandImg from "@assets/1024px-Angel_Island_(California)_1770767921980.jpeg";
 import foodDriveImg from "@assets/Rotary_202511_004_Thanskgiving_Turkeygiveaway_GroupShot_1770766111577.jpg";
 import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
 import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg";
@@ -112,7 +113,7 @@ const upcomingActivities = [
     time: "11:00 AM - 3:00 PM",
     location: "San Francisco Ferry Terminal, San Francisco",
     description: "Join us for a picnic on Angel Island. We will meet at the Ferry Terminal at 11:00 AM.",
-    image: parkCleanupImg,
+    image: angelIslandImg,
     category: "club"
   },
 ];
