@@ -126,7 +126,7 @@ export default function Activities() {
                <img 
                  src={activityImg} 
                  alt="Volunteers working in the park" 
-                 className="rounded-2xl shadow-lg w-full object-contain"
+                 className="rounded-2xl shadow-lg w-3/4 object-contain mx-auto"
                />
             </div>
           </section>
