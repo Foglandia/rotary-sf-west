@@ -140,6 +140,19 @@ export const activities: Activity[] = [
     image: breakfastMeetingImg,
     category: "other_rotary"
   },
+  {
+    id: 13,
+    title: "Angel Island Picnic",
+    date: "2026-05-03",
+    displayDate: "May 3, 2026",
+    time: "11:00 AM - 3:00 PM",
+    location: "San Francisco Ferry Terminal",
+    address: "San Francisco Ferry Terminal, San Francisco, CA",
+    description: "Join us for a picnic on Angel Island. We will meet at the Ferry Terminal at 11:00 AM.",
+    fullDescription: "Join us for a picnic on Angel Island. We will meet at the Ferry Terminal at 11:00 AM.",
+    image: parkCleanupImg,
+    category: "club"
+  },
 ];
 
 export const getCategoryDetails = (category: string) => {

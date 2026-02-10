@@ -105,6 +105,16 @@ const upcomingActivities = [
     image: beachCleanupImg,
     category: "community"
   },
+  {
+    id: 13,
+    title: "Angel Island Picnic",
+    date: "May 3, 2026",
+    time: "11:00 AM - 3:00 PM",
+    location: "San Francisco Ferry Terminal, San Francisco",
+    description: "Join us for a picnic on Angel Island. We will meet at the Ferry Terminal at 11:00 AM.",
+    image: parkCleanupImg,
+    category: "club"
+  },
 ];
 
 const getCategoryDetails = (category: string) => {
