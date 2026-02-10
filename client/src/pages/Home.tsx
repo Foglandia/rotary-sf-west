@@ -14,6 +14,16 @@ import {
 } from "@/components/ui/carousel";
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible";
 
+const renderTextWithLinks = (text: string) => {
+  return text.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
+    part.match(/^https?:\/\//) ? (
+      <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-[#17458f] underline hover:text-[#3d6db8]">{part}</a>
+    ) : (
+      part
+    )
+  );
+};
+
 import carouselImg1 from "@assets/Rotary_202601_001_MaryNotsch_FrankMoreman_MLKDayEvent_1769799672466.jpeg";
 import carouselImg2 from "@assets/Rotary_202512_003_ChristmasGift_Giveaway_Narine_1769799672467.jpeg";
 import carouselImg3 from "@assets/Rotary_202511_004_Thanskgiving_Turkeygiveaway_GroupShot_1769799672468.jpg";
@@ -337,7 +347,7 @@ export default function Home() {
                           </div>
 
                           <p className="text-sm text-muted-foreground mb-4 line-clamp-1">
-                              {activity.description}
+                              {renderTextWithLinks(activity.description)}
                           </p>
 
                           <div className="flex items-center gap-4">
@@ -357,7 +367,7 @@ export default function Home() {
                     
                     <CollapsibleContent className="px-6 pb-6 animate-collapsible-down">
                       <div className="text-sm text-muted-foreground pt-0 border-t border-border/30 mt-[-0.5rem] pt-4">
-                        <p className="hidden group-data-[state=open]:block">{activity.description}</p>
+                        <p className="hidden group-data-[state=open]:block">{renderTextWithLinks(activity.description)}</p>
                       </div>
                     </CollapsibleContent>
                   </Collapsible>
