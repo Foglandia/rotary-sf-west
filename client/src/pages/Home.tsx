@@ -108,10 +108,10 @@ const upcomingActivities = [
   {
     id: 6,
     title: "Ocean Beach Cleanup",
-    date: "Feb 01, 2026",
+    date: "Mar 7, 2026",
     time: "10:00 AM - 1:00 PM",
     location: "Ocean Beach, Stairwell 17",
-    description: "Let's keep our coastline beautiful! We're partnering with the Surf Rider Foundation to remove plastic and debris from the beach. Bring reusable water bottles and sunscreen.",
+    description: "Come join the fun and help conserve and protect our beautiful public beaches!",
     image: beachCleanupImg,
     category: "community"
   },

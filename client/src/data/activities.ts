@@ -169,13 +169,13 @@ export const activities: Activity[] = [
   {
     id: 6,
     title: "Ocean Beach Cleanup",
-    date: "2026-02-14",
-    displayDate: "Feb 14, 2026",
+    date: "2026-03-07",
+    displayDate: "Mar 7, 2026",
     time: "10:00 AM - 1:00 PM",
     location: "Ocean Beach, Stairwell 17",
     address: "Ocean Beach, Stairwell 17, San Francisco, CA",
-    description: "Let's keep our coastline beautiful! We're partnering with the Surf Rider Foundation to remove plastic and debris from the beach. Bring reusable water bottles and sunscreen.",
-    fullDescription: "Let's keep our coastline beautiful! We're partnering with the Surf Rider Foundation to remove plastic and debris from the beach. Bring reusable water bottles and sunscreen.\n\nThis cleanup is part of a citywide effort to reduce ocean pollution. We'll focus on the area around Stairwell 17, which tends to accumulate debris from winter storms.\n\nAll cleanup supplies will be provided. Please dress in layers as beach weather can be unpredictable. We'll celebrate our efforts with coffee and snacks afterward at a nearby café.",
+    description: "Come join the fun and help conserve and protect our beautiful public beaches!",
+    fullDescription: "Come join the fun and help conserve and protect our beautiful public beaches!\n\nAll cleanup supplies will be provided. Please dress in layers as beach weather can be unpredictable. We'll celebrate our efforts with coffee and snacks afterward at a nearby café.",
     image: beachCleanupImg,
     category: "community"
   },
