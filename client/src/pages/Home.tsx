@@ -41,7 +41,7 @@ const upcomingActivities = [
     date: "Feb 12, 2026",
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
-    description: "Join us for our monthly meeting at Crepes on Cole. Connect with fellow Rotarians, hear updates on club projects, and enjoy great company over breakfast.",
+    description: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities.",
     image: serviceAwardImg,
     category: "club"
   },
@@ -81,7 +81,7 @@ const upcomingActivities = [
     date: "Jan 15, 2026",
     time: "7:30 AM - 9:00 AM",
     location: "Crepes on Cole",
-    description: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.",
+    description: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities.",
     image: breakfastMeetingImg,
     category: "meeting"
   },

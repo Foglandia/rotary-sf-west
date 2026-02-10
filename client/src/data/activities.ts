@@ -31,7 +31,7 @@ export const activities: Activity[] = [
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
     address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
-    description: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.",
+    description: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities.",
     fullDescription: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.\n\nThis month's guest speaker will discuss community engagement strategies and how we can expand our impact in the coming year. We'll also be voting on new initiatives and reviewing our recent service projects.\n\nBreakfast is included with your attendance. Please RSVP so we can ensure adequate seating.",
     image: breakfastMeetingImg,
     category: "meeting"
@@ -44,7 +44,7 @@ export const activities: Activity[] = [
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
     address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
-    description: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.",
+    description: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities.",
     fullDescription: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.\n\nBreakfast is included with your attendance. Please RSVP so we can ensure adequate seating.",
     image: breakfastMeetingImg,
     category: "meeting"
@@ -57,7 +57,7 @@ export const activities: Activity[] = [
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
     address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
-    description: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.",
+    description: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities.",
     fullDescription: "Join us for our monthly club meeting where we discuss upcoming projects, hear from guest speakers, and enjoy a delicious breakfast together. It's a great way to start the day and connect with fellow members.\n\nBreakfast is included with your attendance. Please RSVP so we can ensure adequate seating.",
     image: breakfastMeetingImg,
     category: "meeting"
