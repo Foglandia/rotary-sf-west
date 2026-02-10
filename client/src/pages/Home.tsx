@@ -165,7 +165,6 @@ const carouselImages = [
   { src: carouselImg2, alt: "Christmas Gift Giveaway" },
   { src: carouselImg3, alt: "Thanksgiving Turkey Giveaway Group" },
   { src: carouselImg4, alt: "Holiday Gift Wrapping" },
-  { src: carouselImg5, alt: "Happy Thanksgiving" },
   { src: carouselImg6, alt: "Gift Bags for Families" },
   { src: carouselImg7, alt: "Service Award - Teddy & Fiona Ma" },
 ];
