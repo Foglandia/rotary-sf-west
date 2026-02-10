@@ -50,7 +50,7 @@ const upcomingActivities = [
     title: "Woodland Canyon Creek Restoration",
     date: "Feb 21, 2026",
     time: "8:45 AM - 12:30 PM",
-    location: "Bandstand at Golden Gate Park",
+    location: "Woods Lot, 100 Medical Center Way, San Francisco",
     description: "Come join us on Mount Sutro for a morning in habitat restoration activities and help us uncover Woodland Canyon Creek!",
     image: trailRepairImg,
     category: "community"
