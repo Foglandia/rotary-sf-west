@@ -7,7 +7,7 @@ import { Link } from "wouter";
 
 // Import images
 import meetingImg from "@assets/stock_images/breakfast_meeting_gr_273dae38.jpg";
-import activityImg from "@assets/communityparkcleanup_1765319980781.jpg";
+import activityImg from "@assets/Rotary_GardenPlanting_1770766205000.jpg";
 import socialImg from "@assets/stock_images/picnic_in_park_with__bb86390f.jpg";
 
 export default function Activities() {
