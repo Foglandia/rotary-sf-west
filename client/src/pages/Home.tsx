@@ -36,8 +36,8 @@ import breakfastMeetingImg from "@assets/stock_images/breakfast_meeting_gr_273da
 const upcomingActivities = [
   {
     id: 0,
-    title: "February Monthly Meeting",
-    date: "Feb 5, 2026",
+    title: "Monthly Meeting",
+    date: "Feb 12, 2026",
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
     description: "Join us for our monthly meeting at Crepes on Cole. Connect with fellow Rotarians, hear updates on club projects, and enjoy great company over breakfast.",
