@@ -57,7 +57,7 @@ const upcomingActivities = [
   },
   {
     id: 2,
-    title: "Food Pantry Support",
+    title: "Food Pantry: Florence Fang Community Farm",
     date: "Feb 28, 2026",
     time: "10:00 AM - 2:00 PM",
     location: "SF-Marin Food Bank",

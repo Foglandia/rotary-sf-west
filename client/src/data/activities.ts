@@ -90,7 +90,7 @@ export const activities: Activity[] = [
   },
   {
     id: 2,
-    title: "Food Drive Sorting",
+    title: "Food Pantry: Florence Fang Community Farm",
     date: "2026-02-28",
     displayDate: "Feb 28, 2026",
     time: "10:00 AM - 2:00 PM",
