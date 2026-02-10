@@ -179,6 +179,19 @@ export const activities: Activity[] = [
     image: beachCleanupImg,
     category: "community"
   },
+  {
+    id: 12,
+    title: "Servant Leadership for Rotarians Program 2026",
+    date: "2026-03-28",
+    displayDate: "Mar 28, 2026",
+    time: "9:00 AM - 4:00 PM",
+    location: "Rotary Terrace",
+    address: "312 Miller Ave., South San Francisco",
+    description: "Join fellow Rotarians for an immersive day of servant leadership training. This program is designed to help Rotarians develop and strengthen their leadership skills through the lens of service.",
+    fullDescription: "Join fellow Rotarians for an immersive day of servant leadership training. This program is designed to help Rotarians develop and strengthen their leadership skills through the lens of service.\n\nThis full-day program will cover key principles of servant leadership, practical applications for Rotary projects, and collaborative exercises to build stronger club leadership.",
+    image: breakfastMeetingImg,
+    category: "other_rotary"
+  },
 ];
 
 export const getCategoryDetails = (category: string) => {
