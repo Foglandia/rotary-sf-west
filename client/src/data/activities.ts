@@ -115,45 +115,6 @@ export const activities: Activity[] = [
     category: "other_rotary"
   },
   {
-    id: 5,
-    title: "Youth Reading Monthly Mentorship",
-    date: "2026-02-28",
-    displayDate: "Feb 28, 2026",
-    time: "10:00 AM - 12:00 PM",
-    location: "Westside Public Library",
-    address: "Westside Public Library, San Francisco, CA",
-    description: "Help foster a love for reading in our local youth. Volunteers will be paired with elementary school students for one-on-one reading sessions and homework help. Background check required.",
-    fullDescription: "Help foster a love for reading in our local youth. Volunteers will be paired with elementary school students for one-on-one reading sessions and homework help. Background check required.\n\nThis ongoing program meets on the fourth Saturday of every month. Volunteers commit to at least one session per month, though regular participation is encouraged to build relationships with students.\n\nTraining is provided for all new mentors. Background check must be completed at least one week before your first session.",
-    image: readingMentorshipImg,
-    category: "other_rotary"
-  },
-  {
-    id: 10,
-    title: "Youth Reading Monthly Mentorship",
-    date: "2026-03-28",
-    displayDate: "Mar 28, 2026",
-    time: "10:00 AM - 12:00 PM",
-    location: "Westside Public Library",
-    address: "Westside Public Library, San Francisco, CA",
-    description: "Help foster a love for reading in our local youth. Volunteers will be paired with elementary school students for one-on-one reading sessions and homework help. Background check required.",
-    fullDescription: "Help foster a love for reading in our local youth. Volunteers will be paired with elementary school students for one-on-one reading sessions and homework help. Background check required.\n\nThis ongoing program meets on the fourth Saturday of every month. Volunteers commit to at least one session per month, though regular participation is encouraged to build relationships with students.\n\nTraining is provided for all new mentors. Background check must be completed at least one week before your first session.",
-    image: readingMentorshipImg,
-    category: "other_rotary"
-  },
-  {
-    id: 11,
-    title: "Youth Reading Monthly Mentorship",
-    date: "2026-04-25",
-    displayDate: "Apr 25, 2026",
-    time: "10:00 AM - 12:00 PM",
-    location: "Westside Public Library",
-    address: "Westside Public Library, San Francisco, CA",
-    description: "Help foster a love for reading in our local youth. Volunteers will be paired with elementary school students for one-on-one reading sessions and homework help. Background check required.",
-    fullDescription: "Help foster a love for reading in our local youth. Volunteers will be paired with elementary school students for one-on-one reading sessions and homework help. Background check required.\n\nThis ongoing program meets on the fourth Saturday of every month. Volunteers commit to at least one session per month, though regular participation is encouraged to build relationships with students.\n\nTraining is provided for all new mentors. Background check must be completed at least one week before your first session.",
-    image: readingMentorshipImg,
-    category: "other_rotary"
-  },
-  {
     id: 6,
     title: "Ocean Beach Cleanup",
     date: "2026-03-07",

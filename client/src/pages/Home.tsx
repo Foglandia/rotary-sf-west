@@ -96,16 +96,6 @@ const upcomingActivities = [
     category: "other_rotary"
   },
   {
-    id: 5,
-    title: "Youth Reading Mentorship",
-    date: "Jan 22, 2026",
-    time: "3:30 PM - 5:30 PM",
-    location: "Westside Public Library",
-    description: "Help foster a love for reading in our local youth. Volunteers will be paired with elementary school students for one-on-one reading sessions and homework help. Background check required.",
-    image: readingMentorshipImg,
-    category: "other_rotary"
-  },
-  {
     id: 6,
     title: "Ocean Beach Cleanup",
     date: "Mar 7, 2026",
