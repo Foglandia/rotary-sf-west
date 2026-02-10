@@ -233,10 +233,6 @@ export default function Home() {
           {/* Left Sidebar: Quick Links (20% - 2/10 cols) */}
           <aside className="lg:col-span-2 space-y-6">
              <section className="bg-muted/30 rounded-2xl p-6 border border-border/50 sticky top-24">
-              <h2 className="text-xl font-heading font-bold text-foreground mb-4 flex items-center gap-2">
-                <ExternalLink className="h-5 w-5 text-[#d41367]" />
-                Quick Links
-              </h2>
               <div className="flex flex-col gap-3">
                 {quickLinks.map((link, index) => (
                   <a 
