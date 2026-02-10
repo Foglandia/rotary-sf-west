@@ -174,8 +174,8 @@ export const activities: Activity[] = [
     time: "10:00 AM - 1:00 PM",
     location: "Ocean Beach, Stairwell 17",
     address: "Ocean Beach, Stairwell 17, San Francisco, CA",
-    description: "Come join the fun and help conserve and protect our beautiful public beaches!",
-    fullDescription: "Come join the fun and help conserve and protect our beautiful public beaches!\n\nAll cleanup supplies will be provided. Please dress in layers as beach weather can be unpredictable. We'll celebrate our efforts with coffee and snacks afterward at a nearby café.",
+    description: "Come join the fun and help conserve and protect our beautiful public beaches! For more info visit https://www.parksconservancy.org/events/ocean-beach/ocean-beach-clean-ups",
+    fullDescription: "Come join the fun and help conserve and protect our beautiful public beaches!\n\nAll cleanup supplies will be provided. Please dress in layers as beach weather can be unpredictable. We'll celebrate our efforts with coffee and snacks afterward at a nearby café.\n\nFor more information, visit https://www.parksconservancy.org/events/ocean-beach/ocean-beach-clean-ups",
     image: beachCleanupImg,
     category: "community"
   },

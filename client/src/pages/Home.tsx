@@ -121,7 +121,7 @@ const upcomingActivities = [
     date: "Mar 7, 2026",
     time: "10:00 AM - 1:00 PM",
     location: "Ocean Beach, Stairwell 17",
-    description: "Come join the fun and help conserve and protect our beautiful public beaches!",
+    description: "Come join the fun and help conserve and protect our beautiful public beaches! For more info visit https://www.parksconservancy.org/events/ocean-beach/ocean-beach-clean-ups",
     image: beachCleanupImg,
     category: "community"
   },
