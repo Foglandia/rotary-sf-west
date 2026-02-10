@@ -57,10 +57,10 @@ const upcomingActivities = [
   },
   {
     id: 2,
-    title: "Food Pantry: Florence Fang Community Farm",
+    title: "Food Pantry",
     date: "Feb 28, 2026",
-    time: "10:00 AM - 2:00 PM",
-    location: "SF-Marin Food Bank",
+    time: "7:30 AM - 11:00 AM",
+    location: "Florence Fang Community Farm, 1 Diana Street, San Francisco",
     description: "The Florence Fang Community Farm is a partner of the SF-Marin Food Bank and serves 350 participating families every week in its food pantry program. Volunteers are needed to help pantry set up, distribute food, breakdown cardboard, and post-pantry clean up. If you have a passion for food security and want to help provide a critical service to the Bayview community, please come out!",
     image: foodDriveImg,
     category: "community"
