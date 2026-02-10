@@ -70,8 +70,8 @@ export const activities: Activity[] = [
     time: "8:45 AM - 12:30 PM",
     location: "Woods Lot, 100 Medical Center Way",
     address: "Woods Lot, 100 Medical Center Way, San Francisco",
-    description: "Come join us on Mount Sutro for a morning in habitat restoration activities and help us uncover Woodland Canyon Creek!",
-    fullDescription: "Come join us on Mount Sutro for a morning in habitat restoration activities and help us uncover Woodland Canyon Creek!\n\nThis is a family-friendly event and all ages are welcome to participate. We'll have refreshments available and will provide all necessary supplies including gloves, bags, and gardening tools.\n\nPlease wear comfortable clothes that can get dirty and closed-toe shoes. Sunscreen and water bottles are recommended.",
+    description: "Come join us on Mount Sutro for a morning in habitat restoration activities and help us uncover Woodland Canyon Creek! For more info visit https://www.sutrostewards.org/events",
+    fullDescription: "Come join us on Mount Sutro for a morning in habitat restoration activities and help us uncover Woodland Canyon Creek!\n\nThis is a family-friendly event and all ages are welcome to participate. We'll have refreshments available and will provide all necessary supplies including gloves, bags, and gardening tools.\n\nPlease wear comfortable clothes that can get dirty and closed-toe shoes. Sunscreen and water bottles are recommended.\n\nFor more information, visit https://www.sutrostewards.org/events",
     image: trailRepairImg,
     category: "community"
   },

@@ -127,7 +127,15 @@ export default function ActivityDetail() {
                   <div className="border-t pt-6">
                     <div className="prose prose-sm max-w-none text-muted-foreground">
                       {activity.fullDescription.split('\n\n').map((paragraph, index) => (
-                        <p key={index} className="mb-4">{paragraph}</p>
+                        <p key={index} className="mb-4">
+                          {paragraph.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
+                            part.match(/^https?:\/\//) ? (
+                              <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-[#17458f] underline hover:text-[#3d6db8]">{part}</a>
+                            ) : (
+                              part
+                            )
+                          )}
+                        </p>
                       ))}
                     </div>
                   </div>

@@ -51,7 +51,7 @@ const upcomingActivities = [
     date: "Feb 21, 2026",
     time: "8:45 AM - 12:30 PM",
     location: "Woods Lot, 100 Medical Center Way, San Francisco",
-    description: "Come join us on Mount Sutro for a morning in habitat restoration activities and help us uncover Woodland Canyon Creek!",
+    description: "Come join us on Mount Sutro for a morning in habitat restoration activities and help us uncover Woodland Canyon Creek! For more info visit https://www.sutrostewards.org/events",
     image: trailRepairImg,
     category: "community"
   },
