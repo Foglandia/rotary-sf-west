@@ -101,7 +101,7 @@ const upcomingActivities = [
     date: "Mar 19, 2026",
     time: "9:00 AM - 2:00 PM",
     location: "SF War Memorial Veterans Building, 401 Van Ness Avenue, San Francisco",
-    description: "Let's get cooking! All District 5150 Interactors are invited to attend this year's Winter Leadership Conference.",
+    description: "Let's get cooking! All District 5150 Interactors are invited to attend this year's Winter Leadership Conference. Registration required. Registration form and parental consent (waiver) form at https://linktr.ee/districtcouncil",
     image: galaEventImg,
     category: "other_rotary"
   },

@@ -122,8 +122,8 @@ export const activities: Activity[] = [
     time: "9:00 AM - 2:00 PM",
     location: "SF War Memorial Veterans Building",
     address: "401 Van Ness Avenue, San Francisco",
-    description: "Let's get cooking! All District 5150 Interactors are invited to attend this year's Winter Leadership Conference.",
-    fullDescription: "Let's get cooking! All District 5150 Interactors are invited to attend this year's Winter Leadership Conference.",
+    description: "Let's get cooking! All District 5150 Interactors are invited to attend this year's Winter Leadership Conference. Registration required. Registration form and parental consent (waiver) form at https://linktr.ee/districtcouncil",
+    fullDescription: "Let's get cooking! All District 5150 Interactors are invited to attend this year's Winter Leadership Conference.\n\nRegistration required. Registration form and parental consent (waiver) form at https://linktr.ee/districtcouncil",
     image: galaEventImg,
     category: "other_rotary"
   },
