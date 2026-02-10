@@ -61,7 +61,7 @@ const upcomingActivities = [
     date: "Feb 28, 2026",
     time: "10:00 AM - 2:00 PM",
     location: "SF-Marin Food Bank",
-    description: "Help us sort and pack food supplies for local families and seniors in need. We will repack dry goods, sort produce, and fill food boxes. Please wear comfortable clothes and closed-toe shoes. It is often cold in the warehouse so we recommend bringing a jacket.",
+    description: "The Florence Fang Community Farm is a partner of the SF-Marin Food Bank and serves 350 participating families every week in its food pantry program. Volunteers are needed to help pantry set up, distribute food, breakdown cardboard, and post-pantry clean up. If you have a passion for food security and want to help provide a critical service to the Bayview community, please come out!",
     image: foodDriveImg,
     category: "community"
   },
