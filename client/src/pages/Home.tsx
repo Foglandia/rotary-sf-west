@@ -76,16 +76,6 @@ const upcomingActivities = [
     category: "community"
   },
   {
-    id: 3,
-    title: "Senior Home Visit",
-    date: "Jan 05, 2026",
-    time: "2:00 PM - 4:00 PM",
-    location: "Sunrise Senior Living",
-    description: "Spend time playing board games and chatting with residents. Bring your smiles! We are looking for volunteers who can play piano or guitar to lead a sing-along session with the seniors.",
-    image: seniorVisitImg,
-    category: "club"
-  },
-  {
     id: 7,
     title: "Monthly Meeting",
     date: "Jan 15, 2026",

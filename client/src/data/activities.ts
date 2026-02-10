@@ -102,19 +102,6 @@ export const activities: Activity[] = [
     category: "community"
   },
   {
-    id: 3,
-    title: "Senior Home Visit",
-    date: "2026-03-07",
-    displayDate: "Mar 07, 2026",
-    time: "2:00 PM - 4:00 PM",
-    location: "Sunrise Senior Living",
-    address: "Sunrise Senior Living, San Francisco, CA",
-    description: "Spend time playing board games and chatting with residents. Bring your smiles! We are looking for volunteers who can play piano or guitar to lead a sing-along session with the seniors.",
-    fullDescription: "Spend time playing board games and chatting with residents. Bring your smiles! We are looking for volunteers who can play piano or guitar to lead a sing-along session with the seniors.\n\nThis is one of our most rewarding activities. Many of our senior friends look forward to these visits all month. We'll have board games, cards, and art supplies available.\n\nIf you have any musical talents, please let us know! We'd love to have live music for our afternoon together. Background check required for first-time volunteers.",
-    image: seniorVisitImg,
-    category: "club"
-  },
-  {
     id: 4,
     title: "District 5150 Interact Leadership Conference",
     date: "2026-03-19",
