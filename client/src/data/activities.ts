@@ -116,16 +116,16 @@ export const activities: Activity[] = [
   },
   {
     id: 4,
-    title: "Annual Charity Lunch",
+    title: "District 5150 Interact Leadership Conference",
     date: "2026-03-19",
     displayDate: "Mar 19, 2026",
-    time: "11:30 AM - 1:00 PM",
-    location: "Grand Ballroom, City Hotel",
-    address: "Grand Ballroom, City Hotel, San Francisco, CA",
-    description: "Our biggest fundraiser of the year! Join us for a delightful lunch and auctions to support our community projects. Tickets available online.",
-    fullDescription: "Our biggest fundraiser of the year! Join us for a delightful lunch and auctions to support our community projects. Tickets available online.\n\nThe afternoon will feature a gourmet lunch, live entertainment, and both silent and live auctions with amazing prizes. All proceeds go directly to funding our community service projects for the coming year.\n\nTickets are $150 per person or $250 per couple. Tables of 8 are available for $1,000.",
+    time: "9:00 AM - 2:00 PM",
+    location: "SF War Memorial Veterans Building",
+    address: "401 Van Ness Avenue, San Francisco",
+    description: "Let's get cooking! All District 5150 Interactors are invited to attend this year's Winter Leadership Conference.",
+    fullDescription: "Let's get cooking! All District 5150 Interactors are invited to attend this year's Winter Leadership Conference.",
     image: galaEventImg,
-    category: "club"
+    category: "other_rotary"
   },
   {
     id: 5,

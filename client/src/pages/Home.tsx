@@ -97,13 +97,13 @@ const upcomingActivities = [
   },
   {
     id: 4,
-    title: "Annual Charity Gala",
-    date: "Jan 15, 2026",
-    time: "6:00 PM - 10:00 PM",
-    location: "Grand Ballroom, City Hotel",
-    description: "Our biggest fundraiser of the year! Join us for an evening of dinner, dancing, and auctions to support our community projects. Formal attire requested. Tickets available online.",
+    title: "District 5150 Interact Leadership Conference",
+    date: "Mar 19, 2026",
+    time: "9:00 AM - 2:00 PM",
+    location: "SF War Memorial Veterans Building, 401 Van Ness Avenue, San Francisco",
+    description: "Let's get cooking! All District 5150 Interactors are invited to attend this year's Winter Leadership Conference.",
     image: galaEventImg,
-    category: "club"
+    category: "other_rotary"
   },
   {
     id: 5,
