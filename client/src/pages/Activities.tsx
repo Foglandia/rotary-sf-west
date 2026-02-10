@@ -54,7 +54,7 @@ export default function Activities() {
                     <Clock className="h-5 w-5 text-primary mt-0.5" />
                     <div>
                       <h4 className="font-bold text-foreground">When</h4>
-                      <p className="text-sm text-muted-foreground">First Thursday of every month<br/>7:30 AM - 8:30 AM</p>
+                      <p className="text-sm text-muted-foreground">Second Tuesday of every month<br/>7:30 AM - 8:30 AM</p>
                     </div>
                   </CardContent>
                 </Card>
