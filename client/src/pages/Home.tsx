@@ -27,7 +27,7 @@ import foodDriveImg from "@assets/fooddrivesorting_1765320006510.jpg";
 import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
 import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg";
 import readingMentorshipImg from "@assets/stock_images/volunteers_teaching__9d9025ed.jpg";
-import beachCleanupImg from "@assets/stock_images/beach_cleanup_ocean__30385de7.jpg";
+import beachCleanupImg from "@assets/OceanBeachCleanup_1770760972338.png";
 import christmasGiftsImg from "@assets/stock_images/volunteers_handing_o_4a2e2d94.jpg";
 import serviceAwardImg from "@assets/202602_001_ServiceAward_Frank_Narine_1770755899495.jpg";
 import trailRepairImg from "@assets/20260221_WoodsideTrailRepair_1770756385281.jpeg";
