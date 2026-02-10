@@ -81,7 +81,7 @@ export default function Activities() {
                <img 
                  src={meetingImg} 
                  alt="Rotary Club Monthly Meeting" 
-                 className="rounded-2xl shadow-lg w-full object-cover aspect-video"
+                 className="rounded-2xl shadow-lg w-full object-contain"
                />
             </div>
           </section>
