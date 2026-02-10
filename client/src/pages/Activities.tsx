@@ -7,7 +7,7 @@ import { Link } from "wouter";
 
 // Import images
 import meetingImg from "@assets/202602_001_ServiceAward_Frank_Narine_1770766292210.jpg";
-import activityImg from "@assets/Rotary_GardenPlanting_1770766364868.jpeg";
+import activityImg from "@assets/Rotary_202601_002_Narine_MaryNotsch_FrankMoreman_MLKDayEvent_1770766554161.jpg";
 import socialImg from "@assets/20250802_002_FrankMaryParty_1770766243760.jpg";
 
 export default function Activities() {
