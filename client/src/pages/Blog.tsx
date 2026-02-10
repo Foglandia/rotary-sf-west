@@ -9,7 +9,7 @@ import { Link } from "wouter";
 // Import downloaded stock images
 import blogImg1 from "@assets/stock_images/community_volunteers_d7eb7d64.jpg";
 import blogImg2 from "@assets/stock_images/community_volunteers_7e0dc292.jpg";
-import blogImg3 from "@assets/images/elena-rodriguez_1.jpg";
+import blogImg3 from "@assets/elena-rodriguez_1.jpg";
 import blogImg4 from "@assets/stock_images/community_volunteers_4735c16f.jpg";
 import blogImg5 from "@assets/stock_images/picnic_in_park_with__bb86390f.jpg";
 import blogImg6 from "@assets/stock_images/student_holding_cert_4d58b826.jpg";
