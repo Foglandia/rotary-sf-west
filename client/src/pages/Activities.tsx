@@ -6,7 +6,7 @@ import { Calendar, Users, GlassWater, Clock, MapPin } from "lucide-react";
 import { Link } from "wouter";
 
 // Import images
-import meetingImg from "@assets/stock_images/breakfast_meeting_gr_273dae38.jpg";
+import meetingImg from "@assets/202602_001_ServiceAward_Frank_Narine_1770766292210.jpg";
 import activityImg from "@assets/Rotary_GardenPlanting_1770766205000.jpg";
 import socialImg from "@assets/20250802_002_FrankMaryParty_1770766243760.jpg";
 
