@@ -45,7 +45,7 @@ export default function Activities() {
               </div>
               <h2 className="text-3xl font-heading font-bold text-primary">Monthly Meetings</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Our monthly meetings are the heartbeat of our club. We gather to discuss ongoing projects, host inspiring guest speakers, and enjoy fellowship over a meal. It's the perfect place to network with community leaders and learn about issues affecting our city and the world.
+                Join us for breakfast and an update on Rotary San Francisco West upcoming activities. All are welcome. You can show up or contact us at rcofsfw@gmail.com for more information on upcoming meetings.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
