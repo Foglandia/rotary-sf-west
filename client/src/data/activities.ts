@@ -67,8 +67,8 @@ export const activities: Activity[] = [
   {
     id: 1,
     title: "Woodland Canyon Creek Restoration",
-    date: "2025-12-15",
-    displayDate: "Dec 15, 2025",
+    date: "2026-02-21",
+    displayDate: "Feb 21, 2026",
     time: "8:45 AM - 12:30 PM",
     location: "Woods Lot, 100 Medical Center Way",
     address: "Woods Lot, 100 Medical Center Way, San Francisco",
