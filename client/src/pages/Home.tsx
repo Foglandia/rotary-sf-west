@@ -119,7 +119,7 @@ const upcomingActivities = [
   },
   {
     id: 14,
-    title: "February Book Drive",
+    title: "Book Wagon Book Drive",
     date: "Feb 1 - 28, 2026",
     time: "All Month",
     location: "915 Cole St. and 248 West Portal Street, San Francisco",

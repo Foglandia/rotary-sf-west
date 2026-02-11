@@ -157,7 +157,7 @@ export const activities: Activity[] = [
   },
   {
     id: 14,
-    title: "February Book Drive",
+    title: "Book Wagon Book Drive",
     date: "2026-02-01",
     displayDate: "Feb 1 - 28, 2026",
     time: "All Month",
