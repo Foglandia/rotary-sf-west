@@ -119,6 +119,16 @@ const upcomingActivities = [
     category: "other_rotary"
   },
   {
+    id: 15,
+    title: "Book Distribution - Cesar Chavez Elementary School",
+    date: "Mar 25, 2026",
+    time: "1:00 PM - 3:00 PM",
+    location: "Cesar Chavez Elementary School, San Francisco",
+    description: "We will join the Book Wagon team to distribute books to students at Cesar Chavez Elementary School.",
+    image: bookDriveImg,
+    category: "club"
+  },
+  {
     id: 13,
     title: "Angel Island Picnic",
     date: "May 3, 2026",

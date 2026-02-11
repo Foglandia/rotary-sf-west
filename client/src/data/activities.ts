@@ -179,6 +179,19 @@ export const activities: Activity[] = [
       { name: "Archbishop Riordan High School", address: "Archbishop Riordan High School, San Francisco, CA" }
     ]
   },
+  {
+    id: 15,
+    title: "Book Distribution - Cesar Chavez Elementary School",
+    date: "2026-03-25",
+    displayDate: "Mar 25, 2026",
+    time: "1:00 PM - 3:00 PM",
+    location: "Cesar Chavez Elementary School, San Francisco",
+    address: "Cesar Chavez Elementary School, San Francisco, CA",
+    description: "We will join the Book Wagon team to distribute books to students at Cesar Chavez Elementary School.",
+    fullDescription: "We will join the Book Wagon team to distribute books to students at Cesar Chavez Elementary School.\n\nThis is a wonderful opportunity to see the impact of the Book Wagon Book Drive firsthand as we hand out free books to elementary school students, helping them build their own home libraries.",
+    image: bookDriveImg,
+    category: "club"
+  },
 ];
 
 export const getCategoryDetails = (category: string) => {
