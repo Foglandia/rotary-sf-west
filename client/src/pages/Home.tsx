@@ -78,6 +78,16 @@ const upcomingActivities = [
     category: "community"
   },
   {
+    id: 6,
+    title: "Ocean Beach Cleanup",
+    date: "Mar 7, 2026",
+    time: "10:00 AM - 1:00 PM",
+    location: "Ocean Beach, Stairwell 17",
+    description: "Come join the fun and help conserve and protect our beautiful public beaches! For more info visit https://www.parksconservancy.org/events/ocean-beach/ocean-beach-clean-ups",
+    image: beachCleanupImg,
+    category: "community"
+  },
+  {
     id: 7,
     title: "Monthly Meeting",
     date: "Mar 12, 2026",
@@ -96,16 +106,6 @@ const upcomingActivities = [
     description: "Let's get cooking! All District 5150 Interactors are invited to attend this year's Winter Leadership Conference. Registration required. Registration form and parental consent (waiver) form at https://linktr.ee/districtcouncil",
     image: galaEventImg,
     category: "other_rotary"
-  },
-  {
-    id: 6,
-    title: "Ocean Beach Cleanup",
-    date: "Mar 7, 2026",
-    time: "10:00 AM - 1:00 PM",
-    location: "Ocean Beach, Stairwell 17",
-    description: "Come join the fun and help conserve and protect our beautiful public beaches! For more info visit https://www.parksconservancy.org/events/ocean-beach/ocean-beach-clean-ups",
-    image: beachCleanupImg,
-    category: "community"
   },
   {
     id: 13,
