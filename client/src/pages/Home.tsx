@@ -34,6 +34,7 @@ import carouselImg7 from "@assets/202602_001_ServiceAward_Frank_Narine_Ma_176996
 
 import parkCleanupImg from "@assets/communityparkcleanup_1765319980781.jpg";
 import angelIslandImg from "@assets/1024px-Angel_Island_(California)_1770767921980.jpeg";
+import bookDriveImg from "@assets/book-drive.jpg";
 import foodDriveImg from "@assets/Rotary_202511_004_Thanskgiving_Turkeygiveaway_GroupShot_1770766111577.jpg";
 import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
 import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg";
@@ -114,6 +115,16 @@ const upcomingActivities = [
     location: "San Francisco Ferry Terminal, San Francisco",
     description: "Join us for a picnic on Angel Island. We will meet at the Ferry Terminal at 11:00 AM.",
     image: angelIslandImg,
+    category: "club"
+  },
+  {
+    id: 14,
+    title: "February Book Drive",
+    date: "Feb 1 - 28, 2026",
+    time: "All Month",
+    location: "915 Cole St. and 248 West Portal Street, San Francisco",
+    description: "We are collecting new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.",
+    image: bookDriveImg,
     category: "club"
   },
 ];
