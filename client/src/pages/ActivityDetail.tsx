@@ -143,28 +143,60 @@ export default function ActivityDetail() {
               </Card>
 
               {/* Map Section */}
-              <Card className="shadow-md overflow-hidden">
-                <CardContent className="p-0">
-                  <div className="p-4 bg-muted/30 border-b">
-                    <h2 className="text-xl font-heading font-bold text-primary flex items-center gap-2">
-                      <MapPin className="h-5 w-5" />
-                      Location
-                    </h2>
-                    <p className="text-sm text-muted-foreground mt-1">{activity.address}</p>
-                  </div>
-                  <div className="aspect-[2/1] w-full">
-                    <iframe
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0 }}
-                      loading="lazy"
-                      allowFullScreen
-                      referrerPolicy="no-referrer-when-downgrade"
-                      src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${mapQuery}`}
-                    />
-                  </div>
-                </CardContent>
-              </Card>
+              {activity.dropOffLocations && activity.dropOffLocations.length > 0 ? (
+                <Card className="shadow-md overflow-hidden">
+                  <CardContent className="p-0">
+                    <div className="p-4 bg-muted/30 border-b">
+                      <h2 className="text-xl font-heading font-bold text-primary flex items-center gap-2">
+                        <MapPin className="h-5 w-5" />
+                        Drop-Off Locations
+                      </h2>
+                    </div>
+                    {activity.dropOffLocations.map((loc, index) => (
+                      <div key={index} className={index > 0 ? "border-t" : ""}>
+                        <div className="p-4 bg-muted/10">
+                          <p className="font-semibold text-foreground">{loc.name}</p>
+                          <p className="text-sm text-muted-foreground">{loc.address}</p>
+                        </div>
+                        <div className="aspect-[2/1] w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            style={{ border: 0 }}
+                            loading="lazy"
+                            allowFullScreen
+                            referrerPolicy="no-referrer-when-downgrade"
+                            src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(loc.address)}`}
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
+              ) : (
+                <Card className="shadow-md overflow-hidden">
+                  <CardContent className="p-0">
+                    <div className="p-4 bg-muted/30 border-b">
+                      <h2 className="text-xl font-heading font-bold text-primary flex items-center gap-2">
+                        <MapPin className="h-5 w-5" />
+                        Location
+                      </h2>
+                      <p className="text-sm text-muted-foreground mt-1">{activity.address}</p>
+                    </div>
+                    <div className="aspect-[2/1] w-full">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        loading="lazy"
+                        allowFullScreen
+                        referrerPolicy="no-referrer-when-downgrade"
+                        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${mapQuery}`}
+                      />
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
             </div>
 
             {/* Sidebar */}

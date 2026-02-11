@@ -10,6 +10,11 @@ import beachCleanupImg from "@assets/OceanBeachCleanup_1770760972338.png";
 import christmasGiftsImg from "@assets/stock_images/volunteers_handing_o_4a2e2d94.jpg";
 import breakfastMeetingImg from "@assets/stock_images/breakfast_meeting_gr_273dae38.jpg";
 
+export interface DropOffLocation {
+  name: string;
+  address: string;
+}
+
 export interface Activity {
   id: number;
   title: string;
@@ -22,6 +27,7 @@ export interface Activity {
   fullDescription: string;
   image: string;
   category: "club" | "other_rotary" | "community" | "meeting";
+  dropOffLocations?: DropOffLocation[];
 }
 
 export const activities: Activity[] = [
@@ -166,7 +172,12 @@ export const activities: Activity[] = [
     description: "We are collecting new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.",
     fullDescription: "We are collecting new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon from February 1st through the 28th. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.\n\nDrop-off locations:\n- Simple, 915 Cole Street, San Francisco\n- Growing Up Arts & Crafts, 248 West Portal, San Francisco\n- Archbishop Riordan High School, San Francisco",
     image: bookDriveImg,
-    category: "club"
+    category: "club",
+    dropOffLocations: [
+      { name: "Simple", address: "915 Cole Street, San Francisco, CA" },
+      { name: "Growing Up Arts & Crafts", address: "248 West Portal, San Francisco, CA" },
+      { name: "Archbishop Riordan High School", address: "Archbishop Riordan High School, San Francisco, CA" }
+    ]
   },
 ];
 
