@@ -43,7 +43,7 @@ import beachCleanupImg from "@assets/OceanBeachCleanup_1770760972338.png";
 import christmasGiftsImg from "@assets/stock_images/volunteers_handing_o_4a2e2d94.jpg";
 import serviceAwardImg from "@assets/202602_001_ServiceAward_Frank_Narine_1770755899495.jpg";
 import trailRepairImg from "@assets/20260221_WoodsideTrailRepair_1770756385281.jpeg";
-import breakfastMeetingImg from "@assets/stock_images/breakfast_meeting_gr_273dae38.jpg";
+import breakfastMeetingImg from "@assets/A_joyful_breakfast_gathering_in_the_café_1770768820506.jpg";
 
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
