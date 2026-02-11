@@ -351,12 +351,12 @@ export default function Home() {
                           <div className="flex items-center gap-4">
                             <CollapsibleTrigger asChild>
                                 <div className="flex items-center gap-1 text-sm text-primary font-semibold cursor-pointer hover:underline group/trigger select-none w-fit">
-                                    View Details
+                                    Learn More
                                     <ChevronDown className="h-4 w-4 transition-transform duration-200 group-data-[state=open]:rotate-180" />
                                 </div>
                             </CollapsibleTrigger>
                             <Button size="sm" className="h-8 px-4 font-semibold" asChild>
-                              <Link href={`/activity/${activity.id}`}>Learn More</Link>
+                              <Link href={`/activity/${activity.id}`}>View Details</Link>
                             </Button>
                           </div>
                       </div>
