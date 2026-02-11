@@ -122,7 +122,7 @@ const upcomingActivities = [
     title: "Book Wagon Book Drive",
     date: "Feb 1 - 28, 2026",
     time: "All Month",
-    location: "915 Cole St. and 248 West Portal Street, San Francisco",
+    location: "San Francisco",
     description: "We are collecting new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.",
     image: bookDriveImg,
     category: "club"
