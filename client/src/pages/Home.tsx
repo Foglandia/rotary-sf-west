@@ -48,6 +48,16 @@ import breakfastMeetingImg from "@assets/joyful_breakfast_cafe.jpg";
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
   {
+    id: 14,
+    title: "Book Wagon Book Drive",
+    date: "Feb 1 - 28, 2026",
+    time: "All Month",
+    location: "San Francisco",
+    description: "We are collecting new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.",
+    image: bookDriveImg,
+    category: "club"
+  },
+  {
     id: 0,
     title: "Monthly Meeting",
     date: "Feb 12, 2026",
@@ -115,16 +125,6 @@ const upcomingActivities = [
     location: "San Francisco Ferry Terminal, San Francisco",
     description: "Join us for a picnic on Angel Island. We will meet at the Ferry Terminal at 11:00 AM.",
     image: angelIslandImg,
-    category: "club"
-  },
-  {
-    id: 14,
-    title: "Book Wagon Book Drive",
-    date: "Feb 1 - 28, 2026",
-    time: "All Month",
-    location: "San Francisco",
-    description: "We are collecting new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.",
-    image: bookDriveImg,
     category: "club"
   },
 ];
