@@ -34,7 +34,7 @@ import carouselImg7 from "@assets/202602_001_ServiceAward_Frank_Narine_Ma_176996
 
 import parkCleanupImg from "@assets/communityparkcleanup_1765319980781.jpg";
 import angelIslandImg from "@assets/1024px-Angel_Island_(California)_1770767921980.jpeg";
-import bookDriveImg from "@assets/book-drive.jpg";
+import bookDriveImg from "@assets/children-reading-books.jpg";
 import foodDriveImg from "@assets/Rotary_202511_004_Thanskgiving_Turkeygiveaway_GroupShot_1770766111577.jpg";
 import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
 import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg";
