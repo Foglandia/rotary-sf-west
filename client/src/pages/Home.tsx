@@ -54,6 +54,7 @@ const upcomingActivities = [
     time: "All Month",
     location: "San Francisco",
     description: "We are collecting new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.",
+    fullDescription: "We are collecting new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.\n\nOur purpose is simple — to increase the number of books in the homes of San Francisco families. We give books away at elementary schools, clubhouses, and parks. New books are expensive and library visits are not always possible. The Book Wagon provides access to and ownership of books, building community and supporting literacy. The books we share are free, popular with young readers, culturally diverse, multilingual, and appropriate to ages from preschool to sixth grade.",
     image: bookDriveImg,
     category: "club"
   },
@@ -365,7 +366,7 @@ export default function Home() {
                     
                     <CollapsibleContent className="px-6 pb-6 animate-collapsible-down">
                       <div className="text-sm text-muted-foreground pt-0 border-t border-border/30 mt-[-0.5rem] pt-4">
-                        <p className="hidden group-data-[state=open]:block">{renderTextWithLinks(activity.description)}</p>
+                        <p className="hidden group-data-[state=open]:block">{renderTextWithLinks(activity.fullDescription || activity.description)}</p>
                       </div>
                     </CollapsibleContent>
                   </Collapsible>
