@@ -238,6 +238,16 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     extraImages: [debunking1Img, debunking3Img, debunking4Img],
     category: "club"
   },
+  {
+    id: 103,
+    title: "Good Samaritan Thanksgiving Meals Give-away",
+    date: "Nov 22, 2025",
+    time: "10:30 AM - 12:30 PM",
+    location: "Good Samaritan Family Resource Center",
+    description: "Rotary West Volunteers gathered at the Good Samaritan Family Resource Center to hand out Thanksgiving meals.",
+    image: christmasGiftsImg,
+    category: "community"
+  },
 ];
 
 export default function Home() {
