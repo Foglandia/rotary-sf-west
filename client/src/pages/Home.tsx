@@ -228,8 +228,8 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     time: "10:00 AM - 2:00 PM",
     location: "Good Samaritan Family Resource Center",
     description: "Rotary members handed out Christmas gifts at Good Samaritan. Thanks to [Andrea's Bakery](https://www.instagram.com/andreasbakerysf/?hl=en) for the tasty treats.",
-    image: christmasGiftsImg,
-    extraImages: [giftGiveaway3Img, giftGiveaway1Img, giftGiveaway4Img],
+    image: giftGiveaway4Img,
+    extraImages: [giftGiveaway3Img, giftGiveaway1Img],
     category: "community"
   },
   {
