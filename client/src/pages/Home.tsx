@@ -46,6 +46,8 @@ import trailRepairImg from "@assets/20260221_WoodsideTrailRepair_1770756385281.j
 import breakfastMeetingImg from "@assets/joyful_breakfast_cafe.jpg";
 import holidayPartyImg from "@assets/20251207_001_RotaryHolidayParty_1770855168166.jpeg";
 import holidayGiftsImg from "@assets/Rotary_202512_002_ChristmasGift_Giveaway_1770855337631.jpeg";
+import giftGiveaway3Img from "@assets/Rotary_202512_003_ChristmasGift_Giveaway_Narine_1770855714399.jpeg";
+import giftGiveaway1Img from "@assets/Rotary_202512_001_ChristmasGift_Giveaway_Narine_1770855741023.jpeg";
 
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
@@ -215,6 +217,7 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     location: "Good Samaritan Family Resource Center",
     description: "Rotary members handed out Christmas gifts at Good Samaritan. Thanks to Andrea's Bakery for the tasty treats.",
     image: christmasGiftsImg,
+    extraImages: [giftGiveaway3Img, giftGiveaway1Img],
     category: "community"
   },
 ];
