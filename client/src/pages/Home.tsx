@@ -209,7 +209,7 @@ const carouselImages = [
   { src: carouselImg7, alt: "Service Award - Teddy & Fiona Ma" },
 ];
 
-const pastActivities: (typeof upcomingActivities[number] & { extraImages?: string[] })[] = [
+const pastActivities: (typeof upcomingActivities[number] & { extraImages?: string[]; video?: string })[] = [
   {
     id: 100,
     title: "Rotary SF West Holiday Party",
@@ -219,6 +219,7 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     description: "Team got together to wrap gifts for children and enjoy great food, drinks and company.",
     image: holidayPartyImg,
     extraImages: [holidayGiftsImg],
+    video: "/videos/holiday_party.mov",
     category: "club"
   },
   {
@@ -547,9 +548,16 @@ export default function Home() {
 
                   </div>
 
-                  {activity.extraImages && activity.extraImages.length > 0 && (
-                    <div className="px-6 pb-6 flex flex-wrap gap-4">
-                      {activity.extraImages.map((img: string, idx: number) => (
+                  {(activity.extraImages?.length || activity.video) && (
+                    <div className="px-6 pb-6 flex flex-wrap gap-4 items-start">
+                      {activity.video && (
+                        <video 
+                          src={activity.video} 
+                          controls 
+                          className="w-64 h-48 rounded-lg shadow-sm object-cover"
+                        />
+                      )}
+                      {activity.extraImages?.map((img: string, idx: number) => (
                         <img 
                           key={idx}
                           src={img} 
