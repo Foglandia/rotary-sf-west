@@ -494,26 +494,10 @@ export default function Home() {
                             {renderTextWithLinks(activity.description)}
                         </p>
 
-                        <div className="flex items-center gap-4">
-                          <CollapsibleTrigger asChild>
-                              <div className="flex items-center gap-1 text-sm text-primary font-semibold cursor-pointer hover:underline group/trigger select-none w-fit">
-                                  Learn More
-                                  <ChevronDown className="h-4 w-4 transition-transform duration-200 group-data-[state=open]:rotate-180" />
-                              </div>
-                          </CollapsibleTrigger>
-                          <Button size="sm" className="h-8 px-4 font-semibold" asChild>
-                            <Link href={`/activity/${activity.id}`}>View Details</Link>
-                          </Button>
-                        </div>
                     </div>
 
                   </div>
                   
-                  <CollapsibleContent className="px-6 pb-6 animate-collapsible-down">
-                    <div className="text-sm text-muted-foreground pt-0 border-t border-border/30 mt-[-0.5rem] pt-4">
-                      <p className="hidden group-data-[state=open]:block">{renderTextWithLinks(activity.fullDescription || activity.description)}</p>
-                    </div>
-                  </CollapsibleContent>
                 </Collapsible>
               ))}
             </div>
