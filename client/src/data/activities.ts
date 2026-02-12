@@ -105,7 +105,7 @@ export const activities: Activity[] = [
     location: "Florence Fang Community Farm",
     address: "1 Diana Street, San Francisco",
     description: "Join Rotary team members to weed, plant, dig, and grow at the farm! Be sure to wear comfortable clothes and shoes.",
-    fullDescription: "Join Rotary team members to weed, plant, dig, and grow at the farm! Be sure to wear comfortable clothes and shoes.",
+    fullDescription: "Join Rotary team members to weed, plant, dig, and grow at the farm! Be sure to wear comfortable clothes and shoes.\n\nFlorence Fang Community Farm is the biggest community farm and the second most productive urban farm in San Francisco.\n\nWatch this video to learn more: https://youtu.be/3oN9SEjOOO4?si=cQua4gx2kF36UgB4",
     image: foodDriveImg,
     category: "community"
   },
