@@ -214,16 +214,15 @@ const carouselImages = [
 
 const pastActivities: (typeof upcomingActivities[number] & { extraImages?: string[]; video?: string })[] = [
   {
-    id: 100,
-    title: "Rotary SF West Holiday Party",
-    date: "Dec 7, 2025",
-    time: "11:00 AM - 3:00 PM",
-    location: "San Francisco",
-    description: "Team got together to wrap gifts for children and enjoy great food, drinks and company.",
-    image: holidayPartyImg,
-    extraImages: [holidayGiftsImg],
-    video: "/videos/holiday_party.mov",
-    category: "club"
+    id: 104,
+    title: "MLK Day Volunteer Assistance",
+    date: "Jan 19, 2026",
+    time: "",
+    location: "Museum of the African Diaspora (MOAD), San Francisco",
+    description: "Rotary volunteers helped with MLK activities at MOAD.",
+    image: mlk2Img,
+    extraImages: [mlk1Img, mlk3Img],
+    category: "community"
   },
   {
     id: 101,
@@ -237,14 +236,15 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     category: "community"
   },
   {
-    id: 102,
-    title: "Rotary SF West Debunking Gathering",
-    date: "Aug 2, 2025",
-    time: "5:30 PM - 8:30 PM",
+    id: 100,
+    title: "Rotary SF West Holiday Party",
+    date: "Dec 7, 2025",
+    time: "11:00 AM - 3:00 PM",
     location: "San Francisco",
-    description: "Members gathered for a fun debunking evening of fellowship and conversation.",
-    image: debunking2Img,
-    extraImages: [debunking1Img, debunking3Img, debunking4Img],
+    description: "Team got together to wrap gifts for children and enjoy great food, drinks and company.",
+    image: holidayPartyImg,
+    extraImages: [holidayGiftsImg],
+    video: "/videos/holiday_party.mov",
     category: "club"
   },
   {
@@ -259,15 +259,15 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     category: "community"
   },
   {
-    id: 104,
-    title: "MLK Day Volunteer Assistance",
-    date: "Jan 19, 2026",
-    time: "",
-    location: "Museum of the African Diaspora (MOAD), San Francisco",
-    description: "Rotary volunteers helped with MLK activities at MOAD.",
-    image: mlk2Img,
-    extraImages: [mlk1Img, mlk3Img],
-    category: "community"
+    id: 102,
+    title: "Rotary SF West Debunking Gathering",
+    date: "Aug 2, 2025",
+    time: "5:30 PM - 8:30 PM",
+    location: "San Francisco",
+    description: "Members gathered for a fun debunking evening of fellowship and conversation.",
+    image: debunking2Img,
+    extraImages: [debunking1Img, debunking3Img, debunking4Img],
+    category: "club"
   },
 ];
 
