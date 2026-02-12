@@ -229,7 +229,7 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
   },
   {
     id: 102,
-    title: "Debunking Gathering",
+    title: "Rotary SF West Debunking Gathering",
     date: "Aug 2, 2025",
     time: "5:30 PM - 8:30 PM",
     location: "San Francisco",
