@@ -55,6 +55,10 @@ import debunking1Img from "@assets/20250802_001_FrankMary_Dubunking_Party_177085
 import debunking2Img from "@assets/20250802_002_FrankMary_Debunking_Party_1770857265963.jpg";
 import debunking3Img from "@assets/20250802_003_FrankMary_Dubunking_Party_1770857265963.jpeg";
 import debunking4Img from "@assets/20250802_004_FrankMary_Debunking_Party_1770857265963.jpg";
+import thanksgiving1Img from "@assets/Rotary_202511_001_Thanksgiving_Turkeygiveaway_2025_1770857589358.jpeg";
+import thanksgiving2Img from "@assets/Rotary_202511_002_Thanksgiving_Frank&Narine_1770857589359.jpeg";
+import thanksgiving3Img from "@assets/Rotary_202511_003_Thanksgiving_Turkeys_2025_1770857589359.jpeg";
+import thanksgiving4Img from "@assets/Rotary_202511_004_Thanskgiving_Turkeygiveaway_GroupShot_1770857589359.jpg";
 
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
@@ -245,7 +249,8 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     time: "10:30 AM - 12:30 PM",
     location: "Good Samaritan Family Resource Center",
     description: "Rotary West Volunteers gathered at the Good Samaritan Family Resource Center to hand out Thanksgiving meals.",
-    image: christmasGiftsImg,
+    image: thanksgiving4Img,
+    extraImages: [thanksgiving1Img, thanksgiving2Img, thanksgiving3Img],
     category: "community"
   },
 ];
