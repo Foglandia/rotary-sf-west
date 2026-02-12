@@ -60,6 +60,9 @@ import thanksgiving1Img from "@assets/Rotary_202511_001_Thanksgiving_Turkeygivea
 import thanksgiving2Img from "@assets/Rotary_202511_002_Thanksgiving_Frank&Narine_1770857589359.jpeg";
 import thanksgiving3Img from "@assets/Rotary_202511_003_Thanksgiving_Turkeys_2025_1770857589359.jpeg";
 import thanksgiving4Img from "@assets/Rotary_202511_004_Thanskgiving_Turkeygiveaway_GroupShot_1770857589359.jpg";
+import mlk1Img from "@assets/Rotary_202601_001_MaryNotsch_FrankMoreman_MLKDayEvent_1770858215166.jpeg";
+import mlk2Img from "@assets/Rotary_202601_002_Narine_MaryNotsch_FrankMoreman_MLKDayEvent_1770858215166.jpg";
+import mlk3Img from "@assets/Rotary_202601_003_MaryNotsch_FrankMoreman_MLKDayEvent_1770858215166.jpg";
 
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
@@ -262,7 +265,8 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     time: "",
     location: "Museum of the African Diaspora (MOAD), San Francisco",
     description: "Rotary volunteers helped with MLK activities at MOAD.",
-    image: parkCleanupImg,
+    image: mlk2Img,
+    extraImages: [mlk1Img, mlk3Img],
     category: "community"
   },
 ];
