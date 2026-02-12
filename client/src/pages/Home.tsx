@@ -223,6 +223,16 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     extraImages: [giftGiveaway3Img, giftGiveaway1Img],
     category: "community"
   },
+  {
+    id: 102,
+    title: "Debunking Gathering",
+    date: "Aug 2, 2025",
+    time: "5:30 PM - 8:30 PM",
+    location: "San Francisco",
+    description: "Members gathered for a fun debunking evening of fellowship and conversation.",
+    image: christmasGiftsImg,
+    category: "club"
+  },
 ];
 
 export default function Home() {
