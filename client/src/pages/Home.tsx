@@ -255,6 +255,16 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     extraImages: [thanksgiving1Img, thanksgiving2Img, thanksgiving3Img],
     category: "community"
   },
+  {
+    id: 104,
+    title: "MLK Day Volunteer Assistance",
+    date: "Jan 19, 2026",
+    time: "",
+    location: "Museum of the African Diaspora (MOAD), San Francisco",
+    description: "Rotary volunteers helped with MLK activities at MOAD.",
+    image: parkCleanupImg,
+    category: "community"
+  },
 ];
 
 export default function Home() {
