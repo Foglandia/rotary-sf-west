@@ -195,13 +195,13 @@ const carouselImages = [
 
 const pastActivities: typeof upcomingActivities = [
   {
-    id: 0,
-    title: "Monthly Meeting",
-    date: "Feb 12, 2026",
-    time: "7:30 AM - 8:30 AM",
-    location: "Crepes on Cole",
-    description: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities.",
-    image: serviceAwardImg,
+    id: 100,
+    title: "Rotary SF West Holiday Party",
+    date: "Dec 7, 2025",
+    time: "11:00 AM - 3:00 PM",
+    location: "San Francisco",
+    description: "Team got together to wrap gifts for children and enjoy great food, drinks and company.",
+    image: christmasGiftsImg,
     category: "club"
   },
 ];
