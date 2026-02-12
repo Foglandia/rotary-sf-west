@@ -195,7 +195,7 @@ const carouselImages = [
   { src: carouselImg7, alt: "Service Award - Teddy & Fiona Ma" },
 ];
 
-const pastActivities: typeof upcomingActivities = [
+const pastActivities: (typeof upcomingActivities[number] & { extraImages?: string[] })[] = [
   {
     id: 100,
     title: "Rotary SF West Holiday Party",
@@ -206,6 +206,16 @@ const pastActivities: typeof upcomingActivities = [
     image: holidayPartyImg,
     extraImages: [holidayGiftsImg],
     category: "club"
+  },
+  {
+    id: 101,
+    title: "Gift Give-away",
+    date: "Dec 18, 2025",
+    time: "10:00 AM - 2:00 PM",
+    location: "Good Samaritan Family Resource Center",
+    description: "Rotary members handed out Christmas gifts at Good Samaritan. Thanks to Andrea's Bakery for the tasty treats.",
+    image: christmasGiftsImg,
+    category: "community"
   },
 ];
 
