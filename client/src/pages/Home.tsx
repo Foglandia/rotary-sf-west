@@ -513,25 +513,27 @@ export default function Home() {
                   ))}
                 </div>
                 
-                <div className="p-4 bg-muted/30 border-t border-border/50 text-center">
-                  {pastVisibleCount < pastActivities.length ? (
-                    <Button 
-                      variant="ghost" 
-                      className="w-full"
-                      onClick={() => setPastVisibleCount(pastActivities.length)}
-                    >
-                      View More Activities
-                    </Button>
-                  ) : (
-                    <Button 
-                      variant="ghost" 
-                      className="w-full"
-                      onClick={() => setPastVisibleCount(3)}
-                    >
-                      View Less Activities
-                    </Button>
-                  )}
-                </div>
+                {pastActivities.length > 3 && (
+                  <div className="p-4 bg-muted/30 border-t border-border/50 text-center">
+                    {pastVisibleCount < pastActivities.length ? (
+                      <Button 
+                        variant="ghost" 
+                        className="w-full"
+                        onClick={() => setPastVisibleCount(pastActivities.length)}
+                      >
+                        View More Activities
+                      </Button>
+                    ) : (
+                      <Button 
+                        variant="ghost" 
+                        className="w-full"
+                        onClick={() => setPastVisibleCount(3)}
+                      >
+                        View Less Activities
+                      </Button>
+                    )}
+                  </div>
+                )}
               </section>
             )}
 
