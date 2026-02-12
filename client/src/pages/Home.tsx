@@ -193,7 +193,18 @@ const carouselImages = [
   { src: carouselImg7, alt: "Service Award - Teddy & Fiona Ma" },
 ];
 
-const pastActivities: typeof upcomingActivities = [];
+const pastActivities: typeof upcomingActivities = [
+  {
+    id: 0,
+    title: "Monthly Meeting",
+    date: "Feb 12, 2026",
+    time: "7:30 AM - 8:30 AM",
+    location: "Crepes on Cole",
+    description: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities.",
+    image: serviceAwardImg,
+    category: "club"
+  },
+];
 
 export default function Home() {
   const [visibleCount, setVisibleCount] = useState(3);
