@@ -15,13 +15,16 @@ import {
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible";
 
 const renderTextWithLinks = (text: string) => {
-  return text.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
-    part.match(/^https?:\/\//) ? (
-      <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-[#17458f] underline hover:text-[#3d6db8]">{part}</a>
-    ) : (
-      part
-    )
-  );
+  return text.split(/(\[.*?\]\(.*?\)|https?:\/\/[^\s]+)/g).map((part, i) => {
+    const mdMatch = part.match(/^\[(.*?)\]\((.*?)\)$/);
+    if (mdMatch) {
+      return <a key={i} href={mdMatch[2]} target="_blank" rel="noopener noreferrer" className="text-[#17458f] underline hover:text-[#3d6db8]">{mdMatch[1]}</a>;
+    }
+    if (part.match(/^https?:\/\//)) {
+      return <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-[#17458f] underline hover:text-[#3d6db8]">{part}</a>;
+    }
+    return part;
+  });
 };
 
 import carouselImg1 from "@assets/Rotary_202601_001_MaryNotsch_FrankMoreman_MLKDayEvent_1769799672466.jpeg";
@@ -215,7 +218,7 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     date: "Dec 18, 2025",
     time: "10:00 AM - 2:00 PM",
     location: "Good Samaritan Family Resource Center",
-    description: "Rotary members handed out Christmas gifts at Good Samaritan. Thanks to Andrea's Bakery for the tasty treats.",
+    description: "Rotary members handed out Christmas gifts at Good Samaritan. Thanks to [Andrea's Bakery](https://www.instagram.com/andreasbakerysf/?hl=en) for the tasty treats.",
     image: christmasGiftsImg,
     extraImages: [giftGiveaway3Img, giftGiveaway1Img],
     category: "community"
