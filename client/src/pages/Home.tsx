@@ -51,6 +51,10 @@ import holidayPartyImg from "@assets/20251207_001_RotaryHolidayParty_17708551681
 import holidayGiftsImg from "@assets/Rotary_202512_002_ChristmasGift_Giveaway_1770855337631.jpeg";
 import giftGiveaway3Img from "@assets/Rotary_202512_003_ChristmasGift_Giveaway_Narine_1770855714399.jpeg";
 import giftGiveaway1Img from "@assets/Rotary_202512_001_ChristmasGift_Giveaway_Narine_1770855741023.jpeg";
+import debunking1Img from "@assets/20250802_001_FrankMary_Dubunking_Party_1770857265962.jpeg";
+import debunking2Img from "@assets/20250802_002_FrankMary_Debunking_Party_1770857265963.jpg";
+import debunking3Img from "@assets/20250802_003_FrankMary_Dubunking_Party_1770857265963.jpeg";
+import debunking4Img from "@assets/20250802_004_FrankMary_Debunking_Party_1770857265963.jpg";
 
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
@@ -230,7 +234,8 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     time: "5:30 PM - 8:30 PM",
     location: "San Francisco",
     description: "Members gathered for a fun debunking evening of fellowship and conversation.",
-    image: christmasGiftsImg,
+    image: debunking2Img,
+    extraImages: [debunking1Img, debunking3Img, debunking4Img],
     category: "club"
   },
 ];
