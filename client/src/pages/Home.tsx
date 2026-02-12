@@ -193,8 +193,11 @@ const carouselImages = [
   { src: carouselImg7, alt: "Service Award - Teddy & Fiona Ma" },
 ];
 
+const pastActivities: typeof upcomingActivities = [];
+
 export default function Home() {
   const [visibleCount, setVisibleCount] = useState(3);
+  const [pastVisibleCount, setPastVisibleCount] = useState(3);
   
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
@@ -403,6 +406,123 @@ export default function Home() {
                 )}
               </div>
             </section>
+
+            {/* Past Activities Section */}
+            {pastActivities.length > 0 && (
+              <section className="bg-card rounded-2xl border border-border shadow-sm overflow-hidden h-full">
+                <div className="bg-primary/5 p-6 border-b border-border/50 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                  <h2 className="text-2xl font-heading font-bold text-primary flex items-center gap-2">
+                    <Calendar className="h-6 w-6" />
+                    Past Activities
+                  </h2>
+                  
+                  <div className="flex flex-wrap gap-3">
+                    <div className="flex items-center gap-1.5">
+                      <div className="h-2.5 w-2.5 rounded-full bg-[#17458f]"></div>
+                      <span className="text-xs font-medium text-muted-foreground">Club Activity</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <div className="h-2.5 w-2.5 rounded-full bg-[#f59e0b]"></div>
+                      <span className="text-xs font-medium text-muted-foreground">Other Rotary Club Event</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <div className="h-2.5 w-2.5 rounded-full bg-[#10b981]"></div>
+                      <span className="text-xs font-medium text-muted-foreground">Community Event</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <div className="h-2.5 w-2.5 rounded-full bg-[#8b5cf6]"></div>
+                      <span className="text-xs font-medium text-muted-foreground">Club Meeting</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="divide-y divide-border/50">
+                  {pastActivities.slice(0, pastVisibleCount).map((activity) => (
+                    <Collapsible key={activity.id} className="group">
+                      <div className="p-6 hover:bg-muted/30 transition-colors flex flex-col md:flex-row gap-6 md:items-start">
+                        
+                        <div className="shrink-0">
+                          <img 
+                            src={activity.image} 
+                            alt={activity.title} 
+                            className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-lg shadow-sm"
+                          />
+                        </div>
+
+                        <div className="flex-1">
+                            <div className="flex justify-between items-start mb-2">
+                              <div className="flex flex-col gap-1">
+                                <div className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full w-fit flex items-center gap-1 ${getCategoryDetails(activity.category).color}`}>
+                                  {(() => {
+                                    const Icon = getCategoryDetails(activity.category).icon;
+                                    return <Icon className="h-3 w-3" />;
+                                  })()}
+                                  {getCategoryDetails(activity.category).label}
+                                </div>
+                                <h3 className="font-bold text-lg text-foreground mt-1">
+                                    {activity.title}
+                                </h3>
+                              </div>
+                            </div>
+                            
+                            <div className="flex flex-wrap items-center gap-3 mb-2">
+                                <span className="text-xs font-semibold text-muted-foreground bg-muted px-2 py-1 rounded-md">
+                                    {activity.location}
+                                </span>
+                                <div className="text-sm text-[#657f99] font-semibold uppercase tracking-wide">
+                                    {activity.date} • {activity.time}
+                                </div>
+                            </div>
+
+                            <p className="text-sm text-muted-foreground mb-4 line-clamp-1">
+                                {renderTextWithLinks(activity.description)}
+                            </p>
+
+                            <div className="flex items-center gap-4">
+                              <CollapsibleTrigger asChild>
+                                  <div className="flex items-center gap-1 text-sm text-primary font-semibold cursor-pointer hover:underline group/trigger select-none w-fit">
+                                      Learn More
+                                      <ChevronDown className="h-4 w-4 transition-transform duration-200 group-data-[state=open]:rotate-180" />
+                                  </div>
+                              </CollapsibleTrigger>
+                              <Button size="sm" className="h-8 px-4 font-semibold" asChild>
+                                <Link href={`/activity/${activity.id}`}>View Details</Link>
+                              </Button>
+                            </div>
+                        </div>
+
+                      </div>
+                      
+                      <CollapsibleContent className="px-6 pb-6 animate-collapsible-down">
+                        <div className="text-sm text-muted-foreground pt-0 border-t border-border/30 mt-[-0.5rem] pt-4">
+                          <p className="hidden group-data-[state=open]:block">{renderTextWithLinks(activity.fullDescription || activity.description)}</p>
+                        </div>
+                      </CollapsibleContent>
+                    </Collapsible>
+                  ))}
+                </div>
+                
+                <div className="p-4 bg-muted/30 border-t border-border/50 text-center">
+                  {pastVisibleCount < pastActivities.length ? (
+                    <Button 
+                      variant="ghost" 
+                      className="w-full"
+                      onClick={() => setPastVisibleCount(pastActivities.length)}
+                    >
+                      View More Activities
+                    </Button>
+                  ) : (
+                    <Button 
+                      variant="ghost" 
+                      className="w-full"
+                      onClick={() => setPastVisibleCount(3)}
+                    >
+                      View Less Activities
+                    </Button>
+                  )}
+                </div>
+              </section>
+            )}
 
           </div>
 
