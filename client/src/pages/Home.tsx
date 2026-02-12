@@ -45,6 +45,7 @@ import serviceAwardImg from "@assets/202602_001_ServiceAward_Frank_Narine_177075
 import trailRepairImg from "@assets/20260221_WoodsideTrailRepair_1770756385281.jpeg";
 import breakfastMeetingImg from "@assets/joyful_breakfast_cafe.jpg";
 import holidayPartyImg from "@assets/20251207_001_RotaryHolidayParty_1770855168166.jpeg";
+import holidayGiftsImg from "@assets/Rotary_202512_002_ChristmasGift_Giveaway_1770855337631.jpeg";
 
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
@@ -203,6 +204,7 @@ const pastActivities: typeof upcomingActivities = [
     location: "San Francisco",
     description: "Team got together to wrap gifts for children and enjoy great food, drinks and company.",
     image: holidayPartyImg,
+    extraImages: [holidayGiftsImg],
     category: "club"
   },
 ];
@@ -497,6 +499,19 @@ export default function Home() {
                     </div>
 
                   </div>
+
+                  {activity.extraImages && activity.extraImages.length > 0 && (
+                    <div className="px-6 pb-6 flex flex-wrap gap-4">
+                      {activity.extraImages.map((img: string, idx: number) => (
+                        <img 
+                          key={idx}
+                          src={img} 
+                          alt={`${activity.title} photo ${idx + 2}`} 
+                          className="w-48 h-48 object-cover rounded-lg shadow-sm"
+                        />
+                      ))}
+                    </div>
+                  )}
                   
                 </Collapsible>
               ))}
