@@ -223,7 +223,7 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
   },
   {
     id: 101,
-    title: "Gift Give-away",
+    title: "Good Samaritan Christmas Gift Give-away",
     date: "Dec 18, 2025",
     time: "10:00 AM - 2:00 PM",
     location: "Good Samaritan Family Resource Center",
