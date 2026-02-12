@@ -55,6 +55,7 @@ import debunking1Img from "@assets/20250802_001_FrankMary_Dubunking_Party_177085
 import debunking2Img from "@assets/20250802_002_FrankMary_Debunking_Party_1770857265963.jpg";
 import debunking3Img from "@assets/20250802_003_FrankMary_Dubunking_Party_1770857265963.jpeg";
 import debunking4Img from "@assets/20250802_004_FrankMary_Debunking_Party_1770857265963.jpg";
+import giftGiveaway4Img from "@assets/Rotary_202512_004_ChristmasGive-away_1770857762272.jpg";
 import thanksgiving1Img from "@assets/Rotary_202511_001_Thanksgiving_Turkeygiveaway_2025_1770857589358.jpeg";
 import thanksgiving2Img from "@assets/Rotary_202511_002_Thanksgiving_Frank&Narine_1770857589359.jpeg";
 import thanksgiving3Img from "@assets/Rotary_202511_003_Thanksgiving_Turkeys_2025_1770857589359.jpeg";
@@ -228,7 +229,7 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     location: "Good Samaritan Family Resource Center",
     description: "Rotary members handed out Christmas gifts at Good Samaritan. Thanks to [Andrea's Bakery](https://www.instagram.com/andreasbakerysf/?hl=en) for the tasty treats.",
     image: christmasGiftsImg,
-    extraImages: [giftGiveaway3Img, giftGiveaway1Img],
+    extraImages: [giftGiveaway3Img, giftGiveaway1Img, giftGiveaway4Img],
     category: "community"
   },
   {
