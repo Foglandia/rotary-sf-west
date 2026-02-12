@@ -39,8 +39,8 @@ export const activities: Activity[] = [
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
     address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
-    description: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities.",
-    fullDescription: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities. All are welcome. You can show up or contact us at rcofsfw@gmail.com for more information on upcoming meetings.",
+    description: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
+    fullDescription: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
     image: breakfastMeetingImg,
     category: "meeting"
   },
@@ -52,8 +52,8 @@ export const activities: Activity[] = [
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
     address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
-    description: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities.",
-    fullDescription: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities. All are welcome. You can show up or contact us at rcofsfw@gmail.com for more information on upcoming meetings.",
+    description: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
+    fullDescription: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
     image: breakfastMeetingImg,
     category: "meeting"
   },
@@ -65,8 +65,8 @@ export const activities: Activity[] = [
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
     address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
-    description: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities.",
-    fullDescription: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities. All are welcome. You can show up or contact us at rcofsfw@gmail.com for more information on upcoming meetings.",
+    description: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
+    fullDescription: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
     image: breakfastMeetingImg,
     category: "meeting"
   },
