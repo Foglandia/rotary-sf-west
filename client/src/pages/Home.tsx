@@ -44,6 +44,7 @@ import christmasGiftsImg from "@assets/stock_images/volunteers_handing_o_4a2e2d9
 import serviceAwardImg from "@assets/202602_001_ServiceAward_Frank_Narine_1770755899495.jpg";
 import trailRepairImg from "@assets/20260221_WoodsideTrailRepair_1770756385281.jpeg";
 import breakfastMeetingImg from "@assets/joyful_breakfast_cafe.jpg";
+import holidayPartyImg from "@assets/20251207_001_RotaryHolidayParty_1770855168166.jpeg";
 
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
@@ -201,7 +202,7 @@ const pastActivities: typeof upcomingActivities = [
     time: "11:00 AM - 3:00 PM",
     location: "San Francisco",
     description: "Team got together to wrap gifts for children and enjoy great food, drinks and company.",
-    image: christmasGiftsImg,
+    image: holidayPartyImg,
     category: "club"
   },
 ];
