@@ -157,7 +157,7 @@ export const activities: Activity[] = [
     location: "San Francisco Ferry Terminal",
     address: "San Francisco Ferry Terminal, San Francisco, CA",
     description: "Join us for a picnic on Angel Island. We will meet at the Ferry Terminal at 11:00 AM.",
-    fullDescription: "Join us for a picnic on Angel Island. We will meet at the Ferry Terminal at 11:00 AM.",
+    fullDescription: "Join us for a picnic on Angel Island. We will meet at the Ferry Terminal at 11:00 AM.\n\nFor ferry schedule and tickets visit https://www.goldengate.org/ferry/angel-island-ferry/",
     image: angelIslandImg,
     category: "club"
   },
