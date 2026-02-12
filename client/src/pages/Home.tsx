@@ -78,14 +78,14 @@ const upcomingActivities = [
     category: "club"
   },
   {
-    id: 0,
+    id: 7,
     title: "Monthly Meeting",
     date: "Feb 12, 2026",
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
-    description: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities.",
+    description: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
     image: serviceAwardImg,
-    category: "club"
+    category: "meeting"
   },
   {
     id: 1,
@@ -118,12 +118,12 @@ const upcomingActivities = [
     category: "community"
   },
   {
-    id: 7,
+    id: 8,
     title: "Monthly Meeting",
-    date: "Mar 12, 2026",
-    time: "7:30 AM - 9:00 AM",
+    date: "Mar 10, 2026",
+    time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
-    description: "Join us for breakfast and an update on Rotary San Francisco West upcoming activities.",
+    description: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
     image: breakfastMeetingImg,
     category: "meeting"
   },
