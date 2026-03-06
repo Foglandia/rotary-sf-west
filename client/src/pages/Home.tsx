@@ -100,6 +100,16 @@ const upcomingActivities = [
     category: "club"
   },
   {
+    id: 17,
+    title: "Monthly Meeting",
+    date: "Apr 9, 2026",
+    time: "7:30 AM - 8:30 AM",
+    location: "Crepes on Cole",
+    description: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
+    image: breakfastMeetingImg,
+    category: "meeting"
+  },
+  {
     id: 16,
     title: "Dia de los Ninos Book Give-away",
     date: "Apr 30, 2026",

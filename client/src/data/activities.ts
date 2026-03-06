@@ -123,6 +123,19 @@ export const activities: Activity[] = [
     category: "club"
   },
   {
+    id: 17,
+    title: "Monthly Meeting",
+    date: "2026-04-09",
+    displayDate: "Apr 9, 2026",
+    time: "7:30 AM - 8:30 AM",
+    location: "Crepes on Cole",
+    address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
+    description: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
+    fullDescription: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
+    image: breakfastMeetingImg,
+    category: "meeting"
+  },
+  {
     id: 16,
     title: "Dia de los Ninos Book Give-away",
     date: "2026-04-30",
