@@ -218,7 +218,7 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     id: 105,
     title: "Book Wagon Book Drive",
     date: "Feb 1 - 28, 2026",
-    time: "All Month",
+    time: "",
     location: "San Francisco",
     description: "We collected new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.",
     image: bookDrive1Img,
