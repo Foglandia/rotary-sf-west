@@ -70,6 +70,16 @@ import mlk3Img from "@assets/Rotary_202601_003_MaryNotsch_FrankMoreman_MLKDayEve
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
   {
+    id: 18,
+    title: "Serve Breakfast at Edgewood Development Center",
+    date: "Mar 7, 2026",
+    time: "9:00 AM - 11:00 AM",
+    location: "Edgewood Bayview - Hunters Point, 3801 3rd Street, Suite 601 & 320, San Francisco",
+    description: "Join us to cook and serve breakfast to teens at the Edgewood Development Center.",
+    image: seniorVisitImg,
+    category: "community"
+  },
+  {
     id: 8,
     title: "Monthly Meeting",
     date: "Mar 10, 2026",

@@ -32,6 +32,19 @@ export interface Activity {
 
 export const activities: Activity[] = [
   {
+    id: 18,
+    title: "Serve Breakfast at Edgewood Development Center",
+    date: "2026-03-07",
+    displayDate: "Mar 7, 2026",
+    time: "9:00 AM - 11:00 AM",
+    location: "Edgewood Bayview - Hunters Point",
+    address: "3801 3rd Street, Suite 601 & 320, San Francisco",
+    description: "Join us to cook and serve breakfast to teens at the Edgewood Development Center.",
+    fullDescription: "Join us to cook and serve breakfast to teens at the Edgewood Development Center.",
+    image: seniorVisitImg,
+    category: "community"
+  },
+  {
     id: 8,
     title: "Monthly Meeting",
     date: "2026-03-10",
