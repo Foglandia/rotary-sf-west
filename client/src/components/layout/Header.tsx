@@ -171,7 +171,6 @@ export function Header() {
           <NavLink href="/join-us">
             Membership
           </NavLink>
-          <NavLink href="/blog">Blog</NavLink>
         </nav>
 
         {/* Right Actions */}
@@ -221,7 +220,6 @@ export function Header() {
                   <div className="space-y-3">
                     <Link href="/join-us"><span className="text-lg font-medium cursor-pointer block">Membership</span></Link>
                   </div>
-                  <Link href="/blog"><span className="text-lg font-medium cursor-pointer">Blog</span></Link>
                   <div className="flex gap-4 mt-4 pt-4 border-t">
                     <a href="https://www.facebook.com/RCofSFW" target="_blank" rel="noopener noreferrer"><FacebookIcon /></a>
                     <a href="https://www.instagram.com/rcsfwest/" target="_blank" rel="noopener noreferrer"><InstagramIconBetter /></a>

@@ -9,7 +9,6 @@ import Contact from "@/pages/Contact";
 import About from "@/pages/About";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsOfUse from "@/pages/TermsOfUse";
-import Blog from "@/pages/Blog";
 import Leadership from "@/pages/Leadership";
 import JoinUs from "@/pages/JoinUs";
 import Activities from "@/pages/Activities";
@@ -25,7 +24,6 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms-of-use" component={TermsOfUse} />
-      <Route path="/blog" component={Blog} />
       <Route path="/leadership" component={Leadership} />
       <Route path="/join-us" component={JoinUs} />
       <Route path="/activities" component={Activities} />
@@ -33,7 +31,6 @@ function Router() {
       <Route path="/activity/:id" component={ActivityDetail} />
       <Route path="/social-events" component={SocialEvents} />
       <Route path="/membership" component={JoinUs} />
-      <Route path="/blog" component={Home} />
       
       <Route component={NotFound} />
     </Switch>
