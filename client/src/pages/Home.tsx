@@ -70,37 +70,6 @@ import mlk3Img from "@assets/Rotary_202601_003_MaryNotsch_FrankMoreman_MLKDayEve
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
   {
-    id: 1,
-    title: "Woodland Canyon Creek Restoration",
-    date: "Feb 21, 2026",
-    time: "8:45 AM - 12:30 PM",
-    location: "Woods Lot, 100 Medical Center Way, San Francisco",
-    description: "Come join us on Mount Sutro for a morning in habitat restoration activities and help us uncover Woodland Canyon Creek! For more info visit https://www.sutrostewards.org/events",
-    image: trailRepairImg,
-    category: "community"
-  },
-  {
-    id: 2,
-    title: "Help out at the Farm!",
-    date: "Feb 28, 2026",
-    time: "10:00 AM - 1:00 PM",
-    location: "Florence Fang Community Farm, 1 Diana Street, San Francisco",
-    description: "Join Rotary team members to weed, plant, dig, and grow at the farm! Be sure to wear comfortable clothes and shoes.",
-    fullDescription: "Join Rotary team members to weed, plant, dig, and grow at the farm! Be sure to wear comfortable clothes and shoes.\n\nFlorence Fang Community Farm is the biggest community farm and the second most productive urban farm in San Francisco.\n\nWatch this video to learn more: https://youtu.be/3oN9SEjOOO4?si=cQua4gx2kF36UgB4",
-    image: foodDriveImg,
-    category: "community"
-  },
-  {
-    id: 6,
-    title: "Ocean Beach Cleanup",
-    date: "Mar 7, 2026",
-    time: "10:00 AM - 1:00 PM",
-    location: "Ocean Beach, Stairwell 17",
-    description: "Come join the fun and help conserve and protect our beautiful public beaches! For more info visit https://www.parksconservancy.org/events/ocean-beach/ocean-beach-clean-ups",
-    image: beachCleanupImg,
-    category: "community"
-  },
-  {
     id: 8,
     title: "Monthly Meeting",
     date: "Mar 10, 2026",

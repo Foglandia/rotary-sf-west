@@ -58,19 +58,6 @@ export const activities: Activity[] = [
     category: "meeting"
   },
   {
-    id: 1,
-    title: "Woodland Canyon Creek Restoration",
-    date: "2026-02-21",
-    displayDate: "Feb 21, 2026",
-    time: "8:45 AM - 12:30 PM",
-    location: "Woods Lot, 100 Medical Center Way",
-    address: "Woods Lot, 100 Medical Center Way, San Francisco",
-    description: "Come join us on Mount Sutro for a morning in habitat restoration activities and help us uncover Woodland Canyon Creek! For more info visit https://www.sutrostewards.org/events",
-    fullDescription: "Come join us on Mount Sutro for a morning in habitat restoration activities and help us uncover Woodland Canyon Creek!\n\nThis is a family-friendly event and all ages are welcome to participate. We'll have refreshments available and will provide all necessary supplies including gloves, bags, and gardening tools.\n\nPlease wear comfortable clothes that can get dirty and closed-toe shoes. Sunscreen and water bottles are recommended.\n\nFor more information, visit https://www.sutrostewards.org/events",
-    image: trailRepairImg,
-    category: "community"
-  },
-  {
     id: 0,
     title: "Spring Food Donation",
     date: "2026-02-18",
@@ -84,19 +71,6 @@ export const activities: Activity[] = [
     category: "club"
   },
   {
-    id: 2,
-    title: "Help out at the Farm!",
-    date: "2026-02-28",
-    displayDate: "Feb 28, 2026",
-    time: "10:00 AM - 1:00 PM",
-    location: "Florence Fang Community Farm",
-    address: "1 Diana Street, San Francisco",
-    description: "Join Rotary team members to weed, plant, dig, and grow at the farm! Be sure to wear comfortable clothes and shoes.",
-    fullDescription: "Join Rotary team members to weed, plant, dig, and grow at the farm! Be sure to wear comfortable clothes and shoes.\n\nFlorence Fang Community Farm is the biggest community farm and the second most productive urban farm in San Francisco.\n\nWatch this video to learn more: https://youtu.be/3oN9SEjOOO4?si=cQua4gx2kF36UgB4",
-    image: foodDriveImg,
-    category: "community"
-  },
-  {
     id: 4,
     title: "District 5150 Interact Leadership Conference",
     date: "2026-03-19",
@@ -108,19 +82,6 @@ export const activities: Activity[] = [
     fullDescription: "Let's get cooking! All District 5150 Interactors are invited to attend this year's Winter Leadership Conference.\n\nRegistration required. Registration form and parental consent (waiver) form at https://linktr.ee/districtcouncil",
     image: galaEventImg,
     category: "other_rotary"
-  },
-  {
-    id: 6,
-    title: "Ocean Beach Cleanup",
-    date: "2026-03-07",
-    displayDate: "Mar 7, 2026",
-    time: "10:00 AM - 1:00 PM",
-    location: "Ocean Beach, Stairwell 17",
-    address: "Ocean Beach, Stairwell 17, San Francisco, CA",
-    description: "Come join the fun and help conserve and protect our beautiful public beaches! For more info visit https://www.parksconservancy.org/events/ocean-beach/ocean-beach-clean-ups",
-    fullDescription: "Come join the fun and help conserve and protect our beautiful public beaches!\n\nAll cleanup supplies will be provided. Please dress in layers as beach weather can be unpredictable. We'll celebrate our efforts with coffee and snacks afterward at a nearby café.\n\nFor more information, visit https://www.parksconservancy.org/events/ocean-beach/ocean-beach-clean-ups",
-    image: beachCleanupImg,
-    category: "community"
   },
   {
     id: 12,
