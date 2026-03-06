@@ -40,6 +40,7 @@ import angelIslandImg from "@assets/1024px-Angel_Island_(California)_17707679219
 import bookDriveImg from "@assets/TheBookWagon_Logo_1770853730388.jpg";
 import bookDrive1Img from "@assets/Rotary_20250201_001_Bookdrive_1772834648852.jpeg";
 import bookDrive2Img from "@assets/Rotary_20250201_002_Bookdrive_1772834648852.jpeg";
+import febMeetingImg from "@assets/Rotary_JanMeeting_1772834952435.jpeg";
 import foodDriveImg from "@assets/Rotary_202511_004_Thanskgiving_Turkeygiveaway_GroupShot_1770766111577.jpg";
 import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
 import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg";
@@ -211,7 +212,7 @@ const pastActivities: (typeof upcomingActivities[number] & { extraImages?: strin
     time: "7:30 AM - 8:30 AM",
     location: "Crepes on Cole",
     description: "Club members got together for breakfast. Danielle Butler from the Cole Valley Neighborhood Association gave us an overview of their organization and we discussed ways to work together.",
-    image: serviceAwardImg,
+    image: febMeetingImg,
     category: "meeting"
   },
   {
