@@ -84,6 +84,19 @@ export const activities: Activity[] = [
     category: "other_rotary"
   },
   {
+    id: 19,
+    title: "Serve Breakfast at Edgewood Development Center",
+    date: "2026-05-30",
+    displayDate: "May 30, 2026",
+    time: "9:00 AM - 11:00 AM",
+    location: "Edgewood Bayview - Hunters Point",
+    address: "3801 3rd Street, Suite 601 & 320, San Francisco",
+    description: "Join us to cook and serve breakfast to teens at the Edgewood Development Center.",
+    fullDescription: "Join us to cook and serve breakfast to teens at the Edgewood Development Center.\n\nWe will cook and serve a full breakfast to teens and young adults in residence at the Edgewood Development Center. Bring your pancake making skills!",
+    image: seniorVisitImg,
+    category: "community"
+  },
+  {
     id: 13,
     title: "Angel Island Picnic",
     date: "2026-05-03",
