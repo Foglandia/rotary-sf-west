@@ -162,24 +162,6 @@ export const activities: Activity[] = [
     category: "club"
   },
   {
-    id: 14,
-    title: "Book Wagon Book Drive",
-    date: "2026-02-01",
-    displayDate: "Feb 1 - 28, 2026",
-    time: "All Month",
-    location: "San Francisco",
-    address: "San Francisco, CA",
-    description: "We are collecting new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.",
-    fullDescription: "We are collecting new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon from February 1st through the 28th. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.\n\nDrop-off locations:\n- Simple, 915 Cole Street, San Francisco\n- Growing Up Arts & Crafts, 248 West Portal, San Francisco\n- Archbishop Riordan High School, San Francisco\n\nTo learn more or get involved visit https://www.bookwagonsf.org/get-involved",
-    image: bookDriveImg,
-    category: "club",
-    dropOffLocations: [
-      { name: "Simple", address: "915 Cole Street, San Francisco, CA" },
-      { name: "Growing Up Arts & Crafts", address: "248 West Portal, San Francisco, CA" },
-      { name: "Archbishop Riordan High School", address: "Archbishop Riordan High School, San Francisco, CA" }
-    ]
-  },
-  {
     id: 15,
     title: "Book Distribution - Cesar Chavez Elementary School",
     date: "2026-03-25",

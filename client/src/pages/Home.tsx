@@ -38,6 +38,8 @@ import carouselImg7 from "@assets/202602_001_ServiceAward_Frank_Narine_Ma_176996
 import parkCleanupImg from "@assets/communityparkcleanup_1765319980781.jpg";
 import angelIslandImg from "@assets/1024px-Angel_Island_(California)_1770767921980.jpeg";
 import bookDriveImg from "@assets/TheBookWagon_Logo_1770853730388.jpg";
+import bookDrive1Img from "@assets/Rotary_20250201_001_Bookdrive_1772834648852.jpeg";
+import bookDrive2Img from "@assets/Rotary_20250201_002_Bookdrive_1772834648852.jpeg";
 import foodDriveImg from "@assets/Rotary_202511_004_Thanskgiving_Turkeygiveaway_GroupShot_1770766111577.jpg";
 import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
 import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg";
@@ -66,17 +68,6 @@ import mlk3Img from "@assets/Rotary_202601_003_MaryNotsch_FrankMoreman_MLKDayEve
 
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
-  {
-    id: 14,
-    title: "Book Wagon Book Drive",
-    date: "Feb 1 - 28, 2026",
-    time: "All Month",
-    location: "San Francisco",
-    description: "We are collecting new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.",
-    fullDescription: "We are collecting new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.\n\nOur purpose is simple — to increase the number of books in the homes of San Francisco families. We give books away at elementary schools, clubhouses, and parks. New books are expensive and library visits are not always possible. The Book Wagon provides access to and ownership of books, building community and supporting literacy. The books we share are free, popular with young readers, culturally diverse, multilingual, and appropriate to ages from preschool to sixth grade.",
-    image: bookDriveImg,
-    category: "club"
-  },
   {
     id: 7,
     title: "Monthly Meeting",
@@ -223,6 +214,17 @@ const carouselImages = [
 ];
 
 const pastActivities: (typeof upcomingActivities[number] & { extraImages?: string[]; video?: string })[] = [
+  {
+    id: 105,
+    title: "Book Wagon Book Drive",
+    date: "Feb 1 - 28, 2026",
+    time: "All Month",
+    location: "San Francisco",
+    description: "We collected new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.",
+    image: bookDrive1Img,
+    extraImages: [bookDrive2Img],
+    category: "club"
+  },
   {
     id: 104,
     title: "MLK Day Volunteer Assistance",
