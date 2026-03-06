@@ -32,19 +32,6 @@ export interface Activity {
 
 export const activities: Activity[] = [
   {
-    id: 7,
-    title: "Monthly Meeting",
-    date: "2026-02-12",
-    displayDate: "Feb 12, 2026",
-    time: "7:30 AM - 8:30 AM",
-    location: "Crepes on Cole",
-    address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
-    description: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
-    fullDescription: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
-    image: breakfastMeetingImg,
-    category: "meeting"
-  },
-  {
     id: 8,
     title: "Monthly Meeting",
     date: "2026-03-10",

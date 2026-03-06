@@ -69,16 +69,6 @@ import mlk3Img from "@assets/Rotary_202601_003_MaryNotsch_FrankMoreman_MLKDayEve
 // Mock Data for Upcoming Activities
 const upcomingActivities = [
   {
-    id: 7,
-    title: "Monthly Meeting",
-    date: "Feb 12, 2026",
-    time: "7:30 AM - 8:30 AM",
-    location: "Crepes on Cole",
-    description: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
-    image: serviceAwardImg,
-    category: "meeting"
-  },
-  {
     id: 1,
     title: "Woodland Canyon Creek Restoration",
     date: "Feb 21, 2026",
@@ -214,6 +204,16 @@ const carouselImages = [
 ];
 
 const pastActivities: (typeof upcomingActivities[number] & { extraImages?: string[]; video?: string })[] = [
+  {
+    id: 106,
+    title: "Monthly Meeting",
+    date: "Feb 12, 2026",
+    time: "7:30 AM - 8:30 AM",
+    location: "Crepes on Cole",
+    description: "Club members got together for breakfast. Danielle Butler from the Cole Valley Neighborhood Association gave us an overview of their organization and we discussed ways to work together.",
+    image: serviceAwardImg,
+    category: "meeting"
+  },
   {
     id: 105,
     title: "Book Wagon Book Drive",
