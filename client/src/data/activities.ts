@@ -45,32 +45,6 @@ export const activities: Activity[] = [
     category: "meeting"
   },
   {
-    id: 9,
-    title: "Monthly Meeting",
-    date: "2026-04-09",
-    displayDate: "Apr 9, 2026",
-    time: "7:30 AM - 8:30 AM",
-    location: "Crepes on Cole",
-    address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117",
-    description: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
-    fullDescription: "Join us for the monthly Rotary SF West meeting. We will discuss upcoming activities.",
-    image: breakfastMeetingImg,
-    category: "meeting"
-  },
-  {
-    id: 0,
-    title: "Spring Food Donation",
-    date: "2026-02-18",
-    displayDate: "Feb 18, 2026",
-    time: "5:00 PM - 8:00 PM",
-    location: "Community Hall",
-    address: "Community Hall, San Francisco, CA",
-    description: "Help us collect and distribute food donations to families in our community. We need volunteers to help organize and hand out food to those in need.",
-    fullDescription: "Help us collect and distribute food donations to families in our community. We need volunteers to help organize and hand out food to those in need.\n\nThis event supports over 200 families in our neighborhood. Volunteers will help with food sorting and distribution. We especially need volunteers who can help with setup starting at 3:00 PM.\n\nRefreshments will be provided for all volunteers.",
-    image: christmasGiftsImg,
-    category: "club"
-  },
-  {
     id: 4,
     title: "District 5150 Interact Leadership Conference",
     date: "2026-03-19",
