@@ -42,6 +42,7 @@ import bookDrive1Img from "@assets/Rotary_20250201_001_Bookdrive_1772834648852.j
 import bookDrive2Img from "@assets/Rotary_20250201_002_Bookdrive_1772834648852.jpeg";
 import febMeetingImg from "@assets/Rotary_JanMeeting_1772834952435.jpeg";
 import pancakesImg from "@assets/pancakes_1772838707513.jpg";
+import pancakes2Img from "@assets/pancakes2_1772838853253.jpg";
 import foodDriveImg from "@assets/Rotary_202511_004_Thanskgiving_Turkeygiveaway_GroupShot_1770766111577.jpg";
 import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
 import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg";
@@ -139,7 +140,7 @@ const upcomingActivities = [
     location: "Edgewood Bayview - Hunters Point, 3801 3rd Street, Suite 601 & 320, San Francisco",
     description: "Join us to cook and serve breakfast to teens at the Edgewood Development Center.",
     fullDescription: "Join us to cook and serve breakfast to teens at the Edgewood Development Center.\n\nWe will cook and serve a full breakfast to teens and young adults in residence at the Edgewood Development Center. Bring your pancake making skills!",
-    image: seniorVisitImg,
+    image: pancakes2Img,
     category: "community"
   },
   {

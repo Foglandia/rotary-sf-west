@@ -5,6 +5,7 @@ import trailRepairImg from "@assets/20260221_WoodsideTrailRepair_1770756385281.j
 import foodDriveImg from "@assets/Rotary_202511_004_Thanskgiving_Turkeygiveaway_GroupShot_1770766111577.jpg";
 import seniorVisitImg from "@assets/seniorhomevisit_1765319920810.jpg";
 import pancakesImg from "@assets/pancakes_1772838707513.jpg";
+import pancakes2Img from "@assets/pancakes2_1772838853253.jpg";
 import galaEventImg from "@assets/stock_images/group_of_volunteers__4ab34d47.jpg";
 import readingMentorshipImg from "@assets/stock_images/volunteers_teaching__9d9025ed.jpg";
 import beachCleanupImg from "@assets/OceanBeachCleanup_1770760972338.png";
@@ -94,7 +95,7 @@ export const activities: Activity[] = [
     address: "3801 3rd Street, Suite 601 & 320, San Francisco",
     description: "Join us to cook and serve breakfast to teens at the Edgewood Development Center.",
     fullDescription: "Join us to cook and serve breakfast to teens at the Edgewood Development Center.\n\nWe will cook and serve a full breakfast to teens and young adults in residence at the Edgewood Development Center. Bring your pancake making skills!",
-    image: seniorVisitImg,
+    image: pancakes2Img,
     category: "community"
   },
   {
