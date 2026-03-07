@@ -363,18 +363,31 @@ export default function Home() {
              <section className="bg-muted/30 rounded-2xl p-6 border border-border/50 sticky top-24">
               <div className="flex flex-col gap-3">
                 {quickLinks.map((link, index) => (
-                  <a 
-                    key={index} 
-                    href={link.href}
-                    target={link.external ? "_blank" : undefined}
-                    rel={link.external ? "noopener noreferrer" : undefined}
-                    className="group flex items-center gap-2 py-2 text-foreground hover:text-primary transition-colors"
-                  >
-                    <ChevronRight className="h-4 w-4 text-[#d41367] group-hover:text-primary transition-colors" />
-                    <span className="font-medium text-base underline-offset-4 group-hover:underline">
-                      {link.label}
-                    </span>
-                  </a>
+                  link.external ? (
+                    <a 
+                      key={index} 
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-center gap-2 py-2 text-foreground hover:text-primary transition-colors"
+                    >
+                      <ChevronRight className="h-4 w-4 text-[#d41367] group-hover:text-primary transition-colors" />
+                      <span className="font-medium text-base underline-offset-4 group-hover:underline">
+                        {link.label}
+                      </span>
+                    </a>
+                  ) : (
+                    <Link 
+                      key={index} 
+                      href={link.href}
+                      className="group flex items-center gap-2 py-2 text-foreground hover:text-primary transition-colors"
+                    >
+                      <ChevronRight className="h-4 w-4 text-[#d41367] group-hover:text-primary transition-colors" />
+                      <span className="font-medium text-base underline-offset-4 group-hover:underline">
+                        {link.label}
+                      </span>
+                    </Link>
+                  )
                 ))}
               </div>
             </section>
