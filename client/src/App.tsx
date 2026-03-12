@@ -17,6 +17,10 @@ import ActivityDetail from "@/pages/ActivityDetail";
 import SocialEvents from "@/pages/SocialEvents";
 
 function Router() {
+  if (window.location.pathname.startsWith("/admin")) {
+    return null;
+  }
+
   return (
     <Switch>
       <Route path="/" component={Home} />
