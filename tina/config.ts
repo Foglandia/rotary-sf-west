@@ -8,12 +8,12 @@ export default defineConfig({
   token: process.env.TINA_TOKEN || "",
   build: {
     outputFolder: "admin",
-    publicFolder: "client/public",
+    publicFolder: "dist/public",
   },
   media: {
     tina: {
       mediaRoot: "uploads",
-      publicFolder: "client/public",
+      publicFolder: "dist/public",
     },
   },
   schema: {
