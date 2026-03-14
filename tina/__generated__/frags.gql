@@ -1,0 +1,68 @@
+fragment ActivityParts on Activity {
+  __typename
+  title
+  status
+  date
+  displayDate
+  time
+  location
+  address
+  category
+  image
+  extraImages
+  video
+  description
+  body
+}
+
+fragment LeaderParts on Leader {
+  __typename
+  name
+  role
+  image
+  bio
+  email
+  linkedin
+  order
+}
+
+fragment PageParts on Page {
+  __typename
+  title
+  slug
+  subtitle
+  heroImage
+  body
+}
+
+fragment HomePageParts on HomePage {
+  __typename
+  welcomeTitle
+  welcomeText
+  missionStatement
+  carouselImages {
+    __typename
+    src
+    alt
+  }
+  quickLinks {
+    __typename
+    label
+    href
+    external
+  }
+}
+
+fragment SiteSettingsParts on SiteSettings {
+  __typename
+  clubName
+  email
+  phone
+  meetingDay
+  meetingTime
+  meetingLocation
+  meetingAddress
+  facebookUrl
+  instagramUrl
+  youtubeUrl
+}
