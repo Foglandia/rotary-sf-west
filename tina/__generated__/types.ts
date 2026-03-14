@@ -1238,7 +1238,7 @@ export const ExperimentalGetTinaClient = () =>
   getSdk(
     generateRequester(
       createClient({
-        url: "https://content.tinajs.io/2.2/content/a85c749f-7fc9-4019-8e3f-8ccb2d0f43a5/github/main",
+        url: "https://content.tinajs.io/2.2/content/8e2ec8a2-bc61-4d2c-bfd0-7e5570731dda/github/main",
         queries,
       })
     )
