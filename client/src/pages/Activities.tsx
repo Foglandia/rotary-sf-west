@@ -5,11 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Users, GlassWater, Clock, MapPin } from "lucide-react";
 import { Link } from "wouter";
 
-// Import images
-import meetingImg from "@assets/202602_001_ServiceAward_Frank_Narine_1770766292210.jpg";
-import activityImg from "@assets/Rotary_202601_002_Narine_MaryNotsch_FrankMoreman_MLKDayEvent_1770766554161.jpg";
-import socialImg from "@assets/20250802_002_FrankMaryParty_1770766243760.jpg";
-
 export default function Activities() {
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
@@ -36,7 +31,6 @@ export default function Activities() {
 
         <div className="space-y-16 md:space-y-24">
           
-          {/* Monthly Meetings Section */}
           <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8b5cf6]/10 text-[#8b5cf6] font-medium text-sm">
@@ -79,14 +73,13 @@ export default function Activities() {
             <div className="relative">
                <div className="absolute -top-4 -right-4 w-2/3 h-2/3 bg-[#8b5cf6]/10 rounded-2xl -z-10"></div>
                <img 
-                 src={meetingImg} 
+                 src="/uploads/202602_001_ServiceAward_Frank_Narine_1770766292210.jpg" 
                  alt="Rotary Club Monthly Meeting" 
                  className="rounded-2xl shadow-lg w-3/4 object-contain mx-auto"
                />
             </div>
           </section>
 
-          {/* Club Activities Section */}
           <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="lg:order-2 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#10b981]/10 text-[#10b981] font-medium text-sm">
@@ -124,14 +117,13 @@ export default function Activities() {
             <div className="lg:order-1 relative">
                <div className="absolute -bottom-4 -left-4 w-2/3 h-2/3 bg-[#10b981]/10 rounded-2xl -z-10"></div>
                <img 
-                 src={activityImg} 
+                 src="/uploads/Rotary_202601_002_Narine_MaryNotsch_FrankMoreman_MLKDayEvent_1770766554161.jpg" 
                  alt="Volunteers working in the park" 
                  className="rounded-2xl shadow-lg w-3/4 object-contain mx-auto"
                />
             </div>
           </section>
 
-          {/* Social Events Section */}
           <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ec4899]/10 text-[#ec4899] font-medium text-sm">
@@ -154,7 +146,7 @@ export default function Activities() {
             <div className="relative">
                <div className="absolute -top-4 -right-4 w-2/3 h-2/3 bg-[#ec4899]/10 rounded-2xl -z-10"></div>
                <img 
-                 src={socialImg} 
+                 src="/uploads/20250802_002_FrankMaryParty_1770766243760.jpg" 
                  alt="Club social picnic" 
                  className="rounded-2xl shadow-lg w-full object-cover aspect-video"
                />

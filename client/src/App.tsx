@@ -32,7 +32,7 @@ function Router() {
       <Route path="/join-us" component={JoinUs} />
       <Route path="/activities" component={Activities} />
       <Route path="/activities-calendar" component={ActivitiesCalendar} />
-      <Route path="/activity/:id" component={ActivityDetail} />
+      <Route path="/activity/:slug" component={ActivityDetail} />
       <Route path="/social-events" component={SocialEvents} />
       <Route path="/membership" component={JoinUs} />
       

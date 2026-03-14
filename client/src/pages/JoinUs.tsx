@@ -9,7 +9,7 @@ import { CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
-import groupImg from "@assets/RotarySFWest_Group_1769969400809.jpeg";
+const groupImg = "/uploads/RotarySFWest_Group_1769969400809.jpeg";
 
 export default function JoinUs() {
   const { toast } = useToast();

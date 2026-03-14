@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Mail, Phone, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
-import logoImage from "@assets/RotaryLogo_transparent_1765320789572.png";
+const logoImage = "/uploads/rotary-logo.png";
 
 const XIconBetter = () => (
     <svg

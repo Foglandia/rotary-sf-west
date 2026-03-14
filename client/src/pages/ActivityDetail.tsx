@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Clock, MapPin, ArrowLeft, Users, Globe, Heart, MessageCircle } from "lucide-react";
 import { Link, useParams } from "wouter";
-import { getActivityById, getCategoryDetails } from "@/data/activities";
+import { getActivityBySlug, getCategoryDetails } from "@/lib/content";
 
 const getCategoryIcon = (category: string) => {
   switch(category) {
@@ -16,10 +16,22 @@ const getCategoryIcon = (category: string) => {
   }
 };
 
+const renderTextWithLinks = (text: string) => {
+  return text.split(/(\[.*?\]\(.*?\)|https?:\/\/[^\s]+)/g).map((part, i) => {
+    const mdMatch = part.match(/^\[(.*?)\]\((.*?)\)$/);
+    if (mdMatch) {
+      return <a key={i} href={mdMatch[2]} target="_blank" rel="noopener noreferrer" className="text-[#17458f] underline hover:text-[#3d6db8]">{mdMatch[1]}</a>;
+    }
+    if (part.match(/^https?:\/\//)) {
+      return <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-[#17458f] underline hover:text-[#3d6db8]">{part}</a>;
+    }
+    return part;
+  });
+};
+
 export default function ActivityDetail() {
-  const params = useParams<{ id: string }>();
-  const activityId = parseInt(params.id || "0");
-  const activity = getActivityById(activityId);
+  const params = useParams<{ slug: string }>();
+  const activity = getActivityBySlug(params.slug || "");
 
   if (!activity) {
     return (
@@ -48,7 +60,6 @@ export default function ActivityDetail() {
       <Header />
       
       <main className="flex-1">
-        {/* Hero Section with Image */}
         <div className="relative h-[300px] md:h-[400px] w-full overflow-hidden">
           <img 
             src={activity.image} 
@@ -70,7 +81,6 @@ export default function ActivityDetail() {
         </div>
 
         <div className="container mx-auto px-4 py-8 md:py-12">
-          {/* Back Button */}
           <Link href="/">
             <Button variant="ghost" className="mb-6 -ml-2">
               <ArrowLeft className="h-4 w-4 mr-2" />
@@ -79,9 +89,7 @@ export default function ActivityDetail() {
           </Link>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Main Content */}
             <div className="lg:col-span-2 space-y-8">
-              {/* Event Details Card */}
               <Card className="shadow-md">
                 <CardContent className="p-6">
                   <h2 className="text-xl font-heading font-bold text-primary mb-4">Event Details</h2>
@@ -126,15 +134,9 @@ export default function ActivityDetail() {
                   
                   <div className="border-t pt-6">
                     <div className="prose prose-sm max-w-none text-muted-foreground">
-                      {activity.fullDescription.split('\n\n').map((paragraph, index) => (
+                      {(activity.body || activity.description).split('\n\n').map((paragraph, index) => (
                         <p key={index} className="mb-4">
-                          {paragraph.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
-                            part.match(/^https?:\/\//) ? (
-                              <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-[#17458f] underline hover:text-[#3d6db8]">{part}</a>
-                            ) : (
-                              part
-                            )
-                          )}
+                          {renderTextWithLinks(paragraph)}
                         </p>
                       ))}
                     </div>
@@ -142,66 +144,31 @@ export default function ActivityDetail() {
                 </CardContent>
               </Card>
 
-              {/* Map Section */}
-              {activity.dropOffLocations && activity.dropOffLocations.length > 0 ? (
-                <Card className="shadow-md overflow-hidden">
-                  <CardContent className="p-0">
-                    <div className="p-4 bg-muted/30 border-b">
-                      <h2 className="text-xl font-heading font-bold text-primary flex items-center gap-2">
-                        <MapPin className="h-5 w-5" />
-                        Drop-Off Locations
-                      </h2>
-                    </div>
-                    {activity.dropOffLocations.map((loc, index) => (
-                      <div key={index} className={index > 0 ? "border-t" : ""}>
-                        <div className="p-4 bg-muted/10">
-                          <p className="font-semibold text-foreground">{loc.name}</p>
-                          <p className="text-sm text-muted-foreground">{loc.address}</p>
-                        </div>
-                        <div className="aspect-[2/1] w-full">
-                          <iframe
-                            width="100%"
-                            height="100%"
-                            style={{ border: 0 }}
-                            loading="lazy"
-                            allowFullScreen
-                            referrerPolicy="no-referrer-when-downgrade"
-                            src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(loc.address)}`}
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </CardContent>
-                </Card>
-              ) : (
-                <Card className="shadow-md overflow-hidden">
-                  <CardContent className="p-0">
-                    <div className="p-4 bg-muted/30 border-b">
-                      <h2 className="text-xl font-heading font-bold text-primary flex items-center gap-2">
-                        <MapPin className="h-5 w-5" />
-                        Location
-                      </h2>
-                      <p className="text-sm text-muted-foreground mt-1">{activity.address}</p>
-                    </div>
-                    <div className="aspect-[2/1] w-full">
-                      <iframe
-                        width="100%"
-                        height="100%"
-                        style={{ border: 0 }}
-                        loading="lazy"
-                        allowFullScreen
-                        referrerPolicy="no-referrer-when-downgrade"
-                        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${mapQuery}`}
-                      />
-                    </div>
-                  </CardContent>
-                </Card>
-              )}
+              <Card className="shadow-md overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="p-4 bg-muted/30 border-b">
+                    <h2 className="text-xl font-heading font-bold text-primary flex items-center gap-2">
+                      <MapPin className="h-5 w-5" />
+                      Location
+                    </h2>
+                    <p className="text-sm text-muted-foreground mt-1">{activity.address}</p>
+                  </div>
+                  <div className="aspect-[2/1] w-full">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      loading="lazy"
+                      allowFullScreen
+                      referrerPolicy="no-referrer-when-downgrade"
+                      src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${mapQuery}`}
+                    />
+                  </div>
+                </CardContent>
+              </Card>
             </div>
 
-            {/* Sidebar */}
             <div className="space-y-6">
-              {/* Sign Up Card */}
               <Card className={`shadow-md border-t-4 ${category.borderColor}`}>
                 <CardContent className="p-6 text-center">
                   <h3 className="text-lg font-bold text-foreground mb-2">Ready to Join?</h3>
@@ -214,7 +181,6 @@ export default function ActivityDetail() {
                 </CardContent>
               </Card>
 
-              {/* Contact Card */}
               <Card className="shadow-md">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold text-foreground mb-3">Questions?</h3>
@@ -227,7 +193,6 @@ export default function ActivityDetail() {
                 </CardContent>
               </Card>
 
-              {/* Share Card */}
               <Card className="shadow-md bg-muted/30">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold text-foreground mb-3">Spread the Word</h3>

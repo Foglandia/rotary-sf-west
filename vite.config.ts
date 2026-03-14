@@ -4,6 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { metaImagesPlugin } from "./vite-plugin-meta-images";
+import { contentPlugin } from "./vite-plugin-content";
 
 export default defineConfig({
   plugins: [
@@ -11,6 +12,7 @@ export default defineConfig({
     runtimeErrorOverlay(),
     tailwindcss(),
     metaImagesPlugin(),
+    contentPlugin(),
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
@@ -28,6 +30,7 @@ export default defineConfig({
       "@": path.resolve(import.meta.dirname, "client", "src"),
       "@shared": path.resolve(import.meta.dirname, "shared"),
       "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+      "@content": path.resolve(import.meta.dirname, "content"),
     },
   },
   css: {
@@ -46,6 +49,9 @@ export default defineConfig({
     fs: {
       strict: true,
       deny: ["**/.*"],
+      allow: [
+        path.resolve(import.meta.dirname, "content"),
+      ],
     },
   },
 });

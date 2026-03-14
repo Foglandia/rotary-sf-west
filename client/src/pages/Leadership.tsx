@@ -4,64 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-
-import presidentImg from "@assets/NarineHeadshot_1765331555432.jpeg";
-import treasurerImg from "@assets/Ken_Lai_Headshot_1769795085503.jpg";
-import membershipImg from "@assets/Mary_Notsch_headshot_1769795201406.jpeg";
-import communityServiceImg from "@assets/Frank_Moreman_Headshot_1769795317278.jpg";
-import youthServicesImg from "@assets/RobertJocson_Headshot_1769795497883.jpeg";
-import foundationImg from "@assets/Bill_Gilmore_Headshot_1769795602195.jpg";
-
-const leadershipTeam = [
-  {
-    name: "Narine Kerelian",
-    role: "President",
-    image: presidentImg,
-    bio: "Narine leads Rotary SF West with a vision for inclusive community service and impactful local projects. She also provides leadership and support for the Rotary SF West Board.",
-    email: "narine.kerelian@example.com",
-    linkedin: "https://www.linkedin.com/in/narine-n-kerelian-ph-d-15902915/"
-  },
-  {
-    name: "Ken Lai",
-    role: "Treasurer",
-    image: treasurerImg,
-    bio: "Ken brings extensive financial expertise to our board. He ensures our club's resources are managed transparently and effectively to maximize our contribution to the community.",
-    email: "ken.lai@example.com",
-    linkedin: "#"
-  },
-  {
-    name: "Mary Notsch",
-    role: "Membership Chair",
-    image: membershipImg,
-    bio: "Mary recruits new members and welcomes them to the club. She is responsible for new member onboarding.",
-    email: "mary.notsch@example.com",
-    linkedin: "https://www.linkedin.com/in/mary-b-notsch-2489129/"
-  },
-  {
-    name: "Frank Moreman",
-    role: "Community Service",
-    image: communityServiceImg,
-    bio: "Frank coordinates our community service projects and ensures our club continues to make a positive impact in San Francisco.",
-    email: "frank.moreman@example.com",
-    linkedin: "#"
-  },
-  {
-    name: "Robert Jocson",
-    role: "Youth Services/Secretary",
-    image: youthServicesImg,
-    bio: "Robert oversees our youth programs and serves as club secretary, keeping our records organized and our meetings running smoothly.",
-    email: "robert.jocson@example.com",
-    linkedin: "#"
-  },
-  {
-    name: "Bill Glimore",
-    role: "Foundation Chair",
-    image: foundationImg,
-    bio: "Bill leads our foundation initiatives and helps connect our local efforts with Rotary International's global mission.",
-    email: "bill.glimore@example.com",
-    linkedin: "#"
-  }
-];
+import { leaders } from "@/lib/content";
 
 export default function Leadership() {
   return (
@@ -82,7 +25,7 @@ export default function Leadership() {
         </section>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {leadershipTeam.map((leader, index) => (
+          {leaders.map((leader, index) => (
             <Card key={index} className="overflow-hidden border-border/50 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
               <div className="aspect-square relative overflow-hidden bg-muted">
                 <img 
