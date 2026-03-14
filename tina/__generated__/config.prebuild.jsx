@@ -1,18 +1,18 @@
 // tina/config.ts
 import { defineConfig } from "tinacms";
-var branch = process.env.GITHUB_BRANCH || process.env.VERCEL_GIT_COMMIT_REF || process.env.HEAD || "main";
+var branch = "main";
 var config_default = defineConfig({
   branch,
   clientId: process.env.TINA_CLIENT_ID || "",
   token: process.env.TINA_TOKEN || "",
   build: {
     outputFolder: "admin",
-    publicFolder: "client/public"
+    publicFolder: "dist/public"
   },
   media: {
     tina: {
       mediaRoot: "uploads",
-      publicFolder: "client/public"
+      publicFolder: "dist/public"
     }
   },
   schema: {
