@@ -2,7 +2,6 @@
 title: "Book Distribution - Cesar Chavez Elementary School"
 status: "upcoming"
 date: 2026-03-25T00:00:00.000Z
-displayDate: "Mar 25, 2026"
 time: "1:00 PM - 3:00 PM"
 location: "Cesar Chavez Elementary School, San Francisco"
 address: "Cesar Chavez Elementary School, San Francisco, CA"

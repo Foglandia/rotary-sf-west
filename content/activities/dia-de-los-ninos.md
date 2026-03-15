@@ -2,7 +2,6 @@
 title: "Dia de los Ninos Book Give-away"
 status: "upcoming"
 date: 2026-04-30T00:00:00.000Z
-displayDate: "Apr 30, 2026"
 time: "11:00 AM - 3:00 PM"
 location: "3090 23rd Street, San Francisco"
 address: "3090 23rd Street, San Francisco"

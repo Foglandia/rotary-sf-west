@@ -2,7 +2,6 @@
 title: "Serve Breakfast at Edgewood Development Center"
 status: "upcoming"
 date: 2026-05-30T00:00:00.000Z
-displayDate: "May 30, 2026"
 time: "9:00 AM - 11:00 AM"
 location: "Edgewood Bayview - Hunters Point"
 address: "3801 3rd Street, Suite 601 & 320, San Francisco"

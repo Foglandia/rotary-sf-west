@@ -13,7 +13,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible";
-import { upcomingActivities, pastActivities, homeContent, getCategoryDetails } from "@/lib/content";
+import { upcomingActivities, pastActivities, homeContent, getCategoryDetails, formatDate } from "@/lib/content";
 
 const renderTextWithLinks = (text: string) => {
   return text.split(/(\[.*?\]\(.*?\)|https?:\/\/[^\s]+)/g).map((part, i) => {
@@ -204,7 +204,7 @@ export default function Home() {
                                   {activity.location}
                               </span>
                               <div className="text-sm text-[#657f99] font-semibold uppercase tracking-wide">
-                                  {activity.displayDate} • {activity.time}
+                                  {formatDate(activity.date)} • {activity.time}
                               </div>
                           </div>
 
@@ -324,7 +324,7 @@ export default function Home() {
                                 {activity.location}
                             </span>
                             <div className="text-sm text-[#657f99] font-semibold uppercase tracking-wide">
-                                {activity.displayDate} • {activity.time}
+                                {formatDate(activity.date)} • {activity.time}
                             </div>
                         </div>
 

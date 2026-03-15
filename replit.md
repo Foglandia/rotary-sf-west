@@ -54,7 +54,6 @@ To add a new activity, create a markdown file in `content/activities/` with fron
 title: "Event Name"
 status: "upcoming"  # or "past"
 date: 2026-04-15T00:00:00.000Z
-displayDate: "Apr 15, 2026"
 time: "9:00 AM - 11:00 AM"
 location: "Location Name"
 address: "Full address"

@@ -2,7 +2,6 @@
 title: "Good Samaritan Thanksgiving Meals Give-away"
 status: "past"
 date: 2025-11-22T00:00:00.000Z
-displayDate: "Nov 22, 2025"
 time: "10:30 AM - 12:30 PM"
 location: "Good Samaritan Family Resource Center"
 address: "Good Samaritan Family Resource Center, San Francisco, CA"

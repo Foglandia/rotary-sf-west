@@ -1,9 +1,13 @@
+export function formatDate(dateStr: string): string {
+  const d = new Date(dateStr);
+  return d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+}
+
 export interface Activity {
   slug: string;
   title: string;
   status: "upcoming" | "past";
   date: string;
-  displayDate: string;
   time: string;
   location: string;
   address: string;
@@ -74,7 +78,6 @@ function loadActivities(): Activity[] {
       title: data.title,
       status: data.status,
       date: data.date,
-      displayDate: data.displayDate,
       time: data.time || "",
       location: data.location,
       address: data.address || data.location,

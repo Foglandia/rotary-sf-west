@@ -2,7 +2,6 @@
 title: "District 5150 Interact Leadership Conference"
 status: "upcoming"
 date: 2026-03-19T00:00:00.000Z
-displayDate: "Mar 19, 2026"
 time: "9:00 AM - 2:00 PM"
 location: "SF War Memorial Veterans Building"
 address: "401 Van Ness Avenue, San Francisco"

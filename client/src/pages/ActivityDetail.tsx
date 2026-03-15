@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Clock, MapPin, ArrowLeft, Users, Globe, Heart, MessageCircle } from "lucide-react";
 import { Link, useParams } from "wouter";
-import { getActivityBySlug, getCategoryDetails } from "@/lib/content";
+import { getActivityBySlug, getCategoryDetails, formatDate } from "@/lib/content";
 
 const getCategoryIcon = (category: string) => {
   switch(category) {
@@ -100,7 +100,7 @@ export default function ActivityDetail() {
                       </div>
                       <div>
                         <p className="text-sm text-muted-foreground">Date</p>
-                        <p className="font-semibold">{activity.displayDate}</p>
+                        <p className="font-semibold">{formatDate(activity.date)}</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">

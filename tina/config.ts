@@ -31,7 +31,6 @@ export default defineConfig({
           { type: "string", name: "title", label: "Title", required: true },
           { type: "string", name: "status", label: "Status", required: true, options: ["upcoming", "past"] },
           { type: "datetime", name: "date", label: "Date", required: true },
-          { type: "string", name: "displayDate", label: "Display Date", required: true },
           { type: "string", name: "time", label: "Time" },
           { type: "string", name: "location", label: "Location", required: true },
           { type: "string", name: "address", label: "Full Address" },

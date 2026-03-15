@@ -2,7 +2,6 @@
 title: "Book Wagon Book Drive"
 status: "past"
 date: 2026-02-01T00:00:00.000Z
-displayDate: "Feb 1 - 28, 2026"
 time: ""
 location: "San Francisco"
 address: "San Francisco, CA"

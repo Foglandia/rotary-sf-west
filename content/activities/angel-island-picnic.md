@@ -2,7 +2,6 @@
 title: "Angel Island Picnic"
 status: "upcoming"
 date: 2026-05-03T00:00:00.000Z
-displayDate: "May 3, 2026"
 time: "11:00 AM - 3:00 PM"
 location: "San Francisco Ferry Terminal"
 address: "San Francisco Ferry Terminal, San Francisco, CA"
