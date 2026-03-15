@@ -18,7 +18,6 @@ content:
             - value: past
               label: Past
       - { name: date, label: Date, type: date, required: true }
-      - { name: displayDate, label: Display Date, type: string }
       - { name: time, label: Time, type: string }
       - { name: location, label: Location, type: string, required: true }
       - { name: address, label: Address, type: string }
