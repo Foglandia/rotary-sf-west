@@ -2,6 +2,7 @@
 title: "MLK Day Volunteer Assistance"
 status: "past"
 date: 2026-01-19T00:00:00.000Z
+displayDate: "Jan 19, 2026"
 time: ""
 location: "Museum of the African Diaspora (MOAD), San Francisco"
 address: "Museum of the African Diaspora, San Francisco, CA"

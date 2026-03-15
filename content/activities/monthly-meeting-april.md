@@ -2,6 +2,7 @@
 title: "Monthly Meeting"
 status: "upcoming"
 date: 2026-04-09T00:00:00.000Z
+displayDate: "Apr 9, 2026"
 time: "7:30 AM - 8:30 AM"
 location: "Crepes on Cole"
 address: "Crepes on Cole, 100 Carl Street, San Francisco, 94117"

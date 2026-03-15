@@ -2,6 +2,7 @@
 title: "Rotary SF West Debunking Gathering"
 status: "past"
 date: 2025-08-02T00:00:00.000Z
+displayDate: "Aug 2, 2025"
 time: "5:30 PM - 8:30 PM"
 location: "San Francisco"
 address: "San Francisco, CA"

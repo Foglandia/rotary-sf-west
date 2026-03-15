@@ -2,6 +2,7 @@
 title: "Servant Leadership for Rotarians Program 2026"
 status: "upcoming"
 date: 2026-03-28T00:00:00.000Z
+displayDate: "Mar 28, 2026"
 time: "9:00 AM - 4:00 PM"
 location: "Rotary Terrace"
 address: "312 Miller Ave., South San Francisco"

@@ -2,6 +2,7 @@
 title: "Good Samaritan Christmas Gift Give-away"
 status: "past"
 date: 2025-12-18T00:00:00.000Z
+displayDate: "Dec 18, 2025"
 time: "10:00 AM - 2:00 PM"
 location: "Good Samaritan Family Resource Center"
 address: "Good Samaritan Family Resource Center, San Francisco, CA"

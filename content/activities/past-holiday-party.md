@@ -2,6 +2,7 @@
 title: "Rotary SF West Holiday Party"
 status: "past"
 date: 2025-12-07T00:00:00.000Z
+displayDate: "Dec 7, 2025"
 time: "11:00 AM - 3:00 PM"
 location: "San Francisco"
 address: "San Francisco, CA"
