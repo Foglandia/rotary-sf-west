@@ -7,28 +7,13 @@ content:
       fields: [title, status, date, location]
     fields:
       - { name: title, label: Title, type: string, required: true }
-      - name: status
-        label: Status
-        type: select
-        required: true
-        options:
-          - value: upcoming
-            label: Upcoming
-          - value: past
-            label: Past
+      - { name: status, label: Status, type: string, required: true }
       - { name: date, label: Date, type: date, required: true }
       - { name: displayDate, label: Display Date, type: string, required: true }
       - { name: time, label: Time, type: string }
       - { name: location, label: Location, type: string, required: true }
       - { name: address, label: Address, type: string }
-      - name: category
-        label: Category
-        type: select
-        options:
-          - { value: club, label: Club Activity }
-          - { value: community, label: Community Event }
-          - { value: meeting, label: Club Meeting }
-          - { value: other_rotary, label: Other Rotary Event }
+      - { name: category, label: Category, type: string }
       - { name: description, label: Description, type: text }
       - { name: image, label: Image, type: image }
       - { name: body, label: Full Description, type: rich-text }
