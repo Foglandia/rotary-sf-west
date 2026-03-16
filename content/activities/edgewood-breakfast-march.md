@@ -1,6 +1,6 @@
 ---
 title: Serve Breakfast at Edgewood Development Center
-status: upcoming
+status: past
 date: 2026-03-08
 startTime: 10:00
 startAmPm: AM
