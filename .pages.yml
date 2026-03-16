@@ -4,7 +4,7 @@ content:
     path: content/activities
     type: collection
     view:
-      fields: [title, status, date, location]
+      fields: [title, status, date, category, location]
     fields:
       - { name: title, label: Title, type: string, required: true }
       - name: status
