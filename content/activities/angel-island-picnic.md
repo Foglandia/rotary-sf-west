@@ -2,8 +2,10 @@
 title: Angel Island Picnic
 status: upcoming
 date: 2026-03-17
-displayDate: May 3, 2026
-time: 11:00 AM - 3:00 PM
+startTime: 10:00
+startAmPm: AM
+endTime: 3:00
+endAmPm: PM
 location: San Francisco Ferry Terminal
 address: San Francisco Ferry Terminal, San Francisco, CA
 category: club
