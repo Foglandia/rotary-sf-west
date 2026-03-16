@@ -98,9 +98,9 @@ content:
         options:
           values:
             - { value: club, label: Club Activity }
-            - { value: community, label: Community Event }
             - { value: meeting, label: Club Meeting }
-            - { value: other_rotary, label: Other Rotary Event }
+            - { value: community, label: Community Event }
+            - { value: other_rotary, label: Other Rotary Club Event }
       - { name: description, label: Description, type: text }
       - { name: image, label: Image, type: image }
       - { name: extraImages, label: Extra Images, type: image, list: true }
