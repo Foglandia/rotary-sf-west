@@ -1,0 +1,197 @@
+media:
+  input: client/public/uploads
+  output: /uploads
+
+content:
+  - name: activities
+    label: Activities
+    type: collection
+    path: content/activities
+    view:
+      fields: [title, status, date, category]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: status
+        label: Status
+        type: select
+        required: true
+        options:
+          values: [upcoming, past]
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: time
+        label: Time
+        type: string
+      - name: location
+        label: Location
+        type: string
+        required: true
+      - name: address
+        label: Full Address
+        type: string
+      - name: category
+        label: Category
+        type: select
+        required: true
+        options:
+          values: [club, community, meeting, other_rotary]
+      - name: image
+        label: Main Image
+        type: image
+        required: true
+      - name: extraImages
+        label: Extra Images
+        type: image
+        list: true
+      - name: video
+        label: Video URL
+        type: string
+      - name: description
+        label: Short Description
+        type: text
+        required: true
+      - name: body
+        label: Full Description
+        type: rich-text
+
+  - name: leaders
+    label: Leadership Team
+    type: collection
+    path: content/leaders
+    view:
+      fields: [name, role, order]
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: role
+        label: Role
+        type: string
+        required: true
+      - name: image
+        label: Headshot
+        type: image
+        required: true
+      - name: bio
+        label: Bio
+        type: text
+        required: true
+      - name: email
+        label: Email
+        type: string
+      - name: linkedin
+        label: LinkedIn URL
+        type: string
+      - name: order
+        label: Display Order
+        type: number
+
+  - name: pages
+    label: Pages
+    type: collection
+    path: content/pages
+    view:
+      fields: [title, slug]
+    fields:
+      - name: title
+        label: Page Title
+        type: string
+        required: true
+      - name: slug
+        label: URL Slug
+        type: string
+        required: true
+      - name: subtitle
+        label: Subtitle / Intro Text
+        type: text
+      - name: heroImage
+        label: Hero Image
+        type: image
+      - name: formUrl
+        label: External Form URL
+        type: string
+      - name: body
+        label: Page Content
+        type: rich-text
+
+  - name: home
+    label: Home Page
+    type: file
+    path: content/home/index.md
+    fields:
+      - name: welcomeTitle
+        label: Welcome Title
+        type: string
+      - name: welcomeText
+        label: Welcome Text
+        type: text
+      - name: missionStatement
+        label: Mission Statement
+        type: text
+      - name: carouselImages
+        label: Carousel Images
+        type: object
+        list: true
+        fields:
+          - name: src
+            label: Image
+            type: image
+          - name: alt
+            label: Alt Text
+            type: string
+      - name: quickLinks
+        label: Quick Links
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: href
+            label: Link URL
+            type: string
+          - name: external
+            label: Opens in new tab?
+            type: boolean
+
+  - name: settings
+    label: Site Settings
+    type: file
+    path: content/settings/global.json
+    fields:
+      - name: clubName
+        label: Club Name
+        type: string
+      - name: email
+        label: Email Address
+        type: string
+      - name: phone
+        label: Phone Number
+        type: string
+      - name: meetingDay
+        label: Meeting Day
+        type: string
+      - name: meetingTime
+        label: Meeting Time
+        type: string
+      - name: meetingLocation
+        label: Meeting Location
+        type: string
+      - name: meetingAddress
+        label: Meeting Address
+        type: string
+      - name: facebookUrl
+        label: Facebook URL
+        type: string
+      - name: instagramUrl
+        label: Instagram URL
+        type: string
+      - name: youtubeUrl
+        label: YouTube URL
+        type: string

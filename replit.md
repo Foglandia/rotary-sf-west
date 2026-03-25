@@ -5,8 +5,10 @@ A full-stack website for Rotary San Francisco West, a volunteer service organiza
 
 ## Architecture
 
-### Content Management (TinaCMS)
+### Content Management (Pages CMS)
 Content is managed through markdown files in the `content/` directory, processed at build time by a custom Vite plugin (`vite-plugin-content.ts`) that converts markdown frontmatter to importable JSON modules.
+
+The CMS admin UI is configured via Pages CMS (pagescms.org) at `client/public/admin/config.yml`.
 
 **Content directory structure:**
 - `content/activities/` - Activity markdown files (upcoming and past)
@@ -14,8 +16,6 @@ Content is managed through markdown files in the `content/` directory, processed
 - `content/pages/` - Static page content (about, contact, join-us)
 - `content/home/` - Home page configuration (carousel, quick links)
 - `content/settings/` - Site-wide settings (contact info, social links)
-
-**TinaCMS configuration:** `tina/config.ts` defines collection schemas for the admin panel.
 
 ### Content Loading
 - `client/src/lib/content.ts` - Central content loading module using `import.meta.glob` to load all markdown content at build time
@@ -31,16 +31,16 @@ Content is managed through markdown files in the `content/` directory, processed
 ## Tech Stack
 - **Frontend:** React 19, Vite 7, Tailwind CSS 4, shadcn/ui components, wouter (routing)
 - **Backend:** Express 4, PostgreSQL (Drizzle ORM)
-- **Content:** TinaCMS with markdown files, gray-matter for parsing
+- **Content:** Pages CMS with markdown files, gray-matter for parsing
 - **UI Components:** Radix UI primitives, Lucide icons, Embla carousel
 
 ## Key Files
 - `vite.config.ts` - Vite configuration with content plugin and aliases
 - `vite-plugin-content.ts` - Custom Vite plugin transforming .md to JSON modules
 - `client/src/lib/content.ts` - Content loading and type definitions
+- `client/public/admin/config.yml` - Pages CMS collection schemas
 - `client/src/pages/Home.tsx` - Homepage with carousel, activities, quick links
 - `client/src/pages/ActivityDetail.tsx` - Individual activity detail page (slug-based routing)
-- `tina/config.ts` - TinaCMS collection schemas
 
 ## Design
 - Primary blue: `#17458f`
