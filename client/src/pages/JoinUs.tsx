@@ -1,85 +1,18 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { CheckCircle2 } from "lucide-react";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CheckCircle2, ExternalLink } from "lucide-react";
 
 const groupImg = "/uploads/RotarySFWest_Group_1769969400809.jpeg";
+const GOOGLE_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSeBoXzfh3yePzM0kYAWgdUUgDm_EtKm5OWiBmyWRdsrH-zs7g/viewform?usp=header";
 
 export default function JoinUs() {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    address: "",
-    reason: "",
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.id]: e.target.value
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const response = await fetch("/api/membership-inquiry", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        toast({
-          title: "Application Submitted!",
-          description: "Thank you for your interest. Our Recruitment Lead will contact you soon.",
-        });
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phone: "",
-          address: "",
-          reason: "",
-        });
-      } else {
-        toast({
-          title: "Submission Failed",
-          description: data.error || "Please try again later.",
-          variant: "destructive",
-        });
-      }
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "Unable to submit application. Please try again.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
       <Header />
-      
+
       <main className="flex-1 container mx-auto px-4 py-8 md:py-12">
         <section className="mb-12 max-w-4xl mx-auto">
           <div className="space-y-8">
@@ -96,9 +29,9 @@ export default function JoinUs() {
             </div>
             <div className="relative max-w-3xl mx-auto">
               <div className="absolute -bottom-4 -right-4 w-2/3 h-2/3 bg-primary/10 rounded-2xl -z-10"></div>
-              <img 
-                src={groupImg} 
-                alt="Rotary San Francisco West members group photo" 
+              <img
+                src={groupImg}
+                alt="Rotary San Francisco West members group photo"
                 className="rounded-2xl shadow-lg w-full object-cover"
               />
             </div>
@@ -108,137 +41,51 @@ export default function JoinUs() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Benefits / Info Column */}
           <div className="lg:col-span-1 space-y-6">
-             <Card className="bg-primary/5 border-primary/20 shadow-sm">
-                <CardHeader>
-                  <CardTitle className="text-xl font-bold text-primary">Why Join?</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
-                    <p className="text-sm">Connect with diverse professionals and community leaders.</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
-                    <p className="text-sm">Make a tangible impact through hands-on service projects.</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
-                    <p className="text-sm">Develop leadership skills and professional growth.</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
-                    <p className="text-sm">Enjoy social events, dinners, and fun outings.</p>
-                  </div>
-                </CardContent>
-             </Card>
+            <Card className="bg-primary/5 border-primary/20 shadow-sm">
+              <CardHeader>
+                <CardTitle className="text-xl font-bold text-primary">Why Join?</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
+                  <p className="text-sm">Connect with diverse professionals and community leaders.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
+                  <p className="text-sm">Make a tangible impact through hands-on service projects.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
+                  <p className="text-sm">Develop leadership skills and professional growth.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
+                  <p className="text-sm">Enjoy social events, dinners, and fun outings.</p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
-          {/* Application Form */}
+          {/* Membership Interest Form Link */}
           <div className="lg:col-span-2">
-            <Card className="border-border/50 shadow-md">
-              <CardHeader>
-                <CardTitle className="text-2xl font-bold">Membership Interest Form</CardTitle>
-                <CardDescription>
-                  Please fill out the details below and our Recruitment Lead will get in touch with you shortly.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form className="space-y-6" onSubmit={handleSubmit}>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <Label htmlFor="firstName">First Name <span className="text-red-500">*</span></Label>
-                      <Input 
-                        id="firstName" 
-                        placeholder="Jane" 
-                        required 
-                        value={formData.firstName}
-                        onChange={handleChange}
-                        data-testid="input-firstName"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="lastName">Last Name <span className="text-red-500">*</span></Label>
-                      <Input 
-                        id="lastName" 
-                        placeholder="Doe" 
-                        required 
-                        value={formData.lastName}
-                        onChange={handleChange}
-                        data-testid="input-lastName"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email Address <span className="text-red-500">*</span></Label>
-                      <Input 
-                        id="email" 
-                        type="email" 
-                        placeholder="jane@example.com" 
-                        required 
-                        value={formData.email}
-                        onChange={handleChange}
-                        data-testid="input-email"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Phone Number <span className="text-red-500">*</span></Label>
-                      <Input 
-                        id="phone" 
-                        type="tel" 
-                        placeholder="(555) 123-4567" 
-                        required
-                        value={formData.phone}
-                        onChange={handleChange}
-                        data-testid="input-phone"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="address">Address <span className="text-red-500">*</span></Label>
-                    <Input 
-                      id="address" 
-                      placeholder="123 Main St, San Francisco, CA 94117" 
-                      required 
-                      value={formData.address}
-                      onChange={handleChange}
-                      data-testid="input-address"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="reason">Why do you want to join Rotary? <span className="text-red-500">*</span></Label>
-                    <Textarea 
-                      id="reason" 
-                      placeholder="Tell us a bit about your interests and what you hope to gain from membership..." 
-                      className="min-h-[120px]"
-                      required
-                      value={formData.reason}
-                      onChange={handleChange}
-                      data-testid="input-reason"
-                    />
-                  </div>
-
-                  <div className="pt-4">
-                    <Button 
-                      type="submit" 
-                      size="lg" 
-                      className="w-full md:w-auto px-8"
-                      disabled={isSubmitting}
-                      data-testid="button-submit"
-                    >
-                      {isSubmitting ? "Submitting..." : "Submit Application"}
-                    </Button>
-                  </div>
-                </form>
+            <Card className="border-border/50 shadow-md h-full flex flex-col justify-center">
+              <CardContent className="p-10 flex flex-col items-center text-center gap-6">
+                <h2 className="text-2xl font-bold text-foreground">Membership Interest Form</h2>
+                <p className="text-muted-foreground max-w-md">
+                  Ready to take the next step? Fill out our membership interest form and our Recruitment Lead will get in touch with you shortly.
+                </p>
+                <Button size="lg" className="px-8 shadow-md gap-2" asChild>
+                  <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" data-testid="link-membership-form">
+                    Open Membership Form
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                </Button>
               </CardContent>
             </Card>
           </div>
         </div>
       </main>
-      
+
       <Footer />
     </div>
   );
