@@ -1,8 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, ExternalLink } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { pages } from "@/lib/content";
 
 const page = pages["join-us"];
@@ -22,9 +21,9 @@ export default function JoinUs() {
                 </h1>
                 <div className="h-1 w-20 bg-[#d41367] rounded-full mx-auto"></div>
               </div>
-              {page?.subtitle && (
+              {page?.body && (
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  {page.subtitle}
+                  {page.body}
                 </p>
               )}
             </div>
@@ -33,7 +32,7 @@ export default function JoinUs() {
                 <div className="absolute -bottom-4 -right-4 w-2/3 h-2/3 bg-primary/10 rounded-2xl -z-10"></div>
                 <img
                   src={page.heroImage}
-                  alt="Rotary San Francisco West members group photo"
+                  alt={`${page.title} hero image`}
                   className="rounded-2xl shadow-lg w-full object-cover"
                 />
               </div>
@@ -69,29 +68,25 @@ export default function JoinUs() {
             </Card>
           </div>
 
-          {/* Membership Interest Form */}
+          {/* Google Form Embed */}
           <div className="lg:col-span-2">
-            <Card className="border-border/50 shadow-md h-full flex flex-col justify-center">
-              <CardContent className="p-10 flex flex-col items-center text-center gap-6">
-                <h2 className="text-2xl font-bold text-foreground">Membership Interest Form</h2>
-                <p className="text-muted-foreground max-w-md">
-                  Ready to take the next step? Fill out our membership interest form and our Recruitment Lead will get in touch with you shortly.
-                </p>
-                {page?.formUrl ? (
-                  <Button size="lg" className="px-8 shadow-md gap-2" asChild>
-                    <a
-                      href={page.formUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      data-testid="link-membership-form"
-                    >
-                      Open Membership Form
-                      <ExternalLink className="h-4 w-4" />
-                    </a>
-                  </Button>
-                ) : null}
-              </CardContent>
-            </Card>
+            <div className="rounded-2xl border border-border/50 shadow-md overflow-hidden bg-white">
+              {page?.formUrl ? (
+                <iframe
+                  src={page.formUrl}
+                  width="100%"
+                  height="800"
+                  frameBorder="0"
+                  marginHeight={0}
+                  marginWidth={0}
+                  title="Membership Interest Form"
+                  className="block"
+                  data-testid="iframe-membership-form"
+                >
+                  Loading form…
+                </iframe>
+              ) : null}
+            </div>
           </div>
         </div>
       </main>
