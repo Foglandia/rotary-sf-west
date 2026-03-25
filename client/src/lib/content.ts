@@ -34,6 +34,7 @@ export interface PageContent {
   slug: string;
   subtitle?: string;
   heroImage?: string;
+  formUrl?: string;
   body: string;
 }
 
@@ -118,6 +119,7 @@ function loadPages(): Record<string, PageContent> {
       slug,
       subtitle: data.subtitle,
       heroImage: data.heroImage,
+      formUrl: data.formUrl,
       body: data.body || "",
     };
   }

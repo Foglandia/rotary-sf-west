@@ -67,6 +67,7 @@ export default defineConfig({
           { type: "string", name: "slug", label: "URL Slug", required: true },
           { type: "string", name: "subtitle", label: "Subtitle", ui: { component: "textarea" } },
           { type: "image", name: "heroImage", label: "Hero Image" },
+          { type: "string", name: "formUrl", label: "External Form URL" },
           { type: "rich-text", name: "body", label: "Page Content", isBody: true },
         ],
       },
