@@ -1,3 +1,5 @@
+site_url: https://rotaryclubsfwest.org
+
 media:
   input: client/public/uploads
   output: /uploads
