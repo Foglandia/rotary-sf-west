@@ -146,84 +146,16 @@ export default function Contact() {
           {/* Contact Form */}
           <div className="space-y-8">
             <h2 className="text-2xl font-heading font-bold text-primary">Send a Message</h2>
-            <Card className="border shadow-md">
-              <CardContent className="p-6 md:p-8">
-                <form className="space-y-6" onSubmit={handleSubmit}>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <label htmlFor="firstName" className="text-sm font-medium text-foreground">First Name <span className="text-red-500">*</span></label>
-                      <Input 
-                        id="firstName" 
-                        placeholder="John" 
-                        required 
-                        value={formData.firstName}
-                        onChange={handleChange}
-                        data-testid="input-firstName"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label htmlFor="lastName" className="text-sm font-medium text-foreground">Last Name <span className="text-red-500">*</span></label>
-                      <Input 
-                        id="lastName" 
-                        placeholder="Doe" 
-                        required 
-                        value={formData.lastName}
-                        onChange={handleChange}
-                        data-testid="input-lastName"
-                      />
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-foreground">Email Address <span className="text-red-500">*</span></label>
-                    <Input 
-                      id="email" 
-                      type="email" 
-                      placeholder="john@example.com" 
-                      required 
-                      value={formData.email}
-                      onChange={handleChange}
-                      data-testid="input-email"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="subject" className="text-sm font-medium text-foreground">Subject <span className="text-red-500">*</span></label>
-                    <Input 
-                      id="subject" 
-                      placeholder="How can we help?" 
-                      required 
-                      value={formData.subject}
-                      onChange={handleChange}
-                      data-testid="input-subject"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium text-foreground">Message <span className="text-red-500">*</span></label>
-                    <Textarea 
-                      id="message" 
-                      placeholder="Tell us more about your inquiry..." 
-                      className="min-h-[150px]"
-                      required 
-                      value={formData.message}
-                      onChange={handleChange}
-                      data-testid="input-message"
-                    />
-                  </div>
-
-                  <Button 
-                    type="submit" 
-                    className="w-full md:w-auto font-semibold"
-                    disabled={isSubmitting}
-                    data-testid="button-submit"
-                  >
-                    <Send className="mr-2 h-4 w-4" />
-                    {isSubmitting ? "Sending..." : "Send Message"}
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSehU60VmmUvQo523T2sN360BwUYfWsYD0u3leMhcnH_mjQeng/viewform?embedded=true"
+              width="100%"
+              height="800"
+              frameBorder="0"
+              marginHeight={0}
+              marginWidth={0}
+            >
+              Loading…
+            </iframe>
           </div>
         </div>
       </main>
