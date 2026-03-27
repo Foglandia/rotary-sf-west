@@ -35,7 +35,7 @@ const monthNames = [
 ];
 
 export default function ActivitiesCalendar() {
-  const [currentDate, setCurrentDate] = useState(new Date(2026, 1, 1));
+  const [currentDate, setCurrentDate] = useState(() => { const d = new Date(); return new Date(d.getFullYear(), d.getMonth(), 1); });
   const [viewMode, setViewMode] = useState<"calendar" | "list">("calendar");
   
   const year = currentDate.getFullYear();
