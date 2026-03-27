@@ -1,0 +1,160 @@
+site_url: https://rotaryclubsfwest.org
+
+media:
+  input: client/public/uploads
+  output: /uploads
+
+content:
+  - name: activities
+    label: Activities
+    type: collection
+    path: content/activities
+    view:
+      fields: [title, status, date, category]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: status
+        label: Status
+        type: select
+        required: true
+        options:
+          values: [upcoming, past]
+      - name: date
+        label: Date
+        type: date
+      - name: startTime
+        label: Start Time
+        type: string
+      - name: startAmPm
+        label: Start AM/PM
+        type: select
+        options:
+          values: [AM, PM]
+      - name: endTime
+        label: End Time
+        type: string
+      - name: endAmPm
+        label: End AM/PM
+        type: select
+        options:
+          values: [AM, PM]
+      - name: location
+        label: Location
+        type: string
+      - name: address
+        label: Full Address
+        type: string
+      - name: category
+        label: Category
+        type: select
+        options:
+          values: [club, community, meeting, other_rotary]
+      - name: image
+        label: Main Image
+        type: image
+      - name: description
+        label: Short Description
+        type: text
+      - name: body
+        label: Full Description
+        type: rich-text
+
+  - name: leaders
+    label: Leadership Team
+    type: collection
+    path: content/leaders
+    view:
+      fields: [name, role, order]
+    fields:
+      - name: name
+        label: Name
+        type: string
+      - name: role
+        label: Role
+        type: string
+      - name: image
+        label: Headshot
+        type: image
+      - name: bio
+        label: Bio
+        type: text
+      - name: email
+        label: Email
+        type: string
+      - name: order
+        label: Display Order
+        type: number
+
+  - name: pages
+    label: Pages
+    type: collection
+    path: content/pages
+    view:
+      fields: [title, slug]
+    fields:
+      - name: title
+        label: Page Title
+        type: string
+      - name: slug
+        label: URL Slug
+        type: string
+      - name: subtitle
+        label: Subtitle
+        type: text
+      - name: body
+        label: Page Content
+        type: rich-text
+
+  - name: home
+    label: Home Page
+    type: file
+    path: content/home/index.md
+    fields:
+      - name: welcomeTitle
+        label: Welcome Title
+        type: string
+      - name: welcomeText
+        label: Welcome Text
+        type: text
+      - name: missionStatement
+        label: Mission Statement
+        type: text
+
+  - name: settings
+    label: Site Settings
+    type: file
+    path: content/settings/global.json
+    fields:
+      - name: clubName
+        label: Club Name
+        type: string
+      - name: email
+        label: Email Address
+        type: string
+      - name: phone
+        label: Phone Number
+        type: string
+      - name: meetingDay
+        label: Meeting Day
+        type: string
+      - name: meetingTime
+        label: Meeting Time
+        type: string
+      - name: meetingLocation
+        label: Meeting Location
+        type: string
+      - name: meetingAddress
+        label: Meeting Address
+        type: string
+      - name: facebookUrl
+        label: Facebook URL
+        type: string
+      - name: instagramUrl
+        label: Instagram URL
+        type: string
+      - name: youtubeUrl
+        label: YouTube URL
+        type: string
