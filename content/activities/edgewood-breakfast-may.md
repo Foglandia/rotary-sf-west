@@ -8,7 +8,7 @@ endTime: 11:00
 endAmPm: AM
 location: Edgewood Bayview - Hunters Point
 address: 3801 3rd Street, Suite 601 & 320, San Francisco
-category: community
+category: club
 image: /uploads/pancakes2_1772838853253.jpg
 description: Join us to cook and serve breakfast to teens at the Edgewood
   Development Center.
