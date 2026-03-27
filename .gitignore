@@ -4,3 +4,7 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+
+# Managed by Pages CMS / GitHub directly — never overwrite from Replit
+.pages.yml
+content/
