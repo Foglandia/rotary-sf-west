@@ -152,9 +152,4 @@ content:
       - name: facebookUrl
         label: Facebook URL
         type: string
-      - name: instagramUrl
-        label: Instagram URL
-        type: string
-      - name: youtubeUrl
-        label: YouTube URL
-        type: string
+      - name: i
