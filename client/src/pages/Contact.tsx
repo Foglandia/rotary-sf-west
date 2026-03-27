@@ -147,7 +147,7 @@ export default function Contact() {
           <div className="space-y-8">
             <h2 className="text-2xl font-heading font-bold text-primary">Send a Message</h2>
             <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSehU60VmmUvQo523T2sN360BwUYfWsYD0u3leMhcnH_mjQeng/viewform?embedded=true"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdOJtcPY3wJgMhli7LJjg-Yc3uK5nK_7qt3WsAGtKiBW3-8FQ/viewform?embedded=true"
               width="100%"
               height="800"
               frameBorder="0"
