@@ -1,7 +1,11 @@
 ---
 title: Good Samaritan Thanksgiving Meals Give-away
 status: past
-date: 2026-03-27
+date: 2025-12-27
+startTime: 10:00
+startAmPm: AM
+endTime: 2:00
+endAmPm: PM
 location: Good Samaritan Family Resource Center
 address: Good Samaritan Family Resource Center, San Francisco, CA
 category: club
