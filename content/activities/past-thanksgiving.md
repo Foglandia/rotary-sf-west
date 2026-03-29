@@ -1,7 +1,7 @@
 ---
 title: Good Samaritan Thanksgiving Meals Give-away
 status: past
-date: 2025-12-27
+date: 2025-11-21
 startTime: 10:00
 startAmPm: AM
 endTime: 2:00
