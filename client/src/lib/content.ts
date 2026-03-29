@@ -80,7 +80,11 @@ function loadActivities(): Activity[] {
       title: data.title,
       status: data.status,
       date: data.date,
-      time: data.time || "",
+      time: data.startTime && data.startAmPm ? `${data.startTime} ${data.startAmPm}${data.endTime && data.endAmPm ? ` – ${data.endTime} ${data.endAmPm}` : ""}` : data.time || "",
+```
+Make both edits in GitHub using the pencil icon, commit, then trigger Cloudflare:
+```
+curl -d "" "https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/b4322ff1-6056-4616-9211-24cac35055df"
       location: data.location,
       address: data.address || data.location,
       category: data.category,
