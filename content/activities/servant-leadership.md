@@ -1,7 +1,7 @@
 ---
 title: Servant Leadership for Rotarians Program 2026
 status: past
-date: 2026-03-27
+date: 2026-03-28
 startTime: 9:00
 startAmPm: AM
 endTime: 4:00
