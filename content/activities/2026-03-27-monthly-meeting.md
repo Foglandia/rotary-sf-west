@@ -1,5 +1,5 @@
 ---
-title: Monthly Meeting
+title: April Monthly Meeting
 status: upcoming
 date: 2026-04-09
 startTime: 7:30
