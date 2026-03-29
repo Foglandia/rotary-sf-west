@@ -1,5 +1,11 @@
 export function formatDate(dateStr: string): string {
-  const [year, month, day] = dateStr.split("-").map(Number);
+  if (!dateStr) return "";
+  const str = String(dateStr);
+  const parts = str.split("-");
+  if (parts.length !== 3) return str;
+  const year = parseInt(parts[0], 10);
+  const month = parseInt(parts[1], 10);
+  const day = parseInt(parts[2], 10);
   const d = new Date(year, month - 1, day);
   return d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 }
@@ -80,7 +86,7 @@ function loadActivities(): Activity[] {
       title: data.title,
       status: data.status,
       date: data.date,
-      time: data.startTime && data.startAmPm ? `${data.startTime} ${data.startAmPm}${data.endTime && data.endAmPm ? ` – ${data.endTime} ${data.endAmPm}` : ""}` : data.time || "",
+      time: data.startTime && data.startAmPm ? `${data.startTime} ${data.startAmPm}${data.endTime && data.endAmPm ? ` - ${data.endTime} ${data.endAmPm}` : ""}` : data.time || "",
       location: data.location,
       address: data.address || data.location,
       category: data.category,
