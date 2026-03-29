@@ -86,7 +86,24 @@ function loadActivities(): Activity[] {
       title: data.title,
       status: data.status,
       date: data.date,
-      time: data.startTime && data.startAmPm ? `${data.startTime} ${data.startAmPm}${data.endTime && data.endAmPm ? ` - ${data.endTime} ${data.endAmPm}` : ""}` : data.time || "",
+     time: (() => {
+        const toTime = (t: any) => {
+          if (!t) return "";
+          const n = Number(t);
+          if (!isNaN(n) && String(t).length <= 4 && !String(t).includes(":")) {
+            const h = Math.floor(n / 60);
+            const m = n % 60;
+            return `${h}:${m.toString().padStart(2, "0")}`;
+          }
+          return String(t);
+        };
+        const start = toTime(data.startTime);
+        const end = toTime(data.endTime);
+        if (start && data.startAmPm) {
+          return end && data.endAmPm ? `${start} ${data.startAmPm} - ${end} ${data.endAmPm}` : `${start} ${data.startAmPm}`;
+        }
+        return data.time || "";
+      })(),
       location: data.location,
       address: data.address || data.location,
       category: data.category,
