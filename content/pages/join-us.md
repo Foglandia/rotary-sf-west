@@ -2,7 +2,7 @@
 title: "Join the Club"
 slug: "join-us"
 subtitle: "Become part of Rotary SF West"
-heroImage: /uploads/RotarySFWest_Group_1769969400809.jpeg
+heroImage: /uploads/Rotary_202511_004_Thanskgiving_Turkeygiveaway_GroupShot_1769799672468.jpg
 formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeBoXzfh3yePzM0kYAWgdUUgDm_EtKm5OWiBmyWRdsrH-zs7g/viewform?embedded=true"
 ---
 
