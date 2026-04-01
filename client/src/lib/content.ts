@@ -84,7 +84,13 @@ function loadActivities(): Activity[] {
     return {
       slug: getSlug(path),
       title: data.title,
-      status: data.status,
+      status: (() => {
+        const [y, m, d] = String(data.date).split("-").map(Number);
+        const activityDate = new Date(y, m - 1, d);
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        return activityDate < today ? "past" : "upcoming";
+      })(),
       date: data.date,
      time: (() => {
         const toTime = (t: any) => {
