@@ -1,11 +1,6 @@
-export function formatDate(dateStr: any): string {
+export function formatDate(dateStr: string): string {
   if (!dateStr) return "";
-  let str: string;
-  if (dateStr instanceof Date) {
-    str = `${dateStr.getFullYear()}-${String(dateStr.getMonth()+1).padStart(2,'0')}-${String(dateStr.getDate()).padStart(2,'0')}`;
-  } else {
-    str = String(dateStr);
-  }
+  const str = String(dateStr);
   const parts = str.split("-");
   if (parts.length !== 3) return str;
   const year = parseInt(parts[0], 10);
@@ -14,14 +9,6 @@ export function formatDate(dateStr: any): string {
   const d = new Date(year, month - 1, day);
   return d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 }
-
-const toLocalDate = (raw: any): Date => {
-  if (raw instanceof Date) {
-    return new Date(raw.getUTCFullYear(), raw.getUTCMonth(), raw.getUTCDate());
-  }
-  const [y, m, d] = String(raw).split("-").map(Number);
-  return new Date(y, m - 1, d);
-};
 
 export interface Activity {
   slug: string;
@@ -94,15 +81,12 @@ function getSlug(path: string): string {
 function loadActivities(): Activity[] {
   return Object.entries(activityModules).map(([path, mod]) => {
     const data = mod.default;
-    const activityDate = toLocalDate(data.date);
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
     return {
       slug: getSlug(path),
       title: data.title,
-      status: activityDate < today ? "past" : "upcoming",
+      status: data.status,
       date: data.date,
-      time: (() => {
+     time: (() => {
         const toTime = (t: any) => {
           if (!t) return "";
           const n = Number(t);
@@ -191,15 +175,12 @@ function loadSettings(): SiteSettings {
 }
 
 const allActivities = loadActivities();
-const _today = new Date();
-_today.setHours(0, 0, 0, 0);
-
 export const upcomingActivities = allActivities
-  .filter((a) => toLocalDate(a.date) >= _today)
-  .sort((a, b) => toLocalDate(a.date).getTime() - toLocalDate(b.date).getTime());
+  .filter((a) => a.status === "upcoming")
+  .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 export const pastActivities = allActivities
-  .filter((a) => toLocalDate(a.date) < _today)
-  .sort((a, b) => toLocalDate(b.date).getTime() - toLocalDate(a.date).getTime());
+  .filter((a) => a.status === "past")
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 export const leaders = loadLeaders();
 export const pages = loadPages();
 export const homeContent = loadHome();
