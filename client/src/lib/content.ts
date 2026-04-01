@@ -185,15 +185,22 @@ function loadSettings(): SiteSettings {
 }
 
 const allActivities = loadActivities();
+
 const today = new Date();
 today.setHours(0, 0, 0, 0);
 
+const toDate = (d: any) => {
+  if (d instanceof Date) return d;
+  const [y, m, day] = String(d).split("-").map(Number);
+  return new Date(y, m - 1, day);
+};
+
 export const upcomingActivities = allActivities
-  .filter((a) => new Date(a.date) >= today)
-  .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+  .filter((a) => toDate(a.date) >= today)
+  .sort((a, b) => toDate(a.date).getTime() - toDate(b.date).getTime());
 export const pastActivities = allActivities
-  .filter((a) => new Date(a.date) < today)
-  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  .filter((a) => toDate(a.date) < today)
+  .sort((a, b) => toDate(b.date).getTime() - toDate(a.date).getTime());
 export const leaders = loadLeaders();
 export const pages = loadPages();
 export const homeContent = loadHome();
