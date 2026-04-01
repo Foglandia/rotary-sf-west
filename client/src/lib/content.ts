@@ -86,13 +86,11 @@ function loadActivities(): Activity[] {
       title: data.title,
       status: (() => {
         const raw = data.date;
-        let activityDate: Date;
-        if (typeof raw === "string") {
-          const [y, m, d] = raw.split("-").map(Number);
-          activityDate = new Date(y, m - 1, d);
-        } else {
-          activityDate = new Date(raw);
-        }
+        const dateStr = raw instanceof Date 
+          ? `${raw.getFullYear()}-${String(raw.getMonth()+1).padStart(2,'0')}-${String(raw.getDate()).padStart(2,'0')}`
+          : String(raw);
+        const [y, m, d] = dateStr.split("-").map(Number);
+        const activityDate = new Date(y, m - 1, d);
         const today = new Date();
         today.setHours(0, 0, 0, 0);
         return activityDate < today ? "past" : "upcoming";
