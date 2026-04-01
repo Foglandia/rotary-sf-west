@@ -169,17 +169,7 @@ export default function ActivityDetail() {
             </div>
 
             <div className="space-y-6">
-              <Card className={`shadow-md border-t-4 ${category.borderColor}`}>
-                <CardContent className="p-6 text-center">
-                  <h3 className="text-lg font-bold text-foreground mb-2">Ready to Join?</h3>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Sign up to participate in this event and make a difference in our community.
-                  </p>
-                  <Button className="w-full" size="lg">
-                    Sign Up for This Event
-                  </Button>
-                </CardContent>
-              </Card>
+              
 
               <Card className="shadow-md">
                 <CardContent className="p-6">
