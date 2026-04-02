@@ -96,8 +96,10 @@ content:
     label: Pages
     type: collection
     path: content/pages
+    filename: "{fields.slug}"
     view:
       fields: [title, slug]
+    fields:
     fields:
       - name: title
         label: Page Title
