@@ -15,6 +15,7 @@ import Activities from "@/pages/Activities";
 import ActivitiesCalendar from "@/pages/ActivitiesCalendar";
 import ActivityDetail from "@/pages/ActivityDetail";
 import SocialEvents from "@/pages/SocialEvents";
+import Feedback from "@/pages/Feedback";
 
 function Router() {
   if (window.location.pathname.startsWith("/admin")) {
@@ -35,6 +36,7 @@ function Router() {
       <Route path="/activity/:slug" component={ActivityDetail} />
       <Route path="/social-events" component={SocialEvents} />
       <Route path="/membership" component={JoinUs} />
+      <Route path="/feedback" component={Feedback} />
       
       <Route component={NotFound} />
     </Switch>
