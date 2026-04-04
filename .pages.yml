@@ -96,7 +96,7 @@ content:
     label: Pages
     type: collection
     path: content/pages
-    filename: "{fields.slug}"
+    filename: "{fields.slug}.md"
     view:
       fields: [title, slug]
     fields:
