@@ -81,25 +81,29 @@ export default function Home() {
         <section className="space-y-6 mb-12">
           <div className="space-y-2">
             <h1 className="text-2xl md:text-3xl font-heading font-bold text-primary tracking-tight">
-              Welcome to Rotary San Francisco West
+              {homeContent.welcomeTitle || "Welcome to Rotary San Francisco West"}
             </h1>
             <div className="h-1 w-20 bg-[#d41367] rounded-full"></div>
           </div>
-          <p className="text-lg md:text-xl text-primary leading-relaxed">
-            Rotary San Francisco West is a diverse local service group made up of community members, business and nonprofit owners, educators and civic leadership. We provide ongoing support to several family focused nonprofits: Good Samaritan Family Resource Center and the Edgewood Center for Children and Families. We also provide volunteer help at local schools, community gardens and at community meal programs.
-          </p>
-          <p className="text-lg md:text-xl text-primary leading-relaxed">
-            Mixed in with the service is a large dose of friendship and fun. SF West members meet up for picnics, dinners and other social events. There are also multiple opportunities throughout the year to mix with other Rotarians at conferences and training in areas such as leadership and public speaking. The Rotary is truly a global family where all are welcome.
-          </p>
+          {homeContent.welcomeText && (
+            <p className="text-lg md:text-xl text-primary leading-relaxed">
+              {homeContent.welcomeText}
+            </p>
+          )}
+          {homeContent.welcomeText2 && (
+            <p className="text-lg md:text-xl text-primary leading-relaxed">
+              {homeContent.welcomeText2}
+            </p>
+          )}
           <div className="flex flex-wrap gap-4">
             <Link href="/membership">
               <Button size="lg" className="px-8 shadow-md">
-                Join Us Today
+                {homeContent.welcomeButtonPrimary || "Join Us Today"}
               </Button>
             </Link>
             <Link href="/about">
               <Button size="lg" variant="outline" className="px-8">
-                Learn More
+                {homeContent.welcomeButtonSecondary || "Learn More"}
               </Button>
             </Link>
           </div>

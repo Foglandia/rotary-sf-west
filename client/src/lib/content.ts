@@ -36,11 +36,15 @@ export interface PageContent {
   heroImage?: string;
   formUrl?: string;
   body: string;
+  meta: Record<string, any>;
 }
 
 export interface HomeContent {
   welcomeTitle: string;
   welcomeText: string;
+  welcomeText2: string;
+  welcomeButtonPrimary: string;
+  welcomeButtonSecondary: string;
   missionStatement: string;
   carouselImages: { src: string; alt: string }[];
   quickLinks: { label: string; href: string; external?: boolean }[];
@@ -121,6 +125,7 @@ function loadPages(): Record<string, PageContent> {
       heroImage: data.heroImage,
       formUrl: data.formUrl,
       body: data.body || "",
+      meta: data,
     };
   }
   return pages;
@@ -129,12 +134,24 @@ function loadPages(): Record<string, PageContent> {
 function loadHome(): HomeContent {
   const entries = Object.values(homeModules);
   if (entries.length === 0) {
-    return { welcomeTitle: "", welcomeText: "", missionStatement: "", carouselImages: [], quickLinks: [] };
+    return {
+      welcomeTitle: "",
+      welcomeText: "",
+      welcomeText2: "",
+      welcomeButtonPrimary: "Join Us Today",
+      welcomeButtonSecondary: "Learn More",
+      missionStatement: "",
+      carouselImages: [],
+      quickLinks: [],
+    };
   }
   const data = entries[0].default;
   return {
     welcomeTitle: data.welcomeTitle || "",
     welcomeText: data.welcomeText || "",
+    welcomeText2: data.welcomeText2 || "",
+    welcomeButtonPrimary: data.welcomeButtonPrimary || "Join Us Today",
+    welcomeButtonSecondary: data.welcomeButtonSecondary || "Learn More",
     missionStatement: data.missionStatement || "",
     carouselImages: data.carouselImages || [],
     quickLinks: data.quickLinks || [],

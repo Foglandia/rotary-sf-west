@@ -6,8 +6,11 @@ import { CheckCircle2, ExternalLink } from "lucide-react";
 import { pages } from "@/lib/content";
 
 const page = pages["join-us"];
+const m = page?.meta ?? {};
 
 export default function JoinUs() {
+  const benefits: string[] = Array.isArray(m.benefits) ? m.benefits : [];
+
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
       <Header />
@@ -46,25 +49,38 @@ export default function JoinUs() {
           <div className="lg:col-span-1 space-y-6">
             <Card className="bg-primary/5 border-primary/20 shadow-sm">
               <CardHeader>
-                <CardTitle className="text-xl font-bold text-primary">Why Join?</CardTitle>
+                <CardTitle className="text-xl font-bold text-primary">
+                  {m.whyJoinTitle ?? "Why Join?"}
+                </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
-                  <p className="text-sm">Connect with diverse professionals and community leaders.</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
-                  <p className="text-sm">Make a tangible impact through hands-on service projects.</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
-                  <p className="text-sm">Develop leadership skills and professional growth.</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
-                  <p className="text-sm">Enjoy social events, dinners, and fun outings.</p>
-                </div>
+                {benefits.length > 0 ? (
+                  benefits.map((benefit: string, i: number) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
+                      <p className="text-sm">{benefit}</p>
+                    </div>
+                  ))
+                ) : (
+                  <>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
+                      <p className="text-sm">Connect with diverse professionals and community leaders.</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
+                      <p className="text-sm">Make a tangible impact through hands-on service projects.</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
+                      <p className="text-sm">Develop leadership skills and professional growth.</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-[#d41367] shrink-0 mt-0.5" />
+                      <p className="text-sm">Enjoy social events, dinners, and fun outings.</p>
+                    </div>
+                  </>
+                )}
               </CardContent>
             </Card>
           </div>
@@ -73,10 +89,14 @@ export default function JoinUs() {
           <div className="lg:col-span-2">
             <Card className="border-border/50 shadow-md h-full flex flex-col justify-center">
               <CardContent className="p-10 flex flex-col items-center text-center gap-6">
-                <h2 className="text-2xl font-bold text-foreground">Membership Interest Form</h2>
-                <p className="text-muted-foreground max-w-md">
-                  Ready to take the next step? Fill out our membership interest form and our Recruitment Lead will get in touch with you shortly.
-                </p>
+                <h2 className="text-2xl font-bold text-foreground">
+                  {m.formCardTitle ?? "Membership Interest Form"}
+                </h2>
+                {m.formCardDescription && (
+                  <p className="text-muted-foreground max-w-md">
+                    {m.formCardDescription}
+                  </p>
+                )}
                 {page?.formUrl && (
                   <Button size="lg" className="px-8 shadow-md gap-2" asChild>
                     <a
@@ -85,7 +105,7 @@ export default function JoinUs() {
                       rel="noopener noreferrer"
                       data-testid="link-membership-form"
                     >
-                      Open Membership Form
+                      {m.formButtonLabel ?? "Open Membership Form"}
                       <ExternalLink className="h-4 w-4" />
                     </a>
                   </Button>

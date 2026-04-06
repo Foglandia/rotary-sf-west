@@ -7,6 +7,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { pages, siteSettings } from "@/lib/content";
+
+const page = pages["contact"];
+const m = page?.meta ?? {};
 
 export default function Contact() {
   const { toast } = useToast();
@@ -79,20 +83,23 @@ export default function Contact() {
         <section className="space-y-6 mb-12 text-center max-w-2xl mx-auto">
           <div className="space-y-2">
             <h1 className="text-3xl md:text-4xl font-heading font-bold text-primary tracking-tight">
-              Contact Us
+              {page?.title ?? "Contact Us"}
             </h1>
             <div className="h-1 w-20 bg-[#d41367] rounded-full mx-auto"></div>
           </div>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Have questions about our club, interested in membership, or want to partner on a project? 
-            We'd love to hear from you.
-          </p>
+          {(page?.subtitle || page?.body) && (
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              {page?.subtitle || page?.body}
+            </p>
+          )}
         </section>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-8">
-            <h2 className="text-2xl font-heading font-bold text-primary">Get in Touch</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary">
+              {m.getInTouchTitle ?? "Get in Touch"}
+            </h2>
             
             <div className="grid gap-6">
               <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
@@ -103,8 +110,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-lg mb-1">Email Us</h3>
                     <p className="text-muted-foreground mb-2">For general inquiries and membership info</p>
-                    <a href="mailto:rcofsfw@gmail.com" className="text-primary font-medium hover:underline">
-                      rcofsfw@gmail.com
+                    <a href={`mailto:${siteSettings.email}`} className="text-primary font-medium hover:underline">
+                      {siteSettings.email}
                     </a>
                   </div>
                 </CardContent>
@@ -118,8 +125,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-lg mb-1">Call Us</h3>
                     <p className="text-muted-foreground mb-2">Mon-Fri from 9am to 5pm</p>
-                    <a href="tel:+14152034779" className="text-primary font-medium hover:underline">
-                      (415) 203-4779
+                    <a href={`tel:${siteSettings.phone?.replace(/\D/g,"")}`} className="text-primary font-medium hover:underline">
+                      {siteSettings.phone}
                     </a>
                   </div>
                 </CardContent>
@@ -132,10 +139,12 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">Join Us</h3>
-                    <p className="text-muted-foreground mb-2">Monthly meetings. First Thursday at 7:30 am</p>
+                    <p className="text-muted-foreground mb-2">
+                      {siteSettings.meetingDay} • {siteSettings.meetingTime}
+                    </p>
                     <address className="not-italic text-foreground">
-                      Crepes on Cole<br />
-                      San Francisco, CA 94117
+                      {siteSettings.meetingLocation}<br />
+                      {siteSettings.meetingAddress}
                     </address>
                   </div>
                 </CardContent>

@@ -1,6 +1,9 @@
 ---
 welcomeTitle: "Welcome to Rotary San Francisco West"
-welcomeText: "Service Above Self — Join our community of volunteers making a difference in San Francisco. We are a diverse group of professionals committed to serving our local community through hands-on projects, youth mentorship, and fellowship."
+welcomeText: "Rotary San Francisco West is a diverse local service group made up of community members, business and nonprofit owners, educators and civic leadership. We provide ongoing support to several family focused nonprofits: Good Samaritan Family Resource Center and the Edgewood Center for Children and Families. We also provide volunteer help at local schools, community gardens and at community meal programs."
+welcomeText2: "Mixed in with the service is a large dose of friendship and fun. SF West members meet up for picnics, dinners and other social events. There are also multiple opportunities throughout the year to mix with other Rotarians at conferences and training in areas such as leadership and public speaking. The Rotary is truly a global family where all are welcome."
+welcomeButtonPrimary: "Join Us Today"
+welcomeButtonSecondary: "Learn More"
 missionStatement: "Our mission is to provide service to others, promote integrity, and advance world understanding, goodwill, and peace through our fellowship of business, professional, and community leaders."
 carouselImages:
   - src: /uploads/Rotary_202512_004_ChristmasGive-away_1770857762272.jpg
