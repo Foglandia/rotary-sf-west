@@ -7,10 +7,9 @@ import { pages } from "@/lib/content";
 
 import socialImg from "@assets/stock_images/picnic_in_park_with__bb86390f.jpg";
 
-const page = pages["social-events"];
-const m = page?.meta ?? {};
-
 export default function SocialEvents() {
+  const page = pages["social-events"];
+  const m = page?.meta ?? {};
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
       <Header />

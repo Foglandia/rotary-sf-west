@@ -5,10 +5,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, ExternalLink } from "lucide-react";
 import { pages } from "@/lib/content";
 
-const page = pages["join-us"];
-const m = page?.meta ?? {};
-
 export default function JoinUs() {
+  const page = pages["join-us"];
+  const m = page?.meta ?? {};
   const benefits: string[] = Array.isArray(m.benefits) ? m.benefits : [];
 
   return (

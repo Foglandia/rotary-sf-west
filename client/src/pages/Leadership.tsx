@@ -6,10 +6,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { leaders, pages } from "@/lib/content";
 
-const page = pages["leadership"];
-const m = page?.meta ?? {};
-
 export default function Leadership() {
+  const page = pages["leadership"];
+  const m = page?.meta ?? {};
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
       <Header />

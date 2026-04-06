@@ -2,9 +2,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { pages } from "@/lib/content";
 
-const page = pages["feedback"];
-
 export default function Feedback() {
+  const page = pages["feedback"];
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
       <Header />

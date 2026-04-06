@@ -9,10 +9,9 @@ import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { pages, siteSettings } from "@/lib/content";
 
-const page = pages["contact"];
-const m = page?.meta ?? {};
-
 export default function Contact() {
+  const page = pages["contact"];
+  const m = page?.meta ?? {};
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({

@@ -2,10 +2,9 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { pages } from "@/lib/content";
 
-const page = pages["about"];
-const m = page?.meta ?? {};
-
 export default function About() {
+  const page = pages["about"];
+  const m = page?.meta ?? {};
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
       <Header />
