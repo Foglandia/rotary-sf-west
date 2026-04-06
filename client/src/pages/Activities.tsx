@@ -4,6 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Button } from "@/components/ui/button";
 import { Calendar, Users, GlassWater, Clock, MapPin } from "lucide-react";
 import { Link } from "wouter";
+import { pages } from "@/lib/content";
+
+const page = pages["activities"];
 
 export default function Activities() {
   return (
@@ -14,13 +17,15 @@ export default function Activities() {
         <section className="space-y-6 mb-12 text-center max-w-2xl mx-auto">
           <div className="space-y-2">
             <h1 className="text-3xl md:text-4xl font-heading font-bold text-primary tracking-tight">
-              Our Activities
+              {page?.title ?? "Our Activities"}
             </h1>
             <div className="h-1 w-20 bg-[#d41367] rounded-full mx-auto"></div>
           </div>
-          <p className="text-lg text-muted-foreground">
-            From service projects to social gatherings, there's always something happening at Rotary San Francisco West.
-          </p>
+          {(page?.subtitle || page?.body) && (
+            <p className="text-lg text-muted-foreground">
+              {page?.subtitle || page?.body}
+            </p>
+          )}
           <Button asChild className="mt-2">
             <Link href="/activities-calendar">
               <Calendar className="h-4 w-4 mr-2" />
