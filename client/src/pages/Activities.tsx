@@ -6,15 +6,22 @@ import { Calendar, Users, GlassWater, Clock, MapPin } from "lucide-react";
 import { Link } from "wouter";
 import { pages, siteSettings } from "@/lib/content";
 
-const page = pages["activities"];
-const m = page?.meta ?? {};
-
 export default function Activities() {
+  const page = pages["activities"];
+  const m = page?.meta ?? {};
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
       <Header />
       
       <main className="flex-1 container mx-auto px-4 py-8 md:py-12">
+        {/* DEBUG — remove before launch */}
+        <pre className="bg-yellow-100 text-xs p-2 mb-4 rounded overflow-auto max-h-40">
+          meetingsHeading: {JSON.stringify(m.meetingsHeading)}{"\n"}
+          clubActivitiesHeading: {JSON.stringify(m.clubActivitiesHeading)}{"\n"}
+          socialEventsHeading: {JSON.stringify(m.socialEventsHeading)}{"\n"}
+          page defined: {String(!!page)}{"\n"}
+          meta keys: {JSON.stringify(Object.keys(m))}
+        </pre>
         <section className="space-y-6 mb-12 text-center max-w-2xl mx-auto">
           <div className="space-y-2">
             <h1 className="text-3xl md:text-4xl font-heading font-bold text-primary tracking-tight">
