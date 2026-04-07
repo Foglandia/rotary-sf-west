@@ -1,5 +1,21 @@
-export function formatDate(dateStr: string): string {
-  const d = new Date(dateStr);
+function parseDateSafe(val: string | Date | unknown): Date {
+  if (val instanceof Date) return val;
+  const s = String(val ?? "");
+  // Plain YYYY-MM-DD — treat as local noon to avoid UTC-offset day drift
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) {
+    const [y, m, d] = s.split("-").map(Number);
+    return new Date(y, m - 1, d, 12, 0, 0);
+  }
+  return new Date(s);
+}
+
+export function normalizeDate(val: string | Date | unknown): string {
+  const d = parseDateSafe(val);
+  return isNaN(d.getTime()) ? String(val ?? "") : d.toISOString();
+}
+
+export function formatDate(dateStr: string | Date | unknown): string {
+  const d = parseDateSafe(dateStr);
   return d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 }
 
@@ -82,7 +98,7 @@ function loadActivities(): Activity[] {
       slug: getSlug(path),
       title: data.title,
       status: data.status,
-      date: data.date,
+      date: normalizeDate(data.date),
       time: data.time || "",
       location: data.location,
       address: data.address || data.location,
