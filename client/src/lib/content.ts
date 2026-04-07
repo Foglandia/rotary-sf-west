@@ -1,10 +1,13 @@
 function parseDateSafe(val: string | Date | unknown): Date {
-  if (val instanceof Date) return val;
+  if (val instanceof Date) {
+    // Re-anchor Date objects to local noon using the UTC date parts
+    return new Date(val.getUTCFullYear(), val.getUTCMonth(), val.getUTCDate(), 12, 0, 0);
+  }
   const s = String(val ?? "");
-  // Plain YYYY-MM-DD — treat as local noon to avoid UTC-offset day drift
-  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) {
-    const [y, m, d] = s.split("-").map(Number);
-    return new Date(y, m - 1, d, 12, 0, 0);
+  // Extract YYYY-MM-DD from any format and use local noon to prevent UTC-offset day drift
+  const match = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (match) {
+    return new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]), 12, 0, 0);
   }
   return new Date(s);
 }

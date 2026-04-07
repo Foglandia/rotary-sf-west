@@ -5,7 +5,7 @@ import { Calendar, Users, Globe, Heart, MessageCircle, ChevronLeft, ChevronRight
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Link } from "wouter";
-import { upcomingActivities, getCategoryDetails } from "@/lib/content";
+import { upcomingActivities, getCategoryDetails, formatDate } from "@/lib/content";
 
 const getCategoryIcon = (category: string) => {
   switch(category) {
@@ -199,13 +199,7 @@ export default function ActivitiesCalendar() {
             {upcomingActivities.map((activity) => {
               const category = getCategoryDetails(activity.category);
               const Icon = getCategoryIcon(activity.category);
-              const eventDate = new Date(activity.date);
-              const formattedDate = eventDate.toLocaleDateString('en-US', { 
-                weekday: 'long', 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-              });
+              const formattedDate = formatDate(activity.date);
               
               return (
                 <Link key={activity.slug} href={`/activity/${activity.slug}`} className="block">
