@@ -1,13 +1,13 @@
 ---
-title: Serve Breakfast at Edgewood Development Center
+title: Serve Breakfast at Edgewood Center for Children and Families
 status: past
 date: 2026-03-08
 startTime: 10:00
 startAmPm: AM
 endTime: 12:00
 endAmPm: PM
-location: Edgewood Bayview - Hunters Point
-address: 3801 3rd Street, Suite 601 & 320, San Francisco
+location: 1801 Vicente St, San Francisco, CA 94116
+address: 1801 Vicente St, San Francisco, CA 94116
 category: community
 description: Join us to cook and serve breakfast to teens at the Edgewood
   Development Center.
