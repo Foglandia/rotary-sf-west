@@ -1,6 +1,6 @@
 ---
 title: April Monthly Meeting
-status: upcoming
+status: past
 date: 2026-04-09
 startTime: 7:30
 startAmPm: AM
