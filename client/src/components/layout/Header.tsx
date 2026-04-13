@@ -128,7 +128,7 @@ export function Header() {
         {/* Logo Area */}
         <Link href="/">
           <div className="flex items-center gap-2 cursor-pointer">
-            <div className="flex flex-col items-start hidden sm:flex gap-1">
+            <div className="flex flex-col items-end hidden sm:flex gap-1">
               <span className="font-heading font-extrabold text-2xl text-primary leading-none">
                 Rotary
               </span>
