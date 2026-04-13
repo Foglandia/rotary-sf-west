@@ -1,5 +1,5 @@
 ---
-title: Monthly Meeting
+title: March Monthly Meeting
 status: past
 date: 2026-03-12
 startTime: 7:30
