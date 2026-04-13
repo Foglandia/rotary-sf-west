@@ -6,11 +6,11 @@ startTime: 10:00
 startAmPm: AM
 endTime: 12:00
 endAmPm: PM
-location: 1801 Vicente St, San Francisco, CA 94116
+location: Edgewood Center for Children and Families
 address: 1801 Vicente St, San Francisco, CA 94116
-category: community
-description: Join us to cook and serve breakfast to teens at the Edgewood
-  Development Center.
+category: club
+description: Join us to cook and serve breakfast to teens at the Edgewood Center
+  for Children and Families.
 image: /uploads/pancakes_1772838707513.jpg
 ---
 Join us to cook and serve breakfast to teens at the Edgewood Development Center.
