@@ -1,6 +1,11 @@
-export function formatDate(dateStr: string): string {
-  const d = new Date(dateStr);
-  return d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+export function formatDate(dateStr: string | Date | unknown): string {
+  const s = String(dateStr ?? "");
+  const match = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (match) {
+    const d = new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]), 12, 0, 0);
+    return d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+  }
+  return s;
 }
 
 export interface Activity {
