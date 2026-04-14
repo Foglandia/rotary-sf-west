@@ -9,8 +9,8 @@ description: We collected new and lightly-used children's books (infant to 5th
   grade) to be donated to the Book Wagon. The Book Wagon distributes free books
   to children in elementary schools in San Francisco so they can build a home
   library.
-image: /uploads/Rotary_20250201_001_Bookdrive_1772834648852.jpeg
+image: /uploads/Rotary_20250201_002_Bookdrive.jpeg
 extraImages:
-  - /uploads/Rotary_20250201_002_Bookdrive_1772834648852.jpeg
+  - /uploads/Rotary_20250201_001_Bookdrive.jpeg
 ---
 We collected new and lightly-used children's books (infant to 5th grade) to be donated to the Book Wagon. The Book Wagon distributes free books to children in elementary schools in San Francisco so they can build a home library.
