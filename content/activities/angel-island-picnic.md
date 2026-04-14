@@ -11,7 +11,7 @@ address: San Francisco Ferry Terminal, San Francisco, CA
 category: club
 description: "Join us for a picnic on Angel Island. We will meet at the Ferry
   Terminal at 11:00 AM.   "
-image: /uploads/1024px-Angel_Island_(California)_1770767921980.jpeg
+image: /uploads/AngelIslandPicnic.jpeg
 ---
 Join us for a picnic on Angel Island. We will meet at the Ferry Terminal at 11:00 AM.
 
