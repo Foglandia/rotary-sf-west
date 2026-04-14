@@ -13,7 +13,6 @@ description: "Let's celebrate spring together.  Join us for a fun day of
   sunshine, food and fellowship on Angel Island. "
 image: /uploads/AngelIslandPicnic.jpeg
 ---
-We will meet at Gates B/C, SF Ferry Building at 10:15 AM. The Ferry departs at 11:00 AM.  Bring a blanket, your favorite food to share and your friends and family.  All are welcome!
+We will meet at Gates B/C, SF Ferry Building at 10:15 AM. The Ferry departs at 11:00 AM.  Bring a blanket, your favorite food to share and your friends and family.  All are welcome. You can rent bikes, go for a hike or just lounge in the sun. 
 
-You can rent bikes, go for a hike or just lounge in the sun. 
-
+Learn more about Angel Island here.  [https://www.parks.ca.gov/?page_id=468](https://www.parks.ca.gov/?page_id=468)
