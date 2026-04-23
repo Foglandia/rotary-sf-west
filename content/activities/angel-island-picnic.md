@@ -11,7 +11,7 @@ address: San Francisco Ferry Terminal, San Francisco, CA
 category: club
 description: "Let's celebrate spring together.  Join us for a fun day of
   sunshine, food and fellowship on Angel Island. "
-image: /uploads/AngelIslandPicnic.jpeg
+image: /uploads/1024px-Angel_Island_(California).jpeg
 ---
 We will meet at Gates B/C, SF Ferry Building at 10:15 AM. The Ferry departs at 11:00 AM.  Bring a blanket, your favorite food to share and your friends and family.  All are welcome. You can rent bikes, go for a hike or just lounge in the sun. 
 
