@@ -1,6 +1,6 @@
 media:
-  input: attached_assets
-  output: /attached_assets
+  input: client/public/uploads
+  output: /uploads
   
 content:
   - name: activities
