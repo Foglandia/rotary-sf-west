@@ -128,5 +128,5 @@ content:
       - { name: missionStatement, label: Mission Statement, type: text }
 
 media:
-  input: public/uploads
-  output: /uploads
+  input: attached_assets
+  output: /attached_assets
