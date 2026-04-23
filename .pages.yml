@@ -1,3 +1,7 @@
+media:
+  input: attached_assets
+  output: /attached_assets
+  
 content:
   - name: activities
     label: Activities
@@ -127,6 +131,4 @@ content:
       - { name: welcomeText, label: Welcome Text, type: text }
       - { name: missionStatement, label: Mission Statement, type: text }
 
-media:
-  input: attached_assets
-  output: /attached_assets
+
