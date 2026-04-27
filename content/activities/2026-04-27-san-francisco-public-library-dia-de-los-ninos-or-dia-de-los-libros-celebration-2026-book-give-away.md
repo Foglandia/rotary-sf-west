@@ -18,3 +18,4 @@ description: "Rotary club members joined the Book Wagon nonprofit to give away
   and resources to achieve the goal of promoting literacy and unifying families
   of all cultures, through a community-based, child-centered event. "
 ---
+This annual event is rooted in a longtime Latin American tradition of celebrating children. San Francisco’s first Día de los Niños, Día de los Libros was held in 1999 and each year since then, organizers continue to volunteer their time and resources to achieve the goal of promoting literacy and unifying families of all cultures, through a community-based, child-centered event. 
