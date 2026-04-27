@@ -2,7 +2,7 @@
 title: San Francisco Public Library - Día de los Niños | Día de los Libros
   Celebration 2026 - Book Give-away
 status: past
-date: 2026-04-27
+date: 2026-04-26
 startTime: 12:00
 startAmPm: PM
 endTime: 3:00
