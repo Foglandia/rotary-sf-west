@@ -1,6 +1,6 @@
 ---
 title: The Book Wagon Book Give-away
-status: upcoming
+status: past
 date: 2026-04-29
 startTime: 11:00
 startAmPm: AM
