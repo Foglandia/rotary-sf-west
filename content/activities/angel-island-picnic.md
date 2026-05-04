@@ -1,6 +1,6 @@
 ---
 title: Angel Island Picnic
-status: upcoming
+status: past
 date: 2026-05-02
 startTime: 10:00
 startAmPm: AM
