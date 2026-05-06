@@ -13,6 +13,4 @@ description: We had a great time cooking and serving breakfast to teens at the
   Edgewood Development Center.
 image: /uploads/EdgewoodImage.jpg
 ---
-Join us to cook and serve breakfast to teens at the Edgewood Development Center.
-
-We will cook and serve a full breakfast to teens and young adults in residence at the Edgewood Development Center. Bring your pancake making skills!
+We had a great time cooking and serving breakfast to teens at the Edgewood Development Center.
