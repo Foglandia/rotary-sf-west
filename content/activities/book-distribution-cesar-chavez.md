@@ -1,6 +1,6 @@
 ---
 title: Book Distribution - Cesar Chavez Elementary School
-status: upcoming
+status: past
 date: 2026-03-25
 startTime: 1:00
 startAmPm: PM
