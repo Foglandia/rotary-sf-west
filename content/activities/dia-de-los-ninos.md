@@ -1,6 +1,6 @@
 ---
 title: Dia de los Ninos Book Give-away
-status: upcoming
+status: past
 date: 2026-04-25
 startTime: 11:00
 startAmPm: AM
