@@ -1,7 +1,7 @@
 ---
 title: Monthly Meeting
-status: upcoming
-date: 2026-05-07
+status: past
+date: 2026-05-14
 startTime: 7:30
 startAmPm: AM
 endTime: 8:30
