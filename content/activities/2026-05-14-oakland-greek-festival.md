@@ -7,7 +7,7 @@ startAmPm: AM
 endTime: 10:00
 endAmPm: PM
 location: Greek Orthodox Cathedral of the Ascension
-address: 4700 Lincoln Avenue, Oakland
+address: 4700 Lincoln Avenue, Oakland, 94602
 category: community
 description: "Learn about and experience Greek culture without having to fly to
   Greece. Join us at the Oakland Greek Festival to enjoy Greek customs, food,
